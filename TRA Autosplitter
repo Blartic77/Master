@@ -9,7 +9,7 @@ An autosplitter for TRA (Tomb Raider Anniversary), Any% no BJ (Bug Jumps) SS (Si
 4) An experimental "race" autoreset for challenging friends, which sadly does not seem to work with LiveSplit v1.7.7. 
    It is not active by default.
    
-To use it, get the .asl (https://raw.githubusercontent.com/NextLevelMemes/Master/master/TRA%20Autosplitter%20-%20Code), run LiveSplit, right click on it --> Edit Layout --> + --> Control --> Scriptable Autosplitter, then
+To use it, get the .asl (https://www.speedrun.com/tools/traNewest_80pl6.rar), run LiveSplit, right click on it --> Edit Layout --> + --> Control --> Scriptable Autosplitter, then
 go to Layout Settings --> Scriptable Autosplitter and select the .asl file. As of now you should leave all 23 autosplits selected, 
 as otherwise it might not work well.
 
