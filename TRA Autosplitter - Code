@@ -1,8 +1,8 @@
 // TRA Auto Splitter Script v2.0 by NextLevelMemes, using apel's v.1 as base.
 // This was thought as an Autosplitter for Any% no Bug Jump, Single Segment runs. It might not work well/as desired for other categories. 
 // Known issues:
-//     -Splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that 
-//      refresh the area label, or you might use a different route that causes different values for other variables and accidentally cause an autosplit. So keep this in mind. 
+//     -Splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that refresh the area label, 
+//      or you might use a different route that causes different values for other variables and accidentally cause an autosplit. So keep this in mind. 
 //     -DON'T tick autoreset for lava-based deaths if you're unsure/lazy about testing it first. It might end up causing unwanted autoresets in Atlantis,
 //      and I won't be held responsible for it. Also, I could not create an autoreset for every single lava death, it's too unreliable to make.
 //     -If you restart during the Centaurs boss fight without having done any damage to them, the Centaur split might not work at all. This is because their last HP
@@ -153,7 +153,8 @@ isLoading
 }
 
 startup
-{       settings.Add("Main", false, "Autoresets when:");
+{       
+        settings.Add("Main", false, "Autoresets when:");
 	settings.SetToolTip("Main", "Tick an option to autoreset the timer when that condition is satisfied.");
 	
 	  settings.Add("HPDeath",false, "Lara's HP = 0", "Main");
