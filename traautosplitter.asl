@@ -32,6 +32,7 @@ state("tra")
     uint LavaDeath2 : 0x122C94, 0x308; 
     float BossHP : 0x245EC, 0x578; 
     float BossRage : 0x55234, 0x18; 
+    uint IGTStoryModePlusIL1 : 0x48F378, 0x40; 
 }
 
 init
@@ -57,95 +58,87 @@ update
 
 start
 {
-    if((current.level == 1 || current.level == 0) && 
-       !current.isLoading                         &&
-       old.isLoading                              &&
-       !current.isTitle                           &&
-       !vars.isFirstLoad                          &&
-       vars.isNewGame)
-    {
-        vars.isNewGame = false;
-        return true;
-     }
+    if((current.level == 0||current.level == 1) && current.IGTStoryModePlusIL1 == 0 && old.zCoord == 0 && current.zCoord >0 && current.xCoord == 0 && current.yCoord <= 0)  
+       return true;
 }
 
 split
 {
 //Peru:
     if(current.AreaLabel == 2 && old.AreaLabel == 1 && current.level == 1 && current.RegionID == 1 && settings["MountainCaves1"])
-    return true;
+       return true;
     if(current.AreaLabel == 7 && old.AreaLabel == 6 && current.level == 1 && current.RegionID == 1 && settings["MountainCaves2"])
-    return true;
+       return true;
     if(current.AreaLabel == 8 && old.AreaLabel == 7 && current.RegionID == 1 && settings["VilcabambaWarp"])
-    return true;
+       return true;
     if(current.AreaLabel == 23 && current.level == 2 && old.level == 1 && current.RegionID == 1 && settings["TheLostValley"])
-    return true; 
+       return true; 
     if(current.AreaLabel == 16 && old.AreaLabel == 11 && current.RegionID == 1 && settings["TombOfQualopec1"])
-    return true;
+       return true;
     if(current.AreaLabel == 17 && old.AreaLabel == 18 && current.level == 3 && current.RegionID == 1 && settings["TombOfQualopec2"])
-    return true; //THIS ONE DOES NOT AUTOSPLIT IF YOU GET INTO QUALOPEC'S THRONE ROOM WHILE AIRWALK/OOB.
+       return true; //THIS ONE DOES NOT AUTOSPLIT IF YOU GET INTO QUALOPEC'S THRONE ROOM WHILE AIRWALK/OOB.
 
 //Greece:
     if(current.AreaLabel == 1 && old.AreaLabel != 1 && current.RegionID == 2 && settings["StFrancisFolly1"])
-    return true;
+       return true;
     if(current.AreaLabel == 3 && old.AreaLabel == 2 && current.level == 4 && current.RegionID == 2 && settings["StFrancisFolly2"])
-    return true;
+       return true;
     if(current.AreaLabel == 31 && old.AreaLabel == 3 && current.level == 4 && current.RegionID == 2 && settings["TheColiseum"])
-    return true;
+       return true;
     if(current.AreaLabel == 18 && current.level == 5 && old.level == 4 && current.RegionID == 2 && settings["MidasPalace"])
-    return true;
+       return true;
     if(current.AreaLabel == 27 && current.zCoord >= 0 && old.zCoord < 0 && current.level == 5 && current.RegionID == 2 && settings["TombOfTihocan1"])
-    return true;
+       return true;
     if(current.RegionID == 2 && current.AreaLabel >=29 && old.BossHP != 40000 && current.BossHP == 40000 && current.zCoord >= 432 && settings["TombOfTihocan2"])
-    return true;
+       return true;
     
 //Egypt:
     if(current.RegionID == 3 && old.RegionID != 3 && current.level == 6 && settings["TempleOfKhamoon"])
-    return true;
+       return true;
     if(current.AreaLabel == 20 && old.AreaLabel != 20 && current.level == 6 && current.RegionID == 3 && settings["SanctuaryOfTheScion1"])
-    return true;
+       return true;
     if(current.AreaLabel == 22 && old.AreaLabel != 22 && current.level == 6 && current.RegionID == 3 && settings["SanctuaryOfTheScion2"])
-    return true;
+       return true;
 	   
 //Atlantis:
     if(current.AreaLabel == 1 && old.AreaLabel != 1 && current.RegionID == 4 && settings["NatlasMines1"])
-    return true;
+       return true;
     if(current.AreaLabel == 5 && old.AreaLabel == 2 && current.RegionID == 4 && settings["NatlasMines2"])
-    return true;
+       return true;
     if(current.AreaLabel == 11 && old.AreaLabel == 10 && current.RegionID == 4 && settings["TheGreatPyramid1"])
-    return true;   
+       return true;   
     if(current.AreaLabel == 14 && old.AreaLabel == 13 && current.RegionID == 4 && settings["TheGreatPyramid2"])
-    return true; 
+       return true; 
     if(current.AreaLabel == 17 && old.AreaLabel == 16 && current.RegionID == 4 && settings["TheFinalConflict1"])
-    return true;
+       return true;
     if(current.AreaLabel == 19 && current.RegionID == 4 && current.BossRage == 0 && current.BossHP == 5600 && old.BossHP != 5600 && settings["TheFinalConflict2"])
-    return true;
+       return true;
     if(current.AreaLabel == 19 && current.BossHP == 3200 && old.BossHP > 3200 && current.BossRage >= 0 && current.RegionID == 4 && settings["TheFinalConflict3"])
-    return true; 
+       return true; 
     if(current.AreaLabel == 19 && current.level > old.level && current.RegionID == 4 && current.xCoord > -50 && current.yCoord > 150 && current.zCoord < -500 && settings["TheFinalConflict4"])
-    return true;
+       return true;
 }
 
 reset
 {
    if(current.HP <= 0 && old.HP > 0 && settings["HPDeath"])
-   return true;
+      return true;
    if(settings["VoidDeath"] && ((current.level == 1 && current.AreaLabel == 1 && current.RegionID == 1 && current.zCoord < -1000 && old.zCoord > -1000)||(current.AreaLabel == 21 && current.RegionID == 1 && current.zCoord < -2000 && old.zCoord >= -2000)||(current.RegionID == 3 && current.AreaLabel == 16 && current.zCoord <= -4700 && old.zCoord > -4700)||(current.AreaLabel == 16 && current.RegionID == 3 && current.xCoord > 3000 && current.yCoord > -650 && current.zCoord <= -300 && old.zCoord > -300)||(current.AreaLabel == 16 && current.RegionID == 2 && current.zCoord <= -750 && old.zCoord > -750)||(current.AreaLabel == 21 && current.RegionID == 3 && current.zCoord <= -650 && old.zCoord > -600)))
-   return true;
+      return true;
    if(current.RegionID == 4 && settings["LavaDeath"] && ((current.AreaLabel == 5 && current.zCoord < -1800 && old.zCoord >= -1800)||(current.AreaLabel == 17 && current.zCoord < -5000 && old.zCoord >= -5000)||(current.AreaLabel == 18  && current.zCoord < -200 && current.LavaDeath2 == 1 && old.LavaDeath2 == 0)||(current.AreaLabel == 6 && current.zCoord < -1000 && old.zCoord >= -1000)||(current.AreaLabel == 7 && current.yCoord > 1000 && current.xCoord < -1500 && current.zCoord < -3800 && old.zCoord >= -3800)||(current.AreaLabel == 19 && current.zCoord < -4500 && old.zCoord >= -4500)||(current.RegionID == 4 && current.AreaLabel == 13 && current.zCoord <= -150 && old.zCoord > -150)))
-   return true;
+      return true;
    if(old.IGT == 1799 && current.IGT == 1800 && settings["30m"])
-   return true;
+      return true;
    if(old.IGT == 2699 && current.IGT == 2700 && settings["45m"])
-   return true;
+      return true;
    if(old.IGT == 3599 && current.IGT == 3600 && settings["60m"])
-   return true;
+      return true;
    if(old.IGT == 5399 && current.IGT == 5400 && settings["90m"])
-   return true;
+      return true;
    if(old.IGT == 7199 && current.IGT == 7200 && settings["120m"])
-   return true;
+      return true;
    if(old.IGT == 10799 && current.IGT == 10800 && settings["180m"])
-   return true;
+     return true;
 }
 
 isLoading
