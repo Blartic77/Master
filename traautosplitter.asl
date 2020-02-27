@@ -37,7 +37,7 @@ state("tra")
 
 init
 {
-    print("TRA");
+    print("TRA found");
     refreshRate = 30;
     vars.isFirstLoad = true;
     vars.isNewGame = false;
@@ -61,6 +61,9 @@ start
     if((current.level == 0||current.level == 1) && current.IGTStoryModePlusIL1 == 0 && old.zCoord == 0 && current.zCoord >0 && current.xCoord == 0 && current.yCoord <= 0)  
        return true;
 }
+
+//A new, reliable start function that is not messy and allows you to reset your timer, then load your "0" save from anywhere in the game and it'll autostart again
+//without having to go back to the menu/create a new profile every time.
 
 split
 {
