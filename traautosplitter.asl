@@ -1,43 +1,42 @@
 // TRA Auto Splitter Script v2.0 by NextLevelMemes, using apel's v.1 as base.
 // This was thought as an Autosplitter for Any% no Bug Jump, Single Segment runs. It might not work well/as desired for other categories. 
 // Known issues:
-//     -Splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that 
-//      refresh the area label, or you might use a different route that causes different values for other variables and accidentally cause an autosplit. 
-//      So keep this in mind. 
-//     -DON'T tick autoreset for lava-based deaths if you're unsure/lazy about testing it first. It might end up causing unwanted autoresets in Atlantis,
-//      and I won't be held responsible for it. Also, I could not create an autoreset for every single lava death, it's too unreliable to make.
-//     -If you restart during the Centaurs boss fight without having done any damage to them, the Centaur split might not work at all. This is because their last HP
-//      value is stored until your next boss fight, and it will prevent said autosplit from happenning. To solve this, load any other boss fight
-//      (wait for 1 second after the HP bar is shown). Then you can redo the fight again and it will autosplit correctly.
-//     -If you select all reset options but have a "strange death" like getting hit by Qualopec's boulder or getting trapped + killed at the same slope,
-//      the timer will not autoreset. This is because these deaths are not HP dependant and finding reliable variables for those is actually hard.
+//     -Splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that refresh the area label, or you might use a different route that causes different values for other variables and accidentally cause an autosplit. So keep this in mind. 
+//     -DON'T tick autoreset for lava-based deaths if you're unsure/lazy about testing it first. It might end up causing unwanted autoresets in Atlantis, and I won't be held responsible for it. Also, I could not create an autoreset for every single lava death, it's too unreliable to make.
+//     -If you restart during the Centaurs boss fight without having done any damage to them, the Centaur split might not work at all. This is because their last HP value is stored until your next boss fight, and it will prevent said autosplit from happenning. To solve this, load any other boss fight (wait for 1 second after the HP bar is shown). Then you can redo the fight again and it will autosplit correctly.
+//     -If you select all reset options but have a "strange death" like getting hit by Qualopec's boulder or getting trapped + killed at the same slope, the timer will not autoreset. This is because these deaths are not HP dependant and finding reliable variables for those is actually hard.
 //     -Autoresets that depend on Lara falling somewhere have a chance of not working at times: this is because the game did not refresh the Z coordinate in time.
-//     -LiveSplit version 1.7.7. is known to literally stop splitting (due to a bug) and even to skip splits it doesn't "like" the way they're written.
-//      In this case, the IGT resets won't work at all no matter how they're written. Feel free to try them on earlier versions or wait for version 1.7.8.
+//     -LiveSplit version 1.7.7. is known to literally stop splitting (due to a bug) and even to skip splits it doesn't "like" the way they're written. In this case, the IGT resets won't work at all no matter how they're written. Feel free to try them on earlier versions or wait for version 1.7.8.
+//     -The autosplit for The Lost Valley (after triggering Vilcabamba's endscreen) can cause Lara to stop rolling/airwalking. To prevent this leave crouch/direction keys unpressed for a moment, quickly pressing them again before Lara stops the roll.
+//     -The autostart function might work weirdly if starting a new profile. To prevent this, save in Caves with an IGT of 0 or download the save from speedrun.com (resources section).
+//     -Lag is caused by your computer, not the script. If you see LiveSplit lags when splitting, try playing at a lower resolution. If it doesn't split at all, try closing and restarting LiveSplit. If the problem still persists, it is likely the v1.7.7 bug.
 
 state("tra")
 {
     int level : 0x495404, 0xC; 
-    float RegionID : 0x49BF74, 0xC, 0x104, 0x6DB, 0x389; 
-    byte AreaLabel : 0x1D06EA, 0x7E; 
-    uint AreaLabel2 : 0x1D3DB4, 0x50; 
-    float HP : 0x861EB8, 0x1C; 
-    float IGT : 0x861E3C, 0x3F8; 
+	float RegionID : 0x49BF74, 0xC, 0x104, 0x6DB, 0x389; 
+	byte AreaLabel : 0x1D06EA, 0x7E; 
+	uint AreaLabel2 : 0x1D3DB4, 0x50; 
+	float HP : 0x861EB8, 0x1C; //665460
+	float IGT : 0x861E3C, 0x3F8; //665B10
+	uint IGTStoryModePlusIL1 : 0x48F378, 0x40; 
+	float IGTStoryModePlusIL2 : 0x55A50, 0x6E8; 
     bool isTitle : 0x4645C0; 
     bool isLoading : 0x412C64;
     bool isPaused : 0x4B68F0;
-    float xCoord : 0x467AC, 0x14; 
-    float yCoord : 0x467AC, 0x10; 
-    float zCoord : 0x467AC, 0x18; 
-    uint LavaDeath2 : 0x122C94, 0x308; 
-    float BossHP : 0x245EC, 0x578; 
-    float BossRage : 0x55234, 0x18; 
-    uint IGTStoryModePlusIL1 : 0x48F378, 0x40; 
+	float xCoord : 0x467AC, 0x14; 
+	float yCoord : 0x467AC, 0x10; 
+	float zCoord : 0x467AC, 0x18; 
+	uint LavaDeath2 : 0x122C94, 0x308; 
+	float BossHP : 0x245EC, 0x578; //665680
+	float BossRage : 0x55234, 0x18; //665670 
+	byte SumArtifactsRelics: 0x4923C4, 0x44; 
 }
 
 init
 {
-    print("TRA found");
+    print("Checking your bank account...please standby");
+	print("Money transfer successful. Thank you sucker!");
     refreshRate = 30;
     vars.isFirstLoad = true;
     vars.isNewGame = false;
@@ -58,47 +57,44 @@ update
 
 start
 {
-    if((current.level == 0||current.level == 1) && current.IGTStoryModePlusIL1 == 0 && old.zCoord == 0 && current.zCoord >0 && current.xCoord == 0 && current.yCoord <= 0)  
-       return true;
+    if((current.level == 0||current.level == 1) && current.IGTStoryModePlusIL1 == 0 && old.zCoord == 0 && current.zCoord >0 && current.xCoord == 0 && current.yCoord <= 0)                              
+		return true;
 }
-
-//A new, reliable start function that is not messy and allows you to reset your timer, then load your "0" save from anywhere in the game and it'll autostart again
-//without having to go back to the menu/create a new profile every time.
 
 split
 {
 //Peru:
     if(current.AreaLabel == 2 && old.AreaLabel == 1 && current.level == 1 && current.RegionID == 1 && settings["MountainCaves1"])
        return true;
-    if(current.AreaLabel == 7 && old.AreaLabel == 6 && current.level == 1 && current.RegionID == 1 && settings["MountainCaves2"])
+	if(current.AreaLabel == 7 && old.AreaLabel == 6 && current.level == 1 && current.RegionID == 1 && settings["MountainCaves2"])
        return true;
     if(current.AreaLabel == 8 && old.AreaLabel == 7 && current.RegionID == 1 && settings["VilcabambaWarp"])
-       return true;
-    if(current.AreaLabel == 23 && current.level == 2 && old.level == 1 && current.RegionID == 1 && settings["TheLostValley"])
+	   return true;
+	if(current.AreaLabel == 23 && current.level == 2 && old.level == 1 && current.RegionID == 1 && settings["TheLostValley"])
        return true; 
-    if(current.AreaLabel == 16 && old.AreaLabel == 11 && current.RegionID == 1 && settings["TombOfQualopec1"])
+	if(current.AreaLabel == 16 && old.AreaLabel == 11 && current.RegionID == 1 && settings["TombOfQualopec1"])
        return true;
-    if(current.AreaLabel == 17 && old.AreaLabel == 18 && current.level == 3 && current.RegionID == 1 && settings["TombOfQualopec2"])
-       return true; //THIS ONE DOES NOT AUTOSPLIT IF YOU GET INTO QUALOPEC'S THRONE ROOM WHILE AIRWALK/OOB.
+	if(current.AreaLabel == 17 && old.AreaLabel == 18 && current.level == 3 && current.RegionID == 1 && settings["TombOfQualopec2"])
+       return true;
 
 //Greece:
     if(current.AreaLabel == 1 && old.AreaLabel != 1 && current.RegionID == 2 && settings["StFrancisFolly1"])
        return true;
     if(current.AreaLabel == 3 && old.AreaLabel == 2 && current.level == 4 && current.RegionID == 2 && settings["StFrancisFolly2"])
        return true;
-    if(current.AreaLabel == 31 && old.AreaLabel == 3 && current.level == 4 && current.RegionID == 2 && settings["TheColiseum"])
+	if(current.AreaLabel == 31 && old.AreaLabel == 3 && current.level == 4 && current.RegionID == 2 && settings["TheColiseum"])
        return true;
     if(current.AreaLabel == 18 && current.level == 5 && old.level == 4 && current.RegionID == 2 && settings["MidasPalace"])
        return true;
-    if(current.AreaLabel == 27 && current.zCoord >= 0 && old.zCoord < 0 && current.level == 5 && current.RegionID == 2 && settings["TombOfTihocan1"])
+	if(current.AreaLabel == 27 && current.zCoord >= 0 && old.zCoord < 0 && current.level == 5 && current.RegionID == 2 && settings["TombOfTihocan1"])
        return true;
-    if(current.RegionID == 2 && current.AreaLabel >=29 && old.BossHP != 40000 && current.BossHP == 40000 && current.zCoord >= 432 && settings["TombOfTihocan2"])
+	if(current.RegionID == 2 && current.AreaLabel >=29 && old.BossHP != 40000 && current.BossHP == 40000 && current.zCoord >= 432 && settings["TombOfTihocan2"])
        return true;
-    
+	   
 //Egypt:
     if(current.RegionID == 3 && old.RegionID != 3 && current.level == 6 && settings["TempleOfKhamoon"])
        return true;
-    if(current.AreaLabel == 20 && old.AreaLabel != 20 && current.level == 6 && current.RegionID == 3 && settings["SanctuaryOfTheScion1"])
+	if(current.AreaLabel == 20 && old.AreaLabel != 20 && current.level == 6 && current.RegionID == 3 && settings["SanctuaryOfTheScion1"])
        return true;
     if(current.AreaLabel == 22 && old.AreaLabel != 22 && current.level == 6 && current.RegionID == 3 && settings["SanctuaryOfTheScion2"])
        return true;
@@ -106,42 +102,48 @@ split
 //Atlantis:
     if(current.AreaLabel == 1 && old.AreaLabel != 1 && current.RegionID == 4 && settings["NatlasMines1"])
        return true;
-    if(current.AreaLabel == 5 && old.AreaLabel == 2 && current.RegionID == 4 && settings["NatlasMines2"])
+	if(current.AreaLabel == 5 && old.AreaLabel == 2 && current.RegionID == 4 && settings["NatlasMines2"])
        return true;
     if(current.AreaLabel == 11 && old.AreaLabel == 10 && current.RegionID == 4 && settings["TheGreatPyramid1"])
-       return true;   
-    if(current.AreaLabel == 14 && old.AreaLabel == 13 && current.RegionID == 4 && settings["TheGreatPyramid2"])
-       return true; 
-    if(current.AreaLabel == 17 && old.AreaLabel == 16 && current.RegionID == 4 && settings["TheFinalConflict1"])
+       return true;  
+	if(current.AreaLabel == 14 && old.AreaLabel == 13 && current.RegionID == 4 && settings["TheGreatPyramid2"])
        return true;
-    if(current.AreaLabel == 19 && current.RegionID == 4 && current.BossRage == 0 && current.BossHP == 5600 && old.BossHP != 5600 && settings["TheFinalConflict2"])
+	if(current.AreaLabel == 17 && old.AreaLabel == 16 && current.RegionID == 4 && settings["TheFinalConflict1"])
        return true;
-    if(current.AreaLabel == 19 && current.BossHP == 3200 && old.BossHP > 3200 && current.BossRage >= 0 && current.RegionID == 4 && settings["TheFinalConflict3"])
-       return true; 
-    if(current.AreaLabel == 19 && current.level > old.level && current.RegionID == 4 && current.xCoord > -50 && current.yCoord > 150 && current.zCoord < -500 && settings["TheFinalConflict4"])
+	if(current.AreaLabel == 19 && current.RegionID == 4 && current.BossRage == 0 && current.BossHP == 5600 && old.BossHP != 5600 && settings["TheFinalConflict2"])
        return true;
+	if(current.AreaLabel == 19 && current.BossHP == 3200 && old.BossHP > 3200 && current.BossRage >= 0 && current.RegionID == 4 && settings["TheFinalConflict3"])
+       return true;
+	if(current.AreaLabel == 19 && current.level > old.level && current.RegionID == 4 && current.xCoord > -50 && current.yCoord > 150 && current.zCoord < -500 && settings["TheFinalConflict4"])
+       return true;
+	
+	//100%:
+	if((settings["Artifacts"] && (current.SumArtifactsRelics > old.SumArtifactsRelics))||(settings["Chapter"] && (current.RegionID > old.RegionID)))
+	   return true;
+	if(current.level > old.level && current.AreaLabel >= 19 && current.RegionID >= 4 && (settings["Artifacts"]||settings["Chapter"]))
+       return true;	
 }
 
 reset
 {
    if(current.HP <= 0 && old.HP > 0 && settings["HPDeath"])
-      return true;
+   return true;
    if(settings["VoidDeath"] && ((current.level == 1 && current.AreaLabel == 1 && current.RegionID == 1 && current.zCoord < -1000 && old.zCoord > -1000)||(current.AreaLabel == 21 && current.RegionID == 1 && current.zCoord < -2000 && old.zCoord >= -2000)||(current.RegionID == 3 && current.AreaLabel == 16 && current.zCoord <= -4700 && old.zCoord > -4700)||(current.AreaLabel == 16 && current.RegionID == 3 && current.xCoord > 3000 && current.yCoord > -650 && current.zCoord <= -300 && old.zCoord > -300)||(current.AreaLabel == 16 && current.RegionID == 2 && current.zCoord <= -750 && old.zCoord > -750)||(current.AreaLabel == 21 && current.RegionID == 3 && current.zCoord <= -650 && old.zCoord > -600)))
-      return true;
+   return true;
    if(current.RegionID == 4 && settings["LavaDeath"] && ((current.AreaLabel == 5 && current.zCoord < -1800 && old.zCoord >= -1800)||(current.AreaLabel == 17 && current.zCoord < -5000 && old.zCoord >= -5000)||(current.AreaLabel == 18  && current.zCoord < -200 && current.LavaDeath2 == 1 && old.LavaDeath2 == 0)||(current.AreaLabel == 6 && current.zCoord < -1000 && old.zCoord >= -1000)||(current.AreaLabel == 7 && current.yCoord > 1000 && current.xCoord < -1500 && current.zCoord < -3800 && old.zCoord >= -3800)||(current.AreaLabel == 19 && current.zCoord < -4500 && old.zCoord >= -4500)||(current.RegionID == 4 && current.AreaLabel == 13 && current.zCoord <= -150 && old.zCoord > -150)))
-      return true;
-   if(old.IGT == 1799 && current.IGT == 1800 && settings["30m"])
-      return true;
-   if(old.IGT == 2699 && current.IGT == 2700 && settings["45m"])
-      return true;
-   if(old.IGT == 3599 && current.IGT == 3600 && settings["60m"])
-      return true;
-   if(old.IGT == 5399 && current.IGT == 5400 && settings["90m"])
-      return true;
-   if(old.IGT == 7199 && current.IGT == 7200 && settings["120m"])
-      return true;
-   if(old.IGT == 10799 && current.IGT == 10800 && settings["180m"])
-     return true;
+   return true;
+   if(old.IGTStoryModePlusIL1 == 1799 && current.IGTStoryModePlusIL1 == 1800 && settings["30m"])
+   return true;
+   if(old.IGTStoryModePlusIL1 == 2699 && current.IGTStoryModePlusIL1 == 2700 && settings["45m"])
+   return true;
+   if(old.IGTStoryModePlusIL1 == 3599 && current.IGTStoryModePlusIL1 == 3600 && settings["60m"])
+   return true;
+   if(old.IGTStoryModePlusIL1 == 5399 && current.IGTStoryModePlusIL1 == 5400 && settings["90m"])
+   return true;
+   if(old.IGTStoryModePlusIL1 == 7199 && current.IGTStoryModePlusIL1 == 7200 && settings["120m"])
+   return true;
+   if(old.IGTStoryModePlusIL1 == 10799 && current.IGTStoryModePlusIL1 == 10800 && settings["180m"])
+   return true;
 }
 
 isLoading
@@ -150,8 +152,7 @@ isLoading
 }
 
 startup
-{       
-        settings.Add("Main", false, "Autoresets when:");
+{   settings.Add("Main", false, "Autoresets when:");
 	settings.SetToolTip("Main", "Tick an option to autoreset the timer when that condition is satisfied.");
 	
 	  settings.Add("HPDeath",false, "Lara's HP = 0", "Main");
@@ -173,8 +174,8 @@ startup
 	  settings.Add("180m",false, "After 3 hours in-game time (race)", "Main");
 	  settings.SetToolTip("180m", "Just for challenges/competitions/races.");
 	
-	settings.Add("Main2", true, "Autosplits at:");
-	settings.SetToolTip("Main2", "Untick the splits you don't feel necessary.");
+	settings.Add("Main2", true, "Any% No Bug Jump. Untick if you're running 100%. Autosplits at:");
+	settings.SetToolTip("Main2", "Untick the option as a whole, custom splits won't work yet");
 	
 	  settings.Add("Peru", true, "Peru", "Main2");
 	  settings.Add("MountainCaves1",true, "Mountain Caves - Inside", "Peru");
@@ -229,4 +230,13 @@ startup
 	  settings.SetToolTip("TheFinalConflict3", "Splits when the 2nd phase starts.");
 	  settings.Add("TheFinalConflict4",true, "The Final Conflict - Ending", "Atlantis");
 	  settings.SetToolTip("TheFinalConflict4", "Autosplits after skipping the last cutscene.");
+	
+	settings.Add("Main3", false, "100%. Untick if you're running Any% No BJ. Autosplits whenever you pick up an artifact/relic or end a chapter");
+	settings.SetToolTip("Main3", "Tick splitting at the end of each chapter/region if you feel like it's going to help you");
+	
+	  settings.Add("100", false, "100", "Main3");
+	  settings.Add("Artifacts",false, "Autosplits when picking up artifacts and relics", "100");
+	  settings.SetToolTip("Artifacts", "No reason not to tick this if running 100%");
+	  settings.Add("Chapter",false, "Autosplits when you complete a chapter/region", "100");
+	  settings.SetToolTip("Chapter", "Not needed but might help some runners");
 }
