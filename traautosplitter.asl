@@ -15,8 +15,6 @@ state("tra")
 	uint AreaLabel2 : 0x1D3DB4, 0x50; 
 	float HP : 0x861EB8, 0x1C; 
 	float IGT : 0x861E3C, 0x3F8; 
-	uint IGTStoryModePlusIL1 : 0x48F378, 0x40; 
-	float IGTStoryModePlusIL2 : 0x55A50, 0x6E8; 
     bool isTitle : 0x4645C0; 
     bool isLoading : 0x412C64;
     bool isPaused : 0x4B68F0;
@@ -61,7 +59,7 @@ update
 
 start
 {
-    if((current.levelcount == 0||current.levelcount == 1) && current.IGTStoryModePlusIL1 == 0 && old.zCoord == 0 && current.zCoord >0 && current.xCoord == 0 && current.yCoord <= 0)                              
+    if((current.levelcount == 0||current.levelcount == 1) && current.IGT == 0 && old.zCoord == 0 && current.zCoord >0 && current.xCoord == 0 && current.yCoord <= 0)                              
 		return true;
 }
 
@@ -135,7 +133,7 @@ split
 
 reset
 {
-   if(((current.IGTStoryModePlusIL1 < old.IGTStoryModePlusIL1)||(current.HP > old.HP && current.SMedPack == old.SMedPack && current.MedPack == old.MedPack)||((current.zCoord > (50 + old.zCoord)) && current.IGTStoryModePlusIL1 == old.IGTStoryModePlusIL1 && current.DontCheat1 == 1 && ((current.DontCheat2 == 0)||(current.DontCheat3 == 1)))) && settings["Cheats"])
+   if(((current.IGT < old.IGT)||(current.HP > old.HP && current.SMedPack == old.SMedPack && current.MedPack == old.MedPack)||((current.zCoord > (50 + old.zCoord)) && current.IGT == old.IGT && current.DontCheat1 == 1 && ((current.DontCheat2 == 0)||(current.DontCheat3 == 1)))) && settings["Cheats"])
    return true;
    if(current.HP <= 0 && old.HP > 0 && settings["HPDeath"])
    return true;
@@ -143,31 +141,31 @@ reset
    return true;
    if(current.RegionID == 4 && settings["LavaDeath"] && ((current.AreaLabel == 5 && current.zCoord < -1800 && old.zCoord >= -1800)||(current.AreaLabel == 17 && current.zCoord < -5000 && old.zCoord >= -5000)||(current.AreaLabel == 18  && current.zCoord < -200 && current.LavaDeath2 == 1 && old.LavaDeath2 == 0)||(current.AreaLabel == 6 && current.zCoord < -1000 && old.zCoord >= -1000)||(current.AreaLabel == 7 && current.yCoord > 1000 && current.xCoord < -1500 && current.zCoord < -3800 && old.zCoord >= -3800)||(current.AreaLabel == 19 && current.zCoord < -4500 && old.zCoord >= -4500)||(current.RegionID == 4 && current.AreaLabel == 13 && current.zCoord <= -150 && old.zCoord > -150)))
    return true;
-   if(old.IGTStoryModePlusIL1 == 59 && current.IGTStoryModePlusIL1 == 60 && settings["1m"])
+   if(old.IGT == 59 && current.IGT == 60 && settings["1m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 119 && current.IGTStoryModePlusIL1 == 120 && settings["2m"])
+   if(old.IGT == 119 && current.IGT == 120 && settings["2m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 179 && current.IGTStoryModePlusIL1 == 180 && settings["3m"])
+   if(old.IGT == 179 && current.IGT == 180 && settings["3m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 239 && current.IGTStoryModePlusIL1 == 240 && settings["4m"])
+   if(old.IGT == 239 && current.IGT == 240 && settings["4m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 299 && current.IGTStoryModePlusIL1 == 300 && settings["5m"])
+   if(old.IGT == 299 && current.IGT == 300 && settings["5m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 599 && current.IGTStoryModePlusIL1 == 600 && settings["10m"])
+   if(old.IGT == 599 && current.IGT == 600 && settings["10m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 899 && current.IGTStoryModePlusIL1 == 900 && settings["15m"])
+   if(old.IGT == 899 && current.IGT == 900 && settings["15m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 1799 && current.IGTStoryModePlusIL1 == 1800 && settings["30m"])
+   if(old.IGT == 1799 && current.IGT == 1800 && settings["30m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 2699 && current.IGTStoryModePlusIL1 == 2700 && settings["45m"])
+   if(old.IGT == 2699 && current.IGT == 2700 && settings["45m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 3599 && current.IGTStoryModePlusIL1 == 3600 && settings["60m"])
+   if(old.IGT == 3599 && current.IGT == 3600 && settings["60m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 5399 && current.IGTStoryModePlusIL1 == 5400 && settings["90m"])
+   if(old.IGT == 5399 && current.IGT == 5400 && settings["90m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 7199 && current.IGTStoryModePlusIL1 == 7200 && settings["120m"])
+   if(old.IGT == 7199 && current.IGT == 7200 && settings["120m"])
    return true;
-   if(old.IGTStoryModePlusIL1 == 10799 && current.IGTStoryModePlusIL1 == 10800 && settings["180m"])
+   if(old.IGT == 10799 && current.IGT == 10800 && settings["180m"])
    return true;
 }
 
@@ -189,31 +187,31 @@ startup
 	  settings.Add("LavaDeath",false, "Lara makes contact with lava (experimental, TEST BEFORE ENABLING IT!)", "Main");
 	  settings.SetToolTip("LavaDeath", "TEST THIS BEFORE TRYING IT, MIGHT CAUSE UNWANTED RESETS.");
 	  settings.Add("1m",false, "After 1 minute in-game time", "Main");
-	  settings.SetToolTip("1m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("1m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("2m",false, "After 2 minutes in-game time", "Main");
-	  settings.SetToolTip("2m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("2m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("3m",false, "After 3 minutes in-game time", "Main");
-	  settings.SetToolTip("3m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("3m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("4m",false, "After 4 minutes in-game time", "Main");
-	  settings.SetToolTip("4m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("4m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("5m",false, "After 5 minutes in-game time", "Main");
-	  settings.SetToolTip("5m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("5m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("10m",false, "After 10 minutes in-game time", "Main");
-	  settings.SetToolTip("10m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("10m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("15m",false, "After 15 minutes in-game time", "Main");
-	  settings.SetToolTip("15m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("15m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("30m",false, "After 30 minutes in-game time", "Main");
-	  settings.SetToolTip("30m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("30m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("45m",false, "After 45 minutes in-game time", "Main");
-	  settings.SetToolTip("45m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("45m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("60m",false, "After 1 hour in-game time", "Main");
-	  settings.SetToolTip("60m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("60m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("90m",false, "After 1 hour and 30 mins. in-game time", "Main");
-	  settings.SetToolTip("90m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("90m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("120m",false, "After 2 hours in-game time", "Main");
-	  settings.SetToolTip("120m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("120m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("180m",false, "After 3 hours in-game time", "Main");
-	  settings.SetToolTip("180m", "Use it to improve your time while practicing runs.");
+	  settings.SetToolTip("180m", "Use it to improve your time while practicing runs or to race with friends.");
 	
 	settings.Add("Main2", true, "Any% No Bug Jump. Untick if you're running 100%. Autosplits at:");
 	settings.SetToolTip("Main2", "Untick the option as a whole, custom splits won't work yet");
