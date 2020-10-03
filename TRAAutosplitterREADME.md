@@ -19,6 +19,6 @@ DISABLED BY DEFAULT:
 
 Remember that the splits for both NBJ and 100% categories are available on speedrun.com.
 
-To use it, get the .asl (), run LiveSplit, right click on it --> Edit Layout --> + --> Control --> Scriptable Autosplitter, then go to Layout Settings --> Scriptable Autosplitter and select the .asl file. As of now you should have all 23 autosplits ticked and you should be good to go.
+To use it, get the .asl (https://www.speedrun.com/tools/NLM_TRAautosplitter_v3_80pl6.lss), run LiveSplit, right click on it --> Edit Layout --> + --> Control --> Scriptable Autosplitter, then go to Layout Settings --> Scriptable Autosplitter and select the .asl file. As of now you should have all 23 autosplits ticked and you should be good to go.
 
 You can reach me via Discord if there's any trouble with it (username = NextLevelMemes).
