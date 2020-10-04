@@ -23,6 +23,6 @@ Remember that the splits for both NBJ and 100% categories are available on speed
 
 -The splits for 100% can be found in the following link: https://www.speedrun.com/splits/TRASecretsSplits_fmme1.rar
 
-To use it, get the .asl (https://www.speedrun.com/tools/NLM_TRAautosplitter_v3_80pl6.zip), run LiveSplit, right click on it --> Edit Layout --> + --> Control --> Scriptable Autosplitter, then go to Layout Settings --> Scriptable Autosplitter and select the .asl file. As of now you should have all 23 autosplits ticked and you should be good to go.
+To use them, get the .asl (https://www.speedrun.com/tools/NLM_TRAautosplitter_v3_80pl6.zip), run LiveSplit, right click on it --> Edit Layout --> + --> Control --> Scriptable Autosplitter, then go to Layout Settings --> Scriptable Autosplitter and select the .asl file. As of now you should have all 23 autosplits ticked, but if you're running a different category can also untick it and tick the 100% or level options, as well as the autoresets if you want to practice. Hit OK twice. Then right click on the timer --> Open Splits --> From File and select the proper .lss file (you'll have to extract it first). Notice that there are no splits for categories that depend on level yet since the Glitchless and Bug Jump categories don't trigger the same amount of endscreens (you'll have to make them yourself depending on your category).
 
 You can reach me via Discord if there's any trouble with it (username = NextLevelMemes).
