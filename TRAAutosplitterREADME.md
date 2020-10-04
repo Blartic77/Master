@@ -17,9 +17,10 @@ DISABLED BY DEFAULT:
 6) Autoresets based on IGT, which might be useful for races and practicing runs/individual levels. 
 7) Autoresets based on you cheating/hacking with external programs (yup, I've said that right). This is a very early version of it, but it could be of some use when a mod/admin asks for live verification of a run or while racing, so that both players might make sure the other one's not cheating/hacking.
 
-Remember that the splits for both NBJ and 100% categories are available on speedrun.com:
--The splits for NBJ can be found in the following link: https://www.speedrun.com/splits/TRAAnyNoBJ_4bqa3.rar 
--The splits for 100% can be found in the following link: https://www.speedrun.com/splits/TRASecretsSplits_fmme1.rar
+Remember that the splits for both NBJ and 100% categories are available on speedrun.com.
+
+The splits for NBJ can be found in the following link (https://www.speedrun.com/splits/TRAAnyNoBJ_4bqa3.rar)
+The splits for 100% can be found in the following link (https://www.speedrun.com/splits/TRASecretsSplits_fmme1.rar)
 
 To use it, get the .asl (https://www.speedrun.com/tools/NLM_TRAautosplitter_v3_80pl6.zip), run LiveSplit, right click on it --> Edit Layout --> + --> Control --> Scriptable Autosplitter, then go to Layout Settings --> Scriptable Autosplitter and select the .asl file. As of now you should have all 23 autosplits ticked and you should be good to go.
 
