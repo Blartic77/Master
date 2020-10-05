@@ -1,12 +1,8 @@
-// TRA Auto Splitter Script v3.0 by NextLevelMemes, using apel's v.1 as base. 
+// TRA Auto Splitter Script v3.0 by NextLevelMemes, using apel's v.1 as base. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice. 
 // Known issues:
-//     -Splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that refresh the area label, or you might use a different route that causes different values for other variables and accidentally cause an autosplit. So keep this in mind. 
-//     -DON'T tick autoreset for lava-based deaths if you're unsure/lazy about testing it first. It might end up causing unwanted autoresets in Atlantis, and I won't be held responsible for it. Also, I could not create an autoreset for every single lava death, it's too unreliable to make.
+//     -NBJ splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that refresh the area label, or you might use a different route that causes different values for other variables and accidentally cause an autosplit. So keep this in mind. 
 //     -If you restart during the Centaurs boss fight without having done any damage to them, the Centaur split might not work at all. This is because their last HP value is stored until your next boss fight, and it will prevent said autosplit from happenning. To solve this, load any other boss fight (wait for 1 second after the HP bar is shown). Then you can redo the fight again and it will autosplit correctly.
-//     -If you select all reset options but have a "strange death" like getting hit by Qualopec's boulder or getting trapped + killed at the same slope, the timer will not autoreset. This is because these deaths are not HP dependant and finding reliable variables for those is actually hard.
-//     -Autoresets that depend on Lara falling somewhere have a chance of not working at times: this is because the game did not refresh the Z coordinate in time.
-//     -The autosplit for The Lost Valley (after triggering Vilcabamba's endscreen) can cause Lara to stop rolling/airwalking. To prevent this leave crouch/direction keys unpressed for a moment, quickly pressing them again before Lara stops the roll.
-//     -The autostart function might work weirdly if starting a new profile. To prevent this, save in Caves with an IGT of 0 or download the save from speedrun.com (resources section).
+//     -The autosplit for The Lost Valley (after triggering Vilcabamba's endscreen) can cause Lara to stop rolling/airwalking. To prevent this leave crouch/direction keys unpressed for a moment, quickly pressing it again before Lara stops rolling.
 
 state("tra")
 {
@@ -21,7 +17,6 @@ state("tra")
 	float xCoord : 0x467AC, 0x14; 
 	float yCoord : 0x467AC, 0x10; 
 	float zCoord : 0x467AC, 0x18;  
-	uint LavaDeath2 : 0x122C94, 0x308; 
 	float BossHP : 0x55234, 0x28; 
 	float BossRage : 0x55234, 0x18; 
 	byte SumArtifactsRelics : 0x4923C4, 0x44; 
@@ -33,6 +28,9 @@ state("tra")
 	byte DontCheat1 : 0x2625F4, 0x394;
 	byte DontCheat2 : 0x8F0F7, 0xD; 
 	byte DontCheat3 : 0x8F67A, 0x2; 
+	byte IsDeath : 0x25B94, 0x407; 
+	byte IsDeath2 : 0x85D24, 0x3;
+	byte MidasDeath : 0x1B21F8, 0x3;
 }
 
 init
@@ -59,65 +57,137 @@ update
 
 start
 {
-    if((current.levelcount == 0||current.levelcount == 1) && current.IGT == 0 && old.zCoord == 0 && current.zCoord >0 && current.xCoord == 0 && current.yCoord <= 0)                              
+    if((current.levelcount == 0||current.levelcount == 1) && current.IGT == 0 && ((old.IGT != 0)||(old.zCoord == 0 && current.zCoord >0)))                              
+	{
+		vars.LaraWasHere.Clear();
 		return true;
+	}
 }
 
 split
 {
 //Peru:
-    if(current.AreaLabel == 2 && old.AreaLabel == 1 && current.RegionID == 1 && settings["MountainCaves1"])
-       return true;
-	if(current.AreaLabel == 7 && old.AreaLabel == 6 && current.RegionID == 1 && settings["MountainCaves2"])
-       return true;
-    if(current.AreaLabel == 8 && old.AreaLabel == 7 && current.RegionID == 1 && settings["VilcabambaWarp"])
-	   return true;
-	if(current.AreaLabel == 23 && current.levelcount > old.levelcount && current.RegionID == 1 && settings["TheLostValley"])
-       return true; 
-	if(current.AreaLabel == 16 && old.AreaLabel == 11 && current.RegionID == 1 && settings["TombOfQualopec1"])
-       return true;
-	if(current.AreaLabel == 17 && old.AreaLabel == 18 && current.RegionID == 1 && settings["TombOfQualopec2"])
-       return true;
+    if(current.AreaLabel == 2 && old.AreaLabel == 1 && current.RegionID == 1 && !vars.LaraWasHere.Contains("MountainCaves1") && settings["MountainCaves1"])
+	{
+		vars.LaraWasHere.Add("MountainCaves1");
+		return true;
+	}   
+	if(current.AreaLabel == 7 && old.AreaLabel == 6 && current.RegionID == 1 && !vars.LaraWasHere.Contains("MountainCaves2") && settings["MountainCaves2"])
+    {
+		vars.LaraWasHere.Add("MountainCaves2");
+		return true;
+	}   
+    if(current.AreaLabel == 8 && old.AreaLabel == 7 && current.RegionID == 1 && !vars.LaraWasHere.Contains("VilcabambaWarp") && settings["VilcabambaWarp"])
+	{
+		vars.LaraWasHere.Add("VilcabambaWarp");
+		return true;
+	} 
+	if(current.AreaLabel == 23 && current.levelcount > old.levelcount && current.RegionID == 1 && !vars.LaraWasHere.Contains("TheLostValley") && settings["TheLostValley"])
+    {
+		vars.LaraWasHere.Add("TheLostValley");
+		return true;
+	}  
+	if(current.AreaLabel == 16 && old.AreaLabel == 11 && current.RegionID == 1 && !vars.LaraWasHere.Contains("TombOfQualopec1") && settings["TombOfQualopec1"])
+    {
+		vars.LaraWasHere.Add("TombOfQualopec1");
+		return true;
+	}  
+	if(current.AreaLabel == 17 && old.AreaLabel == 18 && current.RegionID == 1 && !vars.LaraWasHere.Contains("TombOfQualopec2") && settings["TombOfQualopec2"])
+    {
+		vars.LaraWasHere.Add("TombOfQualopec2");
+		return true;
+	}  
 
 //Greece:
-    if(current.AreaLabel == 1 && old.AreaLabel != 1 && current.RegionID == 2 && settings["StFrancisFolly1"])
-       return true;
-    if(current.AreaLabel == 3 && old.AreaLabel == 2 && current.RegionID == 2 && settings["StFrancisFolly2"])
-       return true;
-	if(current.AreaLabel == 31 && old.AreaLabel == 3 && current.RegionID == 2 && settings["TheColiseum"])
-       return true;
-    if(current.AreaLabel == 18 && current.levelcount > old.levelcount && current.RegionID == 2 && settings["MidasPalace"])
-       return true;
-	if(current.AreaLabel == 27 && current.zCoord >= 0 && old.zCoord < 0 && current.RegionID == 2 && settings["TombOfTihocan1"])
-       return true;
-	if(current.RegionID == 2 && current.BossHP == 40000 && old.IsCutscene == 1 && current.IsCutscene == 0 && settings["TombOfTihocan2"])
-       return true;
+    if(current.AreaLabel == 1 && old.AreaLabel != 1 && current.RegionID == 2 && !vars.LaraWasHere.Contains("StFrancisFolly1") && settings["StFrancisFolly1"])
+    {
+		vars.LaraWasHere.Add("StFrancisFolly11");
+		return true;
+	}   
+    if(current.AreaLabel == 3 && old.AreaLabel == 2 && current.RegionID == 2 && !vars.LaraWasHere.Contains("StFrancisFolly2") && settings["StFrancisFolly2"])
+    {
+		vars.LaraWasHere.Add("StFrancisFolly12");
+		return true;
+	}  
+	if(current.AreaLabel == 31 && old.AreaLabel == 3 && current.RegionID == 2 && !vars.LaraWasHere.Contains("TheColiseum") && settings["TheColiseum"])
+    {
+		vars.LaraWasHere.Add("TheColiseum");
+		return true;
+	} 
+    if(current.AreaLabel == 18 && current.levelcount > old.levelcount && current.RegionID == 2 && !vars.LaraWasHere.Contains("MidasPalace") && settings["MidasPalace"])
+    {
+		vars.LaraWasHere.Add("MidasPalace");
+		return true;
+	} 
+	if(current.AreaLabel == 27 && current.zCoord >= 0 && old.zCoord < 0 && current.RegionID == 2 && !vars.LaraWasHere.Contains("TombOfTihocan1") && settings["TombOfTihocan1"])
+    {
+		vars.LaraWasHere.Add("TombOfTihocan1");
+		return true;
+	} 
+	if(current.RegionID == 2 && current.BossHP == 40000 && old.IsCutscene == 1 && current.IsCutscene == 0 && !vars.LaraWasHere.Contains("TombOfTihocan2") && settings["TombOfTihocan2"])
+    {
+		vars.LaraWasHere.Add("TombOfTihocan2");
+		return true;
+	} 
 	   
 //Egypt:
-    if(current.RegionID == 3 && old.RegionID != 3 && settings["TempleOfKhamoon"])
-       return true;
-	if(current.AreaLabel == 20 && old.AreaLabel != 20 && current.RegionID == 3 && settings["SanctuaryOfTheScion1"])
-       return true;
-    if(current.AreaLabel == 22 && old.AreaLabel != 22 && current.RegionID == 3 && settings["SanctuaryOfTheScion2"])
-       return true;
+    if(current.RegionID == 3 && old.RegionID != 3 && !vars.LaraWasHere.Contains("TempleOfKhamoon") && settings["TempleOfKhamoon"])
+    {
+		vars.LaraWasHere.Add("TempleOfKhamoon");
+		return true;
+	} 
+	if(current.AreaLabel == 20 && old.AreaLabel != 20 && current.RegionID == 3 && !vars.LaraWasHere.Contains("SanctuaryOfTheScion1") && settings["SanctuaryOfTheScion1"])
+    {
+		vars.LaraWasHere.Add("SanctuaryOfTheScion1");
+		return true;
+	} 
+    if(current.AreaLabel == 22 && old.AreaLabel != 22 && current.RegionID == 3 && !vars.LaraWasHere.Contains("SanctuaryOfTheScion2") && settings["SanctuaryOfTheScion2"])
+    {
+		vars.LaraWasHere.Add("SanctuaryOfTheScion2");
+		return true;
+	} 
 	   
 //Atlantis:
-    if(current.AreaLabel == 1 && old.AreaLabel != 1 && current.RegionID == 4 && settings["NatlasMines1"])
-       return true;
-	if(current.AreaLabel == 5 && old.AreaLabel == 2 && current.RegionID == 4 && settings["NatlasMines2"])
-       return true;
-    if(current.AreaLabel == 11 && old.AreaLabel == 10 && current.RegionID == 4 && settings["TheGreatPyramid1"])
-       return true;  
-	if(current.AreaLabel == 14 && old.AreaLabel == 13 && current.RegionID == 4 && settings["TheGreatPyramid2"])
-       return true;
-	if(current.AreaLabel == 17 && old.AreaLabel == 16 && current.RegionID == 4 && settings["TheFinalConflict1"])
-       return true;
-	if(current.AreaLabel == 19 && current.RegionID == 4 && current.BossHP == 5600 && old.BossHP != 5600 && settings["TheFinalConflict2"])
-       return true;
-	if(current.AreaLabel == 19 && current.BossHP == 3200 && current.RegionID == 4 && old.IsCutscene == 1 && current.IsCutscene == 0 && settings["TheFinalConflict3"])
-       return true;
-	if(current.AreaLabel == 19 && current.levelcount > old.levelcount && current.RegionID == 4 && settings["TheFinalConflict4"])
-       return true;
+    if(current.AreaLabel == 1 && old.AreaLabel != 1 && current.RegionID == 4 && !vars.LaraWasHere.Contains("NatlasMines1") && settings["NatlasMines1"])
+    {
+		vars.LaraWasHere.Add("NatlasMines1");
+		return true;
+	}
+	if(current.AreaLabel == 5 && old.AreaLabel == 2 && current.RegionID == 4 && !vars.LaraWasHere.Contains("NatlasMines2") && settings["NatlasMines2"])
+    {
+		vars.LaraWasHere.Add("NatlasMines2");
+		return true;
+	}
+    if(current.AreaLabel == 11 && old.AreaLabel == 10 && current.RegionID == 4 && !vars.LaraWasHere.Contains("TheGreatPyramid1") && settings["TheGreatPyramid1"])
+    {
+		vars.LaraWasHere.Add("TheGreatPyramid1");
+		return true;
+	}  
+	if(current.AreaLabel == 14 && old.AreaLabel == 13 && current.RegionID == 4 && !vars.LaraWasHere.Contains("TheGreatPyramid2") && settings["TheGreatPyramid2"])
+    {
+		vars.LaraWasHere.Add("TheGreatPyramid2");
+		return true;
+	}  
+	if(current.AreaLabel == 17 && old.AreaLabel == 16 && current.RegionID == 4 && !vars.LaraWasHere.Contains("TheFinalConflict1") && settings["TheFinalConflict1"])
+    {
+		vars.LaraWasHere.Add("TheFinalConflict1");
+		return true;
+	} 
+	if(current.AreaLabel == 19 && current.RegionID == 4 && current.BossHP == 5600 && old.BossHP != 5600 && !vars.LaraWasHere.Contains("TheFinalConflict2") && settings["TheFinalConflict2"])
+    {
+		vars.LaraWasHere.Add("TheFinalConflict2");
+		return true;
+	} 
+	if(current.AreaLabel == 19 && current.BossHP == 3200 && current.RegionID == 4 && old.IsCutscene == 1 && current.IsCutscene == 0 && !vars.LaraWasHere.Contains("TheFinalConflict3") && settings["TheFinalConflict3"])
+    {
+		vars.LaraWasHere.Add("TheFinalConflict3");
+		return true;
+	} 
+	if(current.AreaLabel == 19 && current.levelcount > old.levelcount && current.RegionID == 4 && !vars.LaraWasHere.Contains("TheFinalConflict4") && settings["TheFinalConflict4"])
+    {
+		vars.LaraWasHere.Add("TheFinalConflict4");
+		return true;
+	} 
 	
 //100%:
 	if((settings["Artifacts"] && (current.SumArtifactsRelics > old.SumArtifactsRelics))||(settings["Chapter"] && (current.RegionID > old.RegionID)))
@@ -135,11 +205,7 @@ reset
 {
    if(((current.IGT < old.IGT)||(current.HP > old.HP && current.SMedPack == old.SMedPack && current.MedPack == old.MedPack)||((current.zCoord > (50 + old.zCoord)) && current.IGT == old.IGT && current.DontCheat1 == 1 && ((current.DontCheat2 == 0)||(current.DontCheat3 == 1)))) && settings["Cheats"])
    return true;
-   if(current.HP <= 0 && old.HP > 0 && settings["HPDeath"])
-   return true;
-   if(settings["VoidDeath"] && ((current.level == 1 && current.AreaLabel == 1 && current.RegionID == 1 && current.zCoord < -1000 && old.zCoord > -1000)||(current.AreaLabel == 21 && current.RegionID == 1 && current.zCoord < -2000 && old.zCoord >= -2000)||(current.RegionID == 3 && current.AreaLabel == 16 && current.zCoord <= -4700 && old.zCoord > -4700)||(current.AreaLabel == 16 && current.RegionID == 3 && current.xCoord > 3000 && current.yCoord > -650 && current.zCoord <= -300 && old.zCoord > -300)||(current.AreaLabel == 16 && current.RegionID == 2 && current.zCoord <= -750 && old.zCoord > -750)||(current.AreaLabel == 21 && current.RegionID == 3 && current.zCoord <= -650 && old.zCoord > -600)))
-   return true;
-   if(current.RegionID == 4 && settings["LavaDeath"] && ((current.AreaLabel == 5 && current.zCoord < -1800 && old.zCoord >= -1800)||(current.AreaLabel == 17 && current.zCoord < -5000 && old.zCoord >= -5000)||(current.AreaLabel == 18  && current.zCoord < -200 && current.LavaDeath2 == 1 && old.LavaDeath2 == 0)||(current.AreaLabel == 6 && current.zCoord < -1000 && old.zCoord >= -1000)||(current.AreaLabel == 7 && current.yCoord > 1000 && current.xCoord < -1500 && current.zCoord < -3800 && old.zCoord >= -3800)||(current.AreaLabel == 19 && current.zCoord < -4500 && old.zCoord >= -4500)||(current.RegionID == 4 && current.AreaLabel == 13 && current.zCoord <= -150 && old.zCoord > -150)))
+   if((current.IsDeath == 5 && old.IsDeath != 5 && !current.IsLoading)||(current.IsDeath2 >=67 && old.IsDeath < 67)||(current.MidasDeath == 67 && old.MidasDeath != 67 && current.AreaLabel == 18 && current.RegionID == 2) && settings["Death"])
    return true;
    if(old.IGT == 59 && current.IGT == 60 && settings["1m"])
    return true;
@@ -175,17 +241,15 @@ isLoading
 }
 
 startup
-{   settings.Add("Main", false, "Autoresets when:");
+{   
+	vars.LaraWasHere = new List<string>();
+    settings.Add("Main", false, "Autoresets when:");
 	settings.SetToolTip("Main", "Tick an option to autoreset the timer when that condition is satisfied.");
 	
 	  settings.Add("Cheats",false, "Uncheated Engine (beta)", "Main");
-	  settings.SetToolTip("Cheats", "Prevents some forms of hacking/cheating during runs.");
-	  settings.Add("HPDeath",false, "Lara's HP = 0", "Main");
-	  settings.SetToolTip("HPDeath", "Only autoresets if Lara's HP is 0 upon dying.");
-	  settings.Add("VoidDeath",false, "Lara dies upon falling into the void/a pit (beta)", "Main");
-	  settings.SetToolTip("VoidDeath", "Autoresets at bottomless pits.");
-	  settings.Add("LavaDeath",false, "Lara makes contact with lava (experimental, TEST BEFORE ENABLING IT!)", "Main");
-	  settings.SetToolTip("LavaDeath", "TEST THIS BEFORE TRYING IT, MIGHT CAUSE UNWANTED RESETS.");
+	  settings.SetToolTip("Cheats", "Prevents some forms of hacking/cheating during runs. Thought for live verifications.");
+	  settings.Add("Death",false, "Lara dies", "Main");
+	  settings.SetToolTip("Death", "A bit slower for QTEs and scripted deaths, but works regardless.");
 	  settings.Add("1m",false, "After 1 minute in-game time", "Main");
 	  settings.SetToolTip("1m", "Use it to improve your time while practicing runs or to race with friends.");
 	  settings.Add("2m",false, "After 2 minutes in-game time", "Main");
