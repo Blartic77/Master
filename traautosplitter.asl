@@ -1,4 +1,4 @@
-// TRA Auto Splitter Script v3.0 by NextLevelMemes, using apel's v.1 as base. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice. 
+// TRA Auto Splitter Script v3.0 by NextLevelMemes, using apel's v.1 as base. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice, and to Taeruhs for helping me to test it.
 // Known issues:
 //     -NBJ splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that refresh the area label, or you might use a different route that causes different values for other variables and accidentally cause an autosplit. So keep this in mind. 
 //     -If you restart during the Centaurs boss fight without having done any damage to them, the Centaur split might not work at all. This is because their last HP value is stored until your next boss fight, and it will prevent said autosplit from happenning. To solve this, load any other boss fight (wait for 1 second after the HP bar is shown). Then you can redo the fight again and it will autosplit correctly.
@@ -10,7 +10,9 @@ state("tra")
 	byte AreaLabel : 0x1D06EA, 0x7E; 
 	uint AreaLabel2 : 0x1D3DB4, 0x50; 
 	float HP : 0x861EB8, 0x1C; 
-	float IGT : 0x861E3C, 0x3F8; 
+	float IGT : 0x861E3C, 0x3F8;
+    float IGTStoryplusIL : 0x55A50, 0x6E8;	
+	uint IGTStoryOnly : 0x4923C4, 0x1A4;
     bool isTitle : 0x4645C0; 
     bool isLoading : 0x412C64;
     bool isPaused : 0x4B68F0;
@@ -31,6 +33,7 @@ state("tra")
 	byte IsDeath : 0x25B94, 0x407; 
 	byte IsDeath2 : 0x85D24, 0x3;
 	byte MidasDeath : 0x1B21F8, 0x3;
+	string8 SaveTime : 0x465CB0, 0x40, 0x950, 0x230; 
 }
 
 init
@@ -207,32 +210,19 @@ reset
    return true;
    if((current.IsDeath == 5 && old.IsDeath != 5 && !current.IsLoading)||(current.IsDeath2 >=67 && old.IsDeath < 67)||(current.MidasDeath == 67 && old.MidasDeath != 67 && current.AreaLabel == 18 && current.RegionID == 2) && settings["Death"])
    return true;
-   if(old.IGT == 59 && current.IGT == 60 && settings["1m"])
+   if(old.SaveTime == "00:00:00" && old.IsMenu >= 3 && current.IsMenu <= 1 && settings["Load"])
    return true;
-   if(old.IGT == 119 && current.IGT == 120 && settings["2m"])
+   if(current.IGT == 300 && old.IGT == 299 && settings["5min"])
    return true;
-   if(old.IGT == 179 && current.IGT == 180 && settings["3m"])
+   if(current.IGT == 900 && old.IGT == 899 && settings["15min"])
    return true;
-   if(old.IGT == 239 && current.IGT == 240 && settings["4m"])
+   if(current.IGT == 1800 && old.IGT == 1799 && settings["30min"])
    return true;
-   if(old.IGT == 299 && current.IGT == 300 && settings["5m"])
+   if(current.IGT == 3600 && old.IGT == 3599 && settings["60min"])
    return true;
-   if(old.IGT == 599 && current.IGT == 600 && settings["10m"])
+   if(current.IGT == 7200 && old.IGT == 7199 && settings["120min"])
    return true;
-   if(old.IGT == 899 && current.IGT == 900 && settings["15m"])
-   return true;
-   if(old.IGT == 1799 && current.IGT == 1800 && settings["30m"])
-   return true;
-   if(old.IGT == 2699 && current.IGT == 2700 && settings["45m"])
-   return true;
-   if(old.IGT == 3599 && current.IGT == 3600 && settings["60m"])
-   return true;
-   if(old.IGT == 5399 && current.IGT == 5400 && settings["90m"])
-   return true;
-   if(old.IGT == 7199 && current.IGT == 7200 && settings["120m"])
-   return true;
-   if(old.IGT == 10799 && current.IGT == 10800 && settings["180m"])
-   return true;
+   
 }
 
 isLoading
@@ -250,32 +240,18 @@ startup
 	  settings.SetToolTip("Cheats", "Prevents some forms of hacking/cheating during runs. Thought for live verifications.");
 	  settings.Add("Death",false, "Lara dies", "Main");
 	  settings.SetToolTip("Death", "A bit slower for QTEs and scripted deaths, but works regardless.");
-	  settings.Add("1m",false, "After 1 minute in-game time", "Main");
-	  settings.SetToolTip("1m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("2m",false, "After 2 minutes in-game time", "Main");
-	  settings.SetToolTip("2m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("3m",false, "After 3 minutes in-game time", "Main");
-	  settings.SetToolTip("3m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("4m",false, "After 4 minutes in-game time", "Main");
-	  settings.SetToolTip("4m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("5m",false, "After 5 minutes in-game time", "Main");
-	  settings.SetToolTip("5m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("10m",false, "After 10 minutes in-game time", "Main");
-	  settings.SetToolTip("10m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("15m",false, "After 15 minutes in-game time", "Main");
-	  settings.SetToolTip("15m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("30m",false, "After 30 minutes in-game time", "Main");
-	  settings.SetToolTip("30m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("45m",false, "After 45 minutes in-game time", "Main");
-	  settings.SetToolTip("45m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("60m",false, "After 1 hour in-game time", "Main");
-	  settings.SetToolTip("60m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("90m",false, "After 1 hour and 30 mins. in-game time", "Main");
-	  settings.SetToolTip("90m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("120m",false, "After 2 hours in-game time", "Main");
-	  settings.SetToolTip("120m", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("180m",false, "After 3 hours in-game time", "Main");
-	  settings.SetToolTip("180m", "Use it to improve your time while practicing runs or to race with friends.");
+	  settings.Add("Load",false, "Loading your 00:00:00 file (beta)", "Main");
+	  settings.SetToolTip("Load", "Resets when loading a file in Caves with an IGT of 0.");
+	  settings.Add("5min",false, "After 5 minutes in-game time", "Main");
+	  settings.SetToolTip("5min", "Use it to improve your time while practicing runs or to race with friends.");
+	  settings.Add("15min",false, "After 15 minutes in-game time", "Main");
+	  settings.SetToolTip("15min", "Use it to improve your time while practicing runs or to race with friends.");
+	  settings.Add("30min",false, "After 30 minutes in-game time", "Main");
+	  settings.SetToolTip("30min", "Use it to improve your time while practicing runs or to race with friends.");
+	  settings.Add("60min",false, "After 1 hour in-game time", "Main");
+	  settings.SetToolTip("60min", "Use it to improve your time while practicing runs or to race with friends.");
+	  settings.Add("120min",false, "After 2 hours in-game time", "Main");
+	  settings.SetToolTip("120min", "Use it to improve your time while practicing runs or to race with friends.");
 	
 	settings.Add("Main2", true, "Any% No Bug Jump. Untick if you're running 100%. Autosplits at:");
 	settings.SetToolTip("Main2", "Untick the option as a whole, custom splits won't work yet");
