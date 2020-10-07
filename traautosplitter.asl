@@ -1,7 +1,6 @@
 // TRA Auto Splitter Script v3.0 by NextLevelMemes, using apel's v.1 as base. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice, and to Taeruhs for helping me to test it.
 // Known issues:
 //     -NBJ splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that refresh the area label, or you might use a different route that causes different values for other variables and accidentally cause an autosplit. So keep this in mind. 
-//     -If you restart during the Centaurs boss fight without having done any damage to them, the Centaur split might not work at all. This is because their last HP value is stored until your next boss fight, and it will prevent said autosplit from happenning. To solve this, load any other boss fight (wait for 1 second after the HP bar is shown). Then you can redo the fight again and it will autosplit correctly.
 //     -The autosplit for The Lost Valley (after triggering Vilcabamba's endscreen) can cause Lara to stop rolling/airwalking. To prevent this leave crouch/direction keys unpressed for a moment, quickly pressing it again before Lara stops rolling.
 
 state("tra")
