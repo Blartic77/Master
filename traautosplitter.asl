@@ -55,7 +55,7 @@ update
 
 start
 {
-    if((current.RegionID == 0||current.RegionID == 1) && current.IGTStoryPlusIL == 0 && current.AreaLabel == 1 && current.IsCutscene == 0 && (current.zCoord >= 367 && current.zCoord < 378) && current.IsMenu == 0)                              
+    if((current.levelcount == 0||current.levelcount == 1) && current.IsMenu == 0 && current.IsCutscene == 0 && current.IGT == 0 && ((old.IGT != 0)||(old.zCoord == 0 && current.zCoord >0)))                                
 	{
 		vars.LaraWasHere.Clear();
 		return true;
