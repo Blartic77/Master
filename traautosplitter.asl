@@ -1,25 +1,21 @@
-// TRA Auto Splitter Script v3.0 by NextLevelMemes, using apel's v.1 as base. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice, and to Taeruhs for helping me to test it.
+// TRA Auto Splitter Script v3.0 by NextLevelMemes, using apel's v.1 as base. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice, and to Taeruhs and BryNu for helping me to further test it.
 // Known issues:
-//     -NBJ splits are based on specific routes/paths. They're consistent, but your placement of Lara might or might not trigger some checkpoints that refresh the area label, or you might use a different route that causes different values for other variables and accidentally cause an autosplit. So keep this in mind. 
-//     -The autosplit for The Lost Valley (after triggering Vilcabamba's endscreen) can cause Lara to stop rolling/airwalking. To prevent this leave crouch/direction keys unpressed for a moment, quickly pressing it again before Lara stops rolling.
+//     -NBJ splits are based on specific routes/paths. If you're using different shortcuts, remember to untick the splits in the layout settings. 
+//     -The autosplit for The Lost Valley (after triggering Vilcabamba's endscreen) can cause Lara to stop rolling/airwalking. To prevent this leave crouch/direction keys unpressed for a moment, quickly pressing them again before Lara stops rolling.
 
 state("tra")
 {
 	float RegionID : 0x49BF74, 0xC, 0x104, 0x6DB, 0x389; 
 	byte AreaLabel : 0x1D06EA, 0x7E; 
-	uint AreaLabel2 : 0x1D3DB4, 0x50; 
 	float HP : 0x861EB8, 0x1C; 
 	float IGT : 0x861E3C, 0x3F8;
-    float IGTStoryplusIL : 0x55A50, 0x6E8;	
-	uint IGTStoryOnly : 0x4923C4, 0x1A4;
+	uint IGTStoryPlusIL : 0x48F370, 0x2C;
+    uint IGTStoryOnly : 0x4923C4, 0x1A4;
     bool isTitle : 0x4645C0; 
     bool isLoading : 0x412C64;
     bool isPaused : 0x4B68F0;
-	float xCoord : 0x467AC, 0x14; 
-	float yCoord : 0x467AC, 0x10; 
 	float zCoord : 0x467AC, 0x18;  
 	float BossHP : 0x55234, 0x28; 
-	float BossRage : 0x55234, 0x18; 
 	byte SumArtifactsRelics : 0x4923C4, 0x44; 
 	uint IsMenu : 0xF7464, 0x20; 
 	byte IsCutscene : 0x1D3ED9, 0x3;
@@ -59,7 +55,7 @@ update
 
 start
 {
-    if((current.levelcount == 0||current.levelcount == 1) && current.IGT == 0 && ((old.IGT != 0)||(old.zCoord == 0 && current.zCoord >0)))                              
+    if((current.RegionID == 0||current.RegionID == 1) && current.IGTStoryPlusIL == 0 && current.AreaLabel == 1 && current.IsCutscene == 0 && (current.zCoord >= 367 && current.zCoord < 378) && current.IsMenu == 0)                              
 	{
 		vars.LaraWasHere.Clear();
 		return true;
@@ -205,23 +201,12 @@ split
 
 reset
 {
-   if(((current.IGT < old.IGT)||(current.HP > old.HP && current.SMedPack == old.SMedPack && current.MedPack == old.MedPack)||((current.zCoord > (50 + old.zCoord)) && current.IGT == old.IGT && current.DontCheat1 == 1 && ((current.DontCheat2 == 0)||(current.DontCheat3 == 1)))) && settings["Cheats"])
+   if((((current.IGT < old.IGT)||(current.IGTStoryPlusIL < old.IGTStoryPlusIL))||(current.HP > old.HP && current.SMedPack == old.SMedPack && current.MedPack == old.MedPack)||((current.zCoord > (50 + old.zCoord)) && ((current.IGT == old.IGT)||(current.IGTStoryPlusIL == old.IGTStoryPlusIL)) && current.DontCheat1 == 1 && ((current.DontCheat2 == 0)||(current.DontCheat3 == 1)))) && settings["Cheats"])
    return true;
-   if((current.IsDeath == 5 && old.IsDeath != 5 && !current.IsLoading)||(current.IsDeath2 >=67 && old.IsDeath < 67)||(current.MidasDeath == 67 && old.MidasDeath != 67 && current.AreaLabel == 18 && current.RegionID == 2) && settings["Death"])
+   if(current.SaveTime == "00:00:00" && ((current.IsMenu == 3 && old.IsMenu == 2)||(current.IsMenu == 4 && old.IsMenu == 3)) && settings["Load"])
    return true;
-   if(old.SaveTime == "00:00:00" && old.IsMenu >= 3 && current.IsMenu <= 1 && settings["Load"])
+   if(settings["Death"] && ((current.IsDeath == 5 && old.IsDeath != 5 && !current.IsLoading)||((current.IsDeath2 >=67 && old.IsDeath < 67)||(current.MidasDeath == 67 && old.MidasDeath != 67 && current.AreaLabel == 18 && current.RegionID == 2))))
    return true;
-   if(current.IGT == 300 && old.IGT == 299 && settings["5min"])
-   return true;
-   if(current.IGT == 900 && old.IGT == 899 && settings["15min"])
-   return true;
-   if(current.IGT == 1800 && old.IGT == 1799 && settings["30min"])
-   return true;
-   if(current.IGT == 3600 && old.IGT == 3599 && settings["60min"])
-   return true;
-   if(current.IGT == 7200 && old.IGT == 7199 && settings["120min"])
-   return true;
-   
 }
 
 isLoading
@@ -232,25 +217,16 @@ isLoading
 startup
 {   
 	vars.LaraWasHere = new List<string>();
-    settings.Add("Main", false, "Autoresets when:");
+	
+    settings.Add("Main", true, "Autoresets when:");
 	settings.SetToolTip("Main", "Tick an option to autoreset the timer when that condition is satisfied.");
 	
 	  settings.Add("Cheats",false, "Uncheated Engine (beta)", "Main");
 	  settings.SetToolTip("Cheats", "Prevents some forms of hacking/cheating during runs. Thought for live verifications.");
-	  settings.Add("Death",false, "Lara dies", "Main");
+	  settings.Add("Death", false, "Lara dies", "Main");
 	  settings.SetToolTip("Death", "A bit slower for QTEs and scripted deaths, but works regardless.");
-	  settings.Add("Load",false, "Loading your 00:00:00 file (beta)", "Main");
+	  settings.Add("Load", true, "Loading your 00:00:00 file", "Main");
 	  settings.SetToolTip("Load", "Resets when loading a file in Caves with an IGT of 0.");
-	  settings.Add("5min",false, "After 5 minutes in-game time", "Main");
-	  settings.SetToolTip("5min", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("15min",false, "After 15 minutes in-game time", "Main");
-	  settings.SetToolTip("15min", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("30min",false, "After 30 minutes in-game time", "Main");
-	  settings.SetToolTip("30min", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("60min",false, "After 1 hour in-game time", "Main");
-	  settings.SetToolTip("60min", "Use it to improve your time while practicing runs or to race with friends.");
-	  settings.Add("120min",false, "After 2 hours in-game time", "Main");
-	  settings.SetToolTip("120min", "Use it to improve your time while practicing runs or to race with friends.");
 	
 	settings.Add("Main2", true, "Any% No Bug Jump. Untick if you're running 100%. Autosplits at:");
 	settings.SetToolTip("Main2", "Untick the option as a whole, custom splits won't work yet");
