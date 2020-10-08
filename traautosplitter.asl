@@ -1,4 +1,4 @@
-// TRA Auto Splitter Script v3.0 by NextLevelMemes, using apel's v.1 as base. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice, and to Taeruhs and BryNu for helping me to further test it.
+// TRA Auto Splitter Script v4.0 by NextLevelMemes, using apel's v.1 as base. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice, and to Taeruhs and BryNu for helping me to further test it.
 // Known issues:
 //     -NBJ splits are based on specific routes/paths. If you're using different shortcuts, remember to untick the splits in the layout settings. 
 //     -The autosplit for The Lost Valley (after triggering Vilcabamba's endscreen) can cause Lara to stop rolling/airwalking. To prevent this leave crouch/direction keys unpressed for a moment, quickly pressing them again before Lara stops rolling.
