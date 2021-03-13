@@ -362,11 +362,11 @@ split
 	}
 	
 //NBJ Alt + F4:
-    if(current.AreaLabel == 23 && current.RegionID == 1 && !vars.LaraWasHere.Contains("TheLostValleyAltF4") && current.xCoord > -350 && old.xCoord <= -350 && current.HeadZ > 0 && current.yCoord > -1000 && settings["OtherNBJChecks"])
+    if(current.AreaLabel == 23 && current.RegionID == 1 && !vars.LaraWasHere.Contains("TheLostValleyAltF4") && current.xCoord > -350 && current.IsMenu == 0 && old.IsMenu == 2 && current.HeadZ > 0 && current.yCoord > -1000 && settings["OtherNBJChecks"])
     {
 		vars.LaraWasHere.Add("TheLostValleyAltF4");
 		return true;
-	}  
+	}   
 	if(current.AreaLabel == 18 && current.RegionID == 2  && !vars.LaraWasHere.Contains("MidasPalaceAltF4") && current.AreaLabel == 18 && current.RegionID == 2 && current.xCoord < 2925 && old.xCoord >= 2925 && settings["OtherNBJChecks"])
     {
 		vars.LaraWasHere.Add("MidasPalaceAltF4"); 
