@@ -1,4 +1,4 @@
-// Autosplitter script for TRA (v5.0) by NextLevelMemes, using apel's v1.0 load remover. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice. Also huge thanks BryNu for thoroughly testing it, and thanks to Taeruhs, Didi and Dayo/Clay for helping me to test it too.    
+// Autosplitter script for TRA (v5.0) by NextLevelMemes, using apel's v1.0 load remover. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice. Also huge thanks BryNu for thoroughly testing it, to Taeruhs, Didi and Dayo/Clay for helping me to test it too and to apel for checking for possible writing mistakes.   
 // Note that the default (NBJ) splits are based on specific routes/paths based on the latest top speedrun of that category. If you're using different shortcuts, remember to untick the splits in the layout settings. 
 // For a guide on how to use this autosplitter (and for troubleshooting too) please refer to this guide: https://www.speedrun.com/tra/guide/7dxat
 // The splits files for different categories can be found here: https://www.speedrun.com/tra/resources
@@ -12,10 +12,9 @@ state("tra")
 	float IGT : 0x55A50, 0x6D8;
 	uint IGTStoryPlusIL : 0x48F370, 0x2C;
     uint IGTStoryOnly : 0x438330, 0x1DFC;
-	float xCoord : 0x417DEC, 0x14;
-	float yCoord : 0x417DEC, 0x10;
-	float zCoord : 0x417DEC, 0x18;
-	float HeadZ : 0x467AC, 0x18;  
+	float xCoord : 0x467AC, 0x14;
+	float yCoord : 0x467AC, 0x10;
+	float zCoord : 0x467AC, 0x18;  
 	float BossHP : 0x55234, 0x28; 
 	byte SumArtifactsRelics : 0x4923C4, 0x44; 
 	uint IsMenu : 0xF7464, 0x20; 
@@ -49,6 +48,7 @@ init
 	vars.NewGame = false;
 	vars.LoadMenu = false;
 	vars.ManorReset = false;
+	vars.IsInNatlaFight = false;
 }
 
 update
@@ -93,13 +93,21 @@ update
 	{
 	vars.ManorReset = false;
 	}
+	if(current.BossHP == 5600 && old.BossHP != 5600 && current.AreaLabel == 19 && current.RegionID == 4)
+	{
+	vars.IsInNatlaFight = true;
+	}
+	if(current.RegionID != old.RegionID)
+	{
+	vars.IsInNatlaFight = false;
+	}
 }
 
 start
 {
 	if(current.levelcount == 0)
 	   {
-	   if(current.IsCutscene == 0 && vars.LoadEnded && current.IGTStoryPlusIL == 0 && current.HeadZ != 0 && (old.HeadZ == 0||old.IsCutscene == 1) && settings["PlayManor"])
+	   if(current.IsCutscene == 0 && vars.LoadEnded && current.IGTStoryPlusIL == 0 && current.zCoord != 0 && (old.zCoord == 0||old.IsCutscene == 1) && settings["PlayManor"])
            {
            vars.LaraWasHere.Clear();
            return true;
@@ -188,7 +196,7 @@ split
 		vars.LaraWasHere.Add("MidasPalace");
 		return true;
 	} 
-	if(current.AreaLabel == 27 && current.HeadZ >= 0 && old.HeadZ < 0 && current.RegionID == 2 && !vars.LaraWasHere.Contains("TombOfTihocan1") && (settings["TombOfTihocan1"]||settings["BTGMidas"]))
+	if(current.AreaLabel == 27 && current.zCoord >= 0 && old.zCoord < 0 && current.RegionID == 2 && !vars.LaraWasHere.Contains("TombOfTihocan1") && (settings["TombOfTihocan1"]||settings["BTGMidas"]))
     {
 		vars.LaraWasHere.Add("TombOfTihocan1");
 		return true;
@@ -277,13 +285,13 @@ split
 	   
 //By Level - Alt + F4 compatible splits at the end of each level based on glitchless runs (some of these split slightly earlier/later due to having different conditions other than the level endscreen):   
     //Caves:
-	if((settings["CavesEndAltF4"]||settings["BTGCaves"]) && current.AreaLabel == 7 && current.RegionID == 1 && current.yCoord < -15000 && old.yCoord >= -15000 && current.HeadZ < 1000 && !vars.LaraWasHere.Contains("CavesEnd"))
+	if((settings["CavesEndAltF4"]||settings["BTGCaves"]) && current.AreaLabel == 7 && current.RegionID == 1 && current.yCoord < -15000 && old.yCoord >= -15000 && current.zCoord < 1000 && !vars.LaraWasHere.Contains("CavesEnd"))
 	{
 		vars.LaraWasHere.Add("CavesEnd");
 		return true;
 	} 
 	//Vilcabamba:
-	if((settings["VilcaEndAltF4"]||settings["BTGVilca"]) && current.AreaLabel == 23 && current.RegionID == 1 && current.xCoord > -350 && old.xCoord <= -350 && current.HeadZ > 0 && current.yCoord > -1000 && !vars.LaraWasHere.Contains("VilcaEnd"))
+	if((settings["VilcaEndAltF4"]||settings["BTGVilca"]) && current.AreaLabel == 23 && current.RegionID == 1 && current.xCoord > -350 && old.xCoord <= -350 && current.zCoord > 0 && current.yCoord > -1000 && !vars.LaraWasHere.Contains("VilcaEnd"))
 	{
 		vars.LaraWasHere.Add("VilcaEnd");
 		return true;
@@ -355,24 +363,24 @@ split
 		return true;
 	} 
 	//Conflict:
-	if(current.AreaLabel == 19 && current.RegionID == 4 && current.IsMenu < 2 && old.IsMenu == 2 && current.zCoord < -1000 && !vars.LaraWasHere.Contains("ConflictEnd") && (settings["ConflictEndAltF4"]||settings["BTGConflict"]))
+	if(vars.IsInNatlaFight && current.AreaLabel == 19 && current.RegionID == 4 && current.IsMenu < 2 && old.IsMenu == 2 && current.zCoord < -1000 && !vars.LaraWasHere.Contains("ConflictEnd") && (settings["ConflictEndAltF4"]||settings["BTGConflict"]))
     {
 		vars.LaraWasHere.Add("ConflictEnd");
 		return true;
 	}
 	
 //NBJ Alt + F4:
-    if(current.AreaLabel == 23 && current.RegionID == 1 && !vars.LaraWasHere.Contains("TheLostValleyAltF4") && current.xCoord > -350 && current.IsMenu == 0 && old.IsMenu == 2 && current.HeadZ > 0 && current.yCoord > -1000 && settings["OtherNBJChecks"])
+    if(current.AreaLabel == 23 && current.RegionID == 1 && !vars.LaraWasHere.Contains("TheLostValleyAltF4") && current.xCoord > -350 && current.IsMenu == 0 && old.IsMenu == 2 && current.zCoord > 0 && current.yCoord > -1000 && settings["OtherNBJChecks"])
     {
 		vars.LaraWasHere.Add("TheLostValleyAltF4");
 		return true;
-	}   
+	}  
 	if(current.AreaLabel == 18 && current.RegionID == 2  && !vars.LaraWasHere.Contains("MidasPalaceAltF4") && current.AreaLabel == 18 && current.RegionID == 2 && current.xCoord < 2925 && old.xCoord >= 2925 && settings["OtherNBJChecks"])
     {
 		vars.LaraWasHere.Add("MidasPalaceAltF4"); 
 		return true;
 	} 
-	if(!vars.LaraWasHere.Contains("TheFinalConflictAltF4") && settings["OtherNBJChecks"] && current.AreaLabel == 19 && current.RegionID == 4 && current.IsMenu < 2 && old.IsMenu == 2 && current.zCoord < -1000)
+	if(vars.IsInNatlaFight && !vars.LaraWasHere.Contains("TheFinalConflictAltF4") && settings["OtherNBJChecks"] && current.AreaLabel == 19 && current.RegionID == 4 && current.IsMenu < 2 && old.IsMenu == 2 && current.zCoord < -1000)
     {
 		vars.LaraWasHere.Add("TheFinalConflictAltF4");
 		return true;
@@ -381,7 +389,7 @@ split
 
 reset
 {
-   if((((current.IGT < old.IGT  && !current.Loading)||(current.IGTStoryPlusIL < old.IGTStoryPlusIL  && !current.Loading))||(current.HP > old.HP && current.SMedPack == old.SMedPack && current.MedPack == old.MedPack && !current.Loading)||((current.HeadZ > (50 + old.HeadZ)) && ((current.IGT == old.IGT)||(current.IGTStoryPlusIL == old.IGTStoryPlusIL)) && current.DontCheat1 == 1 && ((current.DontCheat2 == 0)||(current.DontCheat3 == 1)))) && settings["Cheats"])
+   if((((current.IGT < old.IGT  && !current.Loading)||(current.IGTStoryPlusIL < old.IGTStoryPlusIL  && !current.Loading))||(current.HP > old.HP && current.SMedPack == old.SMedPack && current.MedPack == old.MedPack && !current.Loading)||((current.zCoord > (50 + old.zCoord)) && ((current.IGT == old.IGT)||(current.IGTStoryPlusIL == old.IGTStoryPlusIL)) && current.DontCheat1 == 1 && ((current.DontCheat2 == 0)||(current.DontCheat3 == 1)))) && settings["Cheats"])
    {
    vars.LaraWasHere.Clear();
    return true;
