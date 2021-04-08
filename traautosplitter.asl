@@ -34,7 +34,6 @@ state("tra")
 	string10 GameStart : 0x1F9678, 0x1AD;
 	string4 Load : 0x1F9678, 0x201;
 	string3 Quit : 0x1F9678, 0x1C9;
-	string4 Header : 0x1F9678, 0x81;
 	string3 RCM : 0x1F9678, 0x239;
 }
 
@@ -271,7 +270,7 @@ split
 	   {
 	   if(current.SumArtifactsRelics > old.SumArtifactsRelics)
 	   return true;
-	   if((current.levelcount > old.levelcount && current.AreaLabel >= 19 && current.RegionID >= 4)||(current.AreaLabel == 19 && current.RegionID == 4 && current.Header == "EXIT" && old.Header == "Cont"))
+	   if((current.levelcount > old.levelcount && current.AreaLabel >= 19 && current.RegionID >= 4)||(vars.IsInNatlaFight && !vars.LaraWasHere.Contains("TheFinalConflictAltF4") && settings["OtherNBJChecks"] && current.AreaLabel == 19 && current.RegionID == 4 && current.IsMenu < 2 && old.IsMenu == 2 && current.zCoord < -1000))
 	   return true;
 	   }
 	if(settings["Chapter"] && current.RegionID > old.RegionID && !vars.LoadMenu)
