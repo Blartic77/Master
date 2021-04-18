@@ -201,7 +201,7 @@ startup
     var errorMessage = MessageBox.Show (
         "To ensure it works please follow these steps:\n"+
 		" \n"+
-        "1) Load the game in the emu. Have a wild battle* \n"+
+        "1) Load the game in the emu. Start a wild battle* \n"+
 		"2) Run LiveSplit and load the script \n"+
 		" \n"+
 		"*: except the very first battle against the mon \n"+
