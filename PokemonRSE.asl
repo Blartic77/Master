@@ -3,12 +3,7 @@
 //Known issues:
 //-If you lose an important battle, it will split regardless. Might not be too important if you're aiming for a good time and reset upon losing.
 
-
 state("mGBA")
-{
-}
-
-state("VBA")
 {
 }
 
@@ -20,10 +15,15 @@ init
 {
     vars.Game = "Unknown";
 	vars.memeonrepeat = 1;
+}
+
+update
+{
     if(vars.memeonrepeat > 0)
     {
 	vars.Count = 0;
     print("Warning: savestates detected. Flagging times as suspicious for verifiers");
+	
 	vars.search = (Action<SigScanTarget, string>) ((theTarget, name) => {
 		foreach (var page in memory.MemoryPages())
 		{
@@ -39,41 +39,44 @@ init
 				print(name + " found at 0x" + vars.addr.ToString("X"));
 				break;
 			}
-			
-			if (vars.addr == IntPtr.Zero)
-			{
-				print(name + " scan failed");
-				break;
-			}
 		}
 	});
 	
 	SigScanTarget target;
 	
-	target = new SigScanTarget(0, "50 4F 4B 45 4D 4F 4E 20 45 4D 45 52");
+	target = new SigScanTarget(0, "50 4F 4B 45 4D 4F 4E ?? 45 4D 45 52");
    	vars.search(target,"Emerald");
+	if(vars.addr != IntPtr.Zero)
 	{
 	vars.Game = "Emerald";
 	}
     
 	if(vars.addr == IntPtr.Zero)
 	{
-	target = new SigScanTarget(0, "50 4F 4B 45 4D 4F 4E 20 52 55 42 59");
+	target = new SigScanTarget(0, "50 4F 4B 45 4D 4F 4E ?? 52 55 42 59");
    	vars.search(target,"Ruby");
+	if(vars.addr != IntPtr.Zero)
+	{
 	vars.Game = "Ruby";
+	}
 	}
 	
 	if(vars.addr == IntPtr.Zero)
 	{
-	target = new SigScanTarget(0, "50 4F 4B 45 4D 4F 4E 20 53 41 50 50");
+	target = new SigScanTarget(0, "50 4F 4B 45 4D 4F 4E ?? 53 41 50 50");
    	vars.search(target,"Sapphire");
+	if(vars.addr != IntPtr.Zero)
+	{
 	vars.Game = "Sapphire";
+	}
 	}
 	
 	if(vars.addr == IntPtr.Zero)
 	{
 	vars.Game = "Unknown";
 	}
+	
+	vars.memeonrepeat = -1;
 	
 if(vars.Game == "Emerald")
 	{
@@ -96,19 +99,24 @@ if(vars.Game == "Ruby"||vars.Game == "Sapphire")
    	vars.search(target,"MEMES");
 	vars.StepNumber = new MemoryWatcher<short>(vars.addr);
 	
-	target = new SigScanTarget(0, "00 A0 AA 0A 00 AA AA AA 00 0A 00 A0 00");
+	target = new SigScanTarget(0, "00 32 02 00 30 33 20 00 33 33");
    	vars.search(target,"FUN");
+	vars.BirchAppearanceNo = new MemoryWatcher<byte>(vars.addr - 0x2C6);
+	{
+	if(vars.addr == IntPtr.Zero)
+	{
+	target = new SigScanTarget(0, "00 A0 AA 0A 00 AA AA AA 00 0A 00 A0 00");
+   	vars.search(target,"MEMES'R'US");
 	vars.BirchAppearanceNo = new MemoryWatcher<byte>(vars.addr - 0x2B8);
+	}
+	}
 	
 	target = new SigScanTarget(7, "FF ?? ?? FF D6 04 D7 ??");
    	vars.search(target,"TRYHARDING");
 	vars.RNGPosition = new MemoryWatcher<byte>(vars.addr);
 	}
     }
-}
 
-update
-{
 if(vars.Game == "Emerald")
     {
     vars.StepNumber.Update(game);
@@ -185,8 +193,8 @@ if(vars.Game == "Emerald")
 	return true;
 	if((vars.StepNumber.Old == 476 && vars.StepNumber.Current != 476 && vars.Count == 2 && settings["WhoAgain"])||(vars.StepNumber.Old == 481 && vars.StepNumber.Current != 481 && vars.Count == 4 && settings["MrStoned"]))
 	{
-	return true;
 	vars.Count = 0;
+	return true;
 	}
 	else return false;
 	}
@@ -199,8 +207,8 @@ if(vars.Game == "Ruby"||vars.Game == "Sapphire")
 	return true;
 	if(vars.StepNumber.Old == 459 && vars.StepNumber.Current != 459 && vars.Count == 2 && settings["WhoAgain"])
 	{
-	return true;
 	vars.Count = 0;
+	return true;
 	}
 	else return false;
 	}
