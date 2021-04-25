@@ -97,7 +97,8 @@ startup
         "windowed mode, make sure you run the game\n"+
         "first and LiveSplit (ran as administrator)\n"+
 		"afterwards, as otherwise the autosplitter\n"+
-	    "might not work at all.",
+	    "might not work at all. Also, if you close the\n"+
+	    "game you'll have to run LiveSplit again.",
        	"AWE splitter WARNING!",
      	MessageBoxButtons.OK,
 		MessageBoxIcon.Error
