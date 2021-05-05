@@ -11,16 +11,35 @@ init
 	vars.Trainer = "Unknown";
 	vars.print = "FUN";
 	vars.IsDefeated = false;
+	vars.exit = false;
+	vars.Countdown = 100;
+	vars.Count2 = 0;
+	vars.print2 = "MEMES'R'US";
 	print("Clean Emerald ROM not found. Please buy a legal copy instead");
     print("Hang on while Windows reports this pirate copy to Game Freak...");
+	vars.Stopwatch.Start();
 }
 
 update
 {	
+	HashSet<short> MusicValues = new HashSet<short> { 471, 477, 478, 481, 482, 483 };
 	HashSet<byte> FanfareValues = new HashSet<byte> { 136, 138, 140, 142 };
+	HashSet<byte> SpriteValues = new HashSet<byte> { 10, 12, 69, 70 };
 	
-	if(vars.startup == 0)
+	if(vars.print == "FUN" && vars.Stopwatch.ElapsedMilliseconds >= 10000)
 	{
+	print("Pirate copy reported. Shutting down main methods");
+	vars.Stopwatch.Reset();
+	}
+	
+	if(vars.exit && vars.print == "FUN")
+	{
+	vars.Stopwatch.Restart();
+	}
+	
+	if((vars.startup == 0)||(vars.exit && vars.print == "FUN" && vars.Stopwatch.ElapsedMilliseconds >= 10000))
+	{
+	vars.exit = false;
 	vars.search = (Action<SigScanTarget, string>) ((theTarget, name) => {
 		foreach (var page in memory.MemoryPages())
 		{
@@ -64,9 +83,15 @@ update
 	vars.OppLevel = new MemoryWatcher<byte>(vars.addr - 0x1D32E);
 	vars.OppHP = new MemoryWatcher<short>(vars.addr - 0x1CCBC);
 	vars.OppSpecies = new MemoryWatcher<short>(vars.addr - 0x1CCE4);
-	vars.Fanfare = new MemoryWatcher<byte>(vars.addr + 0x668D);
+	vars.Fanfare = new MemoryWatcher<byte>(vars.addr + 0x667C);
+	vars.Fanfare2 = new MemoryWatcher<byte>(vars.addr + 0x672C);
 	
 	vars.startup = 1;
+	}
+	
+	if(vars.print == "TROLL")
+	{
+	vars.addr = IntPtr.Zero;
 	}
 	
 	vars.Music.Update(game);
@@ -100,6 +125,43 @@ update
     {
 	}
 	
+	vars.Fanfare2.Update(game);
+    {
+	}
+	
+	if((vars.Music.Current != vars.Music.Old && MusicValues.Contains(vars.Music.Current))||(vars.Trainer == "Wally")||(vars.Trainer == "Admin Tabitha")||(vars.Trainer == "Admin Shelly")||(vars.Trainer == "Admin Matt"))
+	{
+	vars.print = "TRUMPETSENTEREDTHECHAT";
+	vars.Stopwatch.Restart();
+	}
+	
+	if(vars.print == "TRUMPETSENTEREDTHECHAT" && vars.Stopwatch.ElapsedMilliseconds >= 10000)
+	{
+	vars.Stopwatch.Reset();
+	print("Currently facing " + vars.Trainer);
+	}
+	
+	if(vars.print == "TRUMPETSENTEREDTHECHAT" && vars.Music.Current != vars.Music.Old && MusicValues.Contains(vars.Music.Old) && !MusicValues.Contains(vars.Music.Current))
+	{
+	vars.print = "TRUMPETSGOTAWAYSAFELY";
+	print("An important battle might have ended, a split condition");
+	}
+	
+	if(((FanfareValues.Contains(vars.Fanfare.Current) && vars.Fanfare.Current != vars.Fanfare.Old)||(FanfareValues.Contains(vars.Fanfare2.Current)) && vars.Fanfare2.Current != vars.Fanfare2.Old) && vars.Music.Current == vars.Music.Old)
+	{
+	vars.Count2 = 1;
+	}
+	
+	if(((SpriteValues.Contains(vars.Sprite1.Current) && vars.Sprite1.Current != vars.Sprite1.Old)||(SpriteValues.Contains(vars.Sprite2.Current) && vars.Sprite2.Current != vars.Sprite2.Old)) && vars.Music.Current < 477 && vars.Music.Current > 474)
+	{
+	vars.Countdown = 99;
+	}
+	
+	if(vars.Countdown == 99 && vars.Count2 == 1)
+	{
+	vars.Countdown = 98;
+	}
+	
 	if(vars.OppLevel.Current == 5 && vars.Music.Current == 481)
 	{
 	vars.Trainer = "Rival 1";
@@ -125,17 +187,17 @@ update
 	vars.Trainer = "Rival 5";
 	}
 	
-	if(((vars.Trainer == "Rival 1" && settings["Rival1"])||(vars.Trainer == "Rival 2" && settings["Rival2"])||(vars.Trainer == "Rival 3" && settings["Rival3"])||(vars.Trainer == "Rival 4" && settings["Rival4"])||(vars.Trainer == "Rival 5" && settings["Rival5"])) && vars.Music.Current == 481 && FanfareValues.Contains(vars.Fanfare.Current))
+	if(((vars.Trainer == "Rival 1" && settings["Rival1"])||(vars.Trainer == "Rival 2" && settings["Rival2"])||(vars.Trainer == "Rival 3" && settings["Rival3"])||(vars.Trainer == "Rival 4" && settings["Rival4"])||(vars.Trainer == "Rival 5" && settings["Rival5"])) && vars.Music.Current == 481 && vars.Count2 == 1)
 	{
 	vars.IsDefeated = true;
 	}
 	
-	if(((vars.Sprite1.Current == 70 && vars.Sprite1.Old == 255)||(vars.Sprite1.Current == 70 && vars.Sprite1.Old == 255)) && vars.Music.Current == 476)
+	if(((vars.Sprite1.Current == 70 && vars.Sprite1.Old == 255)||(vars.Sprite2.Current == 70 && vars.Sprite2.Old == 255)) && vars.Music.Current == 476)
 	{
 	vars.Trainer = "Wally";
 	}
 	
-	if(vars.Trainer == "Wally" && vars.OppSpecies.Current == 392 && vars.OppLevel.Current == 16 && vars.Music.Current == 476)
+	if(vars.Trainer == "Wally" && vars.OppSpecies.Current == 392 && vars.OppLevel.Current == 16 && vars.OppHP.Current == 35 && vars.Music.Current == 476)
 	{
 	vars.Trainer = "Wally 1";
 	}
@@ -145,7 +207,7 @@ update
 	vars.Trainer = "Wally 2";
 	}
 	
-	if(((vars.Trainer == "Wally 1" && settings["WhoAgain1"])||(vars.Trainer == "Wally 2" && settings["WhoAgain2"])) && vars.Music.Current == 476 && FanfareValues.Contains(vars.Fanfare.Current))
+	if(((vars.Trainer == "Wally 1" && settings["WhoAgain1"])||(vars.Trainer == "Wally 2" && settings["WhoAgain2"])) && vars.Music.Current == 476 && vars.Count2 == 1)
 	{
 	vars.IsDefeated = true;
 	}
@@ -170,12 +232,12 @@ update
 	vars.Trainer = "Gang 4";
 	}
 	
-	if(((vars.Trainer == "Gang 1" && settings["Gang1"])||(vars.Trainer == "Gang 2" && settings["Gang2"])||(vars.Trainer == "Gang 3" && settings["Gang3"])||(vars.Trainer == "Gang 4" && settings["Gang4"])) && vars.Music.Current == 483 && FanfareValues.Contains(vars.Fanfare.Current))
+	if(((vars.Trainer == "Gang 1" && settings["Gang1"])||(vars.Trainer == "Gang 2" && settings["Gang2"])||(vars.Trainer == "Gang 3" && settings["Gang3"])||(vars.Trainer == "Gang 4" && settings["Gang4"])) && vars.Music.Current == 483 && vars.Count2 == 1)
 	{
 	vars.IsDefeated = true;
 	}
 	
-	if(vars.Music.Current == 475 && (vars.Sprite1.Current == 69||vars.Sprite2.Current == 69))
+	if(vars.Music.Current == 475 && ((vars.Sprite1.Current == 69 && vars.Sprite1.Old == 255)||(vars.Sprite2.Old == 255 && vars.Sprite2.Current == 69)))
 	{
 	vars.Trainer = "Admin Tabitha";
 	}
@@ -190,7 +252,7 @@ update
 	vars.Trainer = "Admin Tabitha 2";
 	}
 	
-	if(vars.Music.Current == 475 && (vars.Sprite1.Current == 12||vars.Sprite2.Current == 12))
+	if(vars.Music.Current == 475 && ((vars.Sprite1.Current == 12 && vars.Sprite1.Old == 255)||(vars.Sprite2.Old == 255 && vars.Sprite2.Current == 12)))
 	{
 	vars.Trainer = "Admin Shelly";
 	}
@@ -205,29 +267,60 @@ update
 	vars.Trainer = "Admin Shelly 2";
 	}
 	
-	if(vars.Music.Current == 475 && (vars.Sprite1.Current == 10||vars.Sprite2.Current == 10) && FanfareValues.Contains(vars.Fanfare.Current))
+	if(vars.Music.Current == 475 && ((vars.Sprite1.Current == 10 && vars.Sprite1.Old == 255)||(vars.Sprite2.Old == 255 && vars.Sprite2.Current == 10)) && vars.Count2 == 1)
 	{
 	vars.Trainer = "Admin Matt";
 	}
 	
-	if(((vars.Trainer == "Admin Tabitha 1" && settings["Admin1"])||(vars.Trainer == "Admin Tabitha 2" && settings["Admin2"])||(vars.Trainer == "Admin Shelly 1" && settings["Admin3"])||(vars.Trainer == "Admin Shelly 2" && settings["Admin4"])||(vars.Trainer == "Admin Matt" && settings["Admin5"])) && vars.Music.Current == 475 && FanfareValues.Contains(vars.Fanfare.Current))
+	if(((vars.Trainer == "Admin Tabitha 1" && settings["Admin1"])||(vars.Trainer == "Admin Tabitha 2" && settings["Admin2"])||(vars.Trainer == "Admin Shelly 1" && settings["Admin3"])||(vars.Trainer == "Admin Shelly 2" && settings["Admin4"])||(vars.Trainer == "Admin Matt" && settings["Admin5"])) && vars.Music.Current == 475 && vars.Count2 == 1)
 	{
 	vars.IsDefeated = true;
 	}
 	
-	if(((vars.Music.Current == 471 && settings["FB"])||(vars.Music.Current == 477 && settings["BossOfGym"])||(vars.Music.Current == 482 && settings["E4"])||(vars.Music.Current == 478 && settings["Champions"])) && FanfareValues.Contains(vars.Fanfare.Current))
+	if(((vars.Music.Current == 471 && settings["FB"])||(vars.Music.Current == 477 && settings["BossOfGym"])||(vars.Music.Current == 482 && settings["E4"])||(vars.Music.Current == 478 && settings["Champions"])) && vars.Count2 == 1)
 	{
 	vars.IsDefeated = true;
 	}
 	
-	if(vars.Music.Current == 474 && vars.OppSpecies.Current == 63 && vars.OppHP.Current > 0 && FanfareValues.Contains(vars.Fanfare.Current) && settings["Abra"])
+	if(vars.Music.Current == 474 && vars.OppSpecies.Current == 63 && vars.OppHP.Current > 0 && vars.Count2 == 1 && settings["Abra"])
 	{
 	vars.IsDefeated = true;
 	}
 	
-	if(vars.Music.Current == 470 && vars.OppSpecies.Current == 406 && vars.OppHP.Current > 0 && FanfareValues.Contains(vars.Fanfare.Current) && settings["Rayquaza"])
+	if(vars.Music.Current == 470 && vars.OppSpecies.Current == 406 && vars.OppHP.Current > 0 && vars.Count2 == 1 && settings["Rayquaza"])
 	{
 	vars.IsDefeated = true;
+	}
+	
+	if(vars.Music.Current == 477 && vars.Music.Current != vars.Music.Old)
+	{
+	vars.Trainer = "Leader";
+	}
+	
+	if(vars.Music.Current == 471 && vars.Music.Current != vars.Music.Old)
+	{
+	vars.Trainer = "Frontier Brain";
+	}
+	
+	if(vars.Music.Current == 482 && vars.Music.Current != vars.Music.Old)
+	{
+	vars.Trainer = "E4";
+	}
+	
+	if(vars.Music.Current == 478 && vars.Music.Current != vars.Music.Old)
+	{
+	vars.Trainer = "Wallace";
+	}
+	
+	if(vars.IsDefeated && vars.print2 == "MEMES'R'US")
+	{
+	vars.print2 = "TRUMPETBREAK";
+	}
+	
+	if(vars.print2 == "TRUMPETBREAK")
+	{
+	vars.print2 = "TRUMPETREADY";
+	print(vars.Trainer + " defeated");
 	}
 }
 
@@ -243,9 +336,15 @@ start
 
 split
 {
-	if(vars.IsDefeated && vars.Fanfare.Current == 0 && (vars.Fanfare.Old == 8||vars.Fanfare.Old == 16))
+	HashSet<byte> FanfareValuesAgain = new HashSet<byte> { 136, 138, 140, 142 };
+	
+	if(vars.IsDefeated && ((vars.Fanfare.Current != vars.Fanfare.Old && FanfareValuesAgain.Contains(vars.Fanfare.Old))||(vars.Fanfare2.Current != vars.Fanfare2.Old && FanfareValuesAgain.Contains(vars.Fanfare2.Old))))
 	{
 	vars.IsDefeated = false;
+	vars.print2 = "MEMES'R'US";
+	vars.print = "FUN";
+	vars.Count2 = 0;
+	vars.Countdown = 100;
 	return true;
 	}
 	
@@ -261,9 +360,20 @@ split
 	}
 }
 
+exit
+{
+	vars.print = "TROLL";
+	vars.exit = true;
+	vars.Count = 0;
+	vars.Trainer = "Unknown";
+	vars.IsDefeated = false;
+	vars.Stopwatch.Reset();
+}
+
 startup
 {
 	vars.startup = 0;
+	vars.Stopwatch = new Stopwatch();
 	settings.Add("Main", true, "Autosplits after battling:");
 	settings.SetToolTip("Main", "Tick the autosplits you want for your run");
 	  settings.Add("Rival",true, "Rival (May/Brendan)", "Main");
