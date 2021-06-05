@@ -1,0 +1,255 @@
+Abra encounters (no Sweet Scent) using an initial seed of 0, regardless of its ability. The frames listed match Pokefinder's.
+Ability 0 = Synchronize, Ability 1 = Inner Focus
+
+1) Route 116 (Lv7):
+
+Frame	Nature	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
+693	Naive	1	24	21	7	9	17	15	Dragon	37	♀
+856	Serious	0	13	6	18	0	3	29	Water	54	♀
+930	Serious	1	9	16	10	27	25	5	Ice	42	♂
+1293	Hardy	1	2	7	16	5	9	3	Ice	36	♂
+1401	Quiet	0	18	17	8	30	9	27	Grass	45	♀
+1433	Adamant	1	31	8	14	1	16	21	Bug	33	♂
+1655	Mild	1	10	6	28	15	4	26	Ground	47	♂
+1710	Naive	1	0	7	20	7	30	15	Ghost	66	♂
+1783	Timid	0	17	23	7	24	4	22	Flying	38	♂
+1971	Gentle	0	31	24	7	0	12	18	Flying	38	♂
+2132	Naughty	0	30	22	3	20	14	9	Poison	54	♀
+2149	Docile	1	24	0	3	20	2	15	Poison	57	♂
+2159	Bold	0	27	20	27	4	17	23	Grass	38	♂
+2300	Adamant	0	22	9	15	27	14	31	Steel	68	♀
+2398	Naughty	1	18	19	6	10	10	12	Fight.	64	♂
+2490	Naughty	0	20	7	21	10	20	5	Ground	41	♂
+2500	Gentle	1	31	26	18	24	10	2	Fight.	59	♂
+2679	Adamant	0	20	3	24	2	17	14	Fire	46	♂
+2813	Impish	0	15	28	8	22	16	28	Fight.	40	♂
+2875	Bold	1	12	14	28	30	25	22	Steel	46	♂
+2914	Bashful	0	19	4	13	15	8	3	Ghost	45	♂
+2975	Relaxed	1	16	16	21	3	5	11	Dragon	45	♀
+3032	Sassy	0	31	1	21	22	8	18	Flying	45	♂
+3076	Docile	1	31	11	5	25	10	0	Bug	52	♂
+3217	Gentle	0	23	2	3	0	14	5	Ground	54	♂
+3251	Serious	1	8	4	15	15	7	14	Psychic	68	♂
+3465	Lax	0	18	27	22	21	16	31	Ghost	39	♀
+3479	Lonely	1	2	30	23	5	9	31	Dragon	39	♂
+3647	Gentle	0	10	20	12	22	0	29	Flying	40	♂
+3728	Brave	1	13	16	29	23	26	27	Ghost	65	♀
+3730	Mild	1	7	23	10	11	12	17	Ghost	44	♀
+3829	Docile	0	21	5	31	13	5	3	Dark	37	♀
+3832	Adamant	1	17	4	4	28	23	29	Water	50	♂
+3923	Calm	0	13	29	18	17	13	30	Psychic	37	♀
+3940	Naughty	1	20	17	2	19	11	8	Elect.	63	♂
+4016	Rash	0	3	12	12	8	13	21	Water	30	♂
+4052	Careful	1	9	29	12	30	30	23	Poison	65	♂
+4122	Lonely	1	19	11	8	30	7	28	Fire	62	♂
+4198	Mild	0	3	27	2	17	3	14	Psychic	59	♂
+4302	Bashful	0	18	29	22	12	24	12	Fight.	33	♀
+4315	Sassy	1	29	31	17	2	24	13	Ground	41	♂
+4607	Docile	0	20	17	14	24	17	15	Grass	37	♂
+4675	Calm	1	17	12	26	22	13	19	Water	47	♂
+4760	Calm	0	10	18	8	20	30	19	Flying	57	♂
+4780	Relaxed	1	29	26	14	9	8	21	Bug	33	♀
+4837	Rash	0	15	7	17	31	18	1	Steel	62	♂
+5062	Naughty	0	14	13	17	26	26	27	Ground	66	♀
+5154	Naughty	0	25	31	29	20	20	13	Ground	31	♂
+5482	Lonely	0	28	13	20	6	16	6	Fight.	45	♂
+5586	Hardy	0	0	17	27	2	11	11	Grass	68	♂
+5646	Bashful	0	25	12	2	20	23	12	Steel	52	♂
+5695	Quirky	0	4	31	16	7	29	26	Elect.	46	♂
+5702	Rash	1	13	17	5	17	15	30	Ice	55	♂
+5953	Lax	0	23	17	15	23	9	21	Dark	43	♂
+5959	Jolly	1	6	4	16	25	26	14	Ground	56	♂
+6089	Modest	0	2	14	25	0	26	20	Fight.	52	♂
+6221	Relaxed	1	13	16	27	25	9	18	Psychic	37	♀
+6354	Quiet	0	26	11	18	14	21	2	Fire	49	♂
+6478	Brave	1	7	22	24	18	12	15	Poison	47	♂
+6649	Relaxed	1	29	3	31	24	17	11	Elect.	38	♂
+6703	Rash	1	16	21	11	14	3	26	Water	68	♂
+6729	Quiet	1	14	27	14	8	29	19	Grass	39	♂
+6781	Naive	0	22	1	28	4	7	11	Grass	56	♂
+6805	Brave	1	1	9	29	19	1	13	Dark	40	♂
+6816	Sassy	0	20	15	20	8	23	7	Grass	56	♂
+6845	Quirky	1	24	10	1	17	2	18	Rock	56	♀
+6855	Brave	1	1	10	23	17	4	25	Ghost	33	♂
+6863	Brave	1	1	10	23	17	4	25	Ghost	33	♂
+6884	Quiet	0	20	11	23	30	3	7	Grass	69	♂
+7002	Jolly	0	14	20	19	19	25	1	Dragon	43	♂
+7031	Impish	1	24	20	19	9	1	26	Psychic	37	♂
+7032	Docile	0	8	5	22	21	28	0	Rock	32	♀
+7073	Naive	1	19	20	13	30	31	7	Grass	66	♂
+7182	Modest	0	29	2	12	3	1	16	Elect.	41	♂
+7205	Bashful	0	14	25	12	29	9	2	Elect.	35	♀
+7380	Mild	1	7	2	17	21	7	9	Dragon	52	♀
+7489	Careful	1	17	3	31	7	10	26	Bug	69	♂
+7704	Naive	0	31	12	1	12	22	9	Ground	50	♀
+7766	Hardy	0	5	20	17	19	14	8	Bug	60	♂
+7962	Quirky	0	21	8	1	6	31	30	Fire	65	♂
+7963	Naughty	0	12	4	17	8	21	14	Fire	35	♂
+7983	Quiet	0	8	10	24	5	28	14	Ground	36	♂
+8001	Lax	1	30	6	31	6	10	16	Fight.	64	♂
+8039	Lonely	1	19	2	15	29	10	8	Bug	54	♂
+8081	Impish	1	31	29	12	5	24	1	Ghost	30	♂
+8199	Impish	1	19	25	18	31	2	10	Rock	68	♂
+8216	Docile	0	15	19	21	10	31	21	Elect.	62	♂
+8259	Docile	0	20	7	24	4	5	14	Fire	36	♂
+8309	Docile	0	28	29	31	15	3	21	Dragon	63	♂
+8368	Naughty	1	28	15	15	18	29	21	Grass	43	♂
+8380	Careful	1	16	31	27	26	31	29	Grass	64	♂
+8440	Naive	0	31	14	1	6	12	3	Ground	47	♂
+8488	Adamant	1	11	17	17	21	6	24	Bug	50	♂
+8637	Serious	1	1	29	23	29	2	12	Bug	52	♂
+8758	Lonely	1	10	23	22	5	22	21	Ghost	54	♀
+8843	Docile	0	13	6	7	6	15	19	Grass	69	♂
+8933	Quiet	0	14	2	15	10	2	3	Poison	70	♀
+9262	Naive	0	20	19	1	6	1	3	Grass	46	♀
+9279	Hasty	0	18	1	10	17	7	2	Elect.	58	♂
+9427	Modest	0	23	4	16	28	21	21	Water	30	♂
+9501	Relaxed	0	6	27	12	7	9	27	Ice	47	♀
+9545	Naive	1	14	18	13	28	23	23	Grass	57	♀
+9633	Lax	1	26	3	15	15	17	15	Dragon	49	♂
+9748	Modest	0	26	11	10	14	19	24	Fire	64	♀
+9842	Hasty	0	22	9	20	7	23	15	Ice	66	♂
+9900	Lonely	1	26	1	4	31	14	16	Rock	61	♂
+9903	Bashful	0	12	11	30	9	25	27	Ice	38	♂
+9904	Lonely	1	26	1	4	31	14	16	Rock	61	♂
+10034	Lax	0	6	5	14	31	13	15	Ice	48	♀
+10129	Naive	0	20	7	13	9	22	9	Steel	51	♂
+10567	Relaxed	0	18	3	19	14	14	18	Flying	70	♂
+10633	Hasty	0	26	16	14	8	1	20	Steel	33	♂
+10668	Quiet	1	29	6	7	21	12	21	Ghost	33	♂
+10724	Docile	0	14	2	25	27	0	2	Rock	47	♂
+10848	Quiet	1	20	0	19	0	14	7	Poison	57	♀
+10868	Bashful	0	23	17	10	16	4	1	Poison	33	♂
+10998	Timid	0	0	20	23	19	15	3	Dragon	68	♂
+11024	Gentle	0	17	23	15	1	14	3	Steel	59	♂
+11256	Serious	1	12	17	9	11	1	29	Dragon	40	♂
+11419	Gentle	1	29	24	31	20	3	1	Grass	52	♂
+11631	Quirky	0	29	3	3	13	10	12	Bug	54	♀
+11807	Rash	0	3	28	3	14	31	13	Grass	63	♂
+11829	Calm	1	26	24	16	2	10	17	Flying	61	♂
+12251	Relaxed	1	25	19	23	1	2	28	Bug	54	♂
+12277	Calm	1	11	5	21	19	20	24	Bug	40	♂
+12339	Lax	1	1	20	12	23	11	30	Elect.	65	♂
+12341	Serious	0	25	8	28	7	29	10	Elect.	45	♂
+12352	Mild	1	21	27	5	19	22	0	Bug	61	♂
+12356	Hardy	1	16	15	11	16	12	5	Ground	33	♂
+12499	Bold	1	28	27	24	24	23	30	Fire	56	♂
+12543	Naughty	1	25	24	30	4	5	18	Steel	37	♀
+12565	Lax	1	8	2	25	13	15	12	Psychic	51	♂
+12729	Careful	1	5	19	18	10	6	19	Poison	69	♀
+12744	Lonely	1	16	19	6	9	11	5	Ice	54	♂
+13111	Modest	1	6	3	8	20	11	21	Grass	52	♂
+13128	Relaxed	1	20	11	0	27	8	16	Rock	41	♂
+13131	Mild	1	15	8	31	23	18	7	Ghost	68	♂
+13209	Careful	0	9	7	24	11	31	27	Dragon	66	♀
+13363	Modest	1	11	27	25	22	16	31	Ground	47	♀
+13407	Jolly	0	13	31	24	16	15	11	Grass	56	♂
+13422	Hasty	1	13	30	12	20	22	3	Poison	56	♀
+13465	Hardy	0	22	26	7	31	21	10	Psychic	49	♂
+13654	Quirky	0	18	19	10	31	0	16	Rock	44	♂
+13842	Quirky	0	4	27	10	7	3	29	Ice	64	♂
+13917	Quiet	0	13	24	31	8	25	17	Grass	32	♀
+14004	Bashful	1	19	20	30	30	9	31	Water	48	♂
+14129	Docile	1	4	30	2	1	28	6	Ground	38	♂
+14131	Careful	0	3	11	27	26	24	31	Ground	49	♂
+14249	Quiet	0	13	22	16	1	10	23	Bug	56	♀
+14336	Jolly	1	0	28	17	7	23	12	Psychic	60	♂
+14441	Rash	0	17	16	5	27	16	23	Ghost	45	♂
+14456	Bold	0	8	10	12	29	25	31	Ice	36	♂
+14671	Hasty	0	9	11	26	7	2	11	Ghost	69	♂
+
+
+
+2) Granite Cave:
+602	8	Calm	0	2	1	30	22	13	4	Fire	43	♂
+1330	8	Bold	0	19	18	25	16	29	24	Fire	31	♂
+1472	8	Relaxed	1	0	6	19	20	25	27	Grass	38	♂
+1562	8	Docile	1	15	0	17	24	7	19	Grass	56	♂
+1585	8	Quirky	0	7	24	0	2	10	5	Poison	61	♂
+1685	8	Rash	1	7	16	13	26	13	31	Grass	45	♂
+1696	8	Hardy	1	14	13	18	23	27	6	Elect.	68	♂
+1814	8	Adamant	0	16	0	31	24	22	3	Poison	57	♀
+1950	8	Bashful	1	27	10	1	17	10	4	Bug	52	♂
+1977	8	Quirky	1	27	23	23	18	16	10	Flying	49	♂
+2126	8	Naive	1	2	25	4	25	2	6	Rock	56	♂
+2243	8	Rash	1	0	8	11	21	21	8	Psychic	32	♂
+2382	8	Jolly	0	3	21	8	13	13	3	Dragon	35	♂
+2410	8	Mild	0	8	18	0	26	30	13	Flying	61	♂
+2596	8	Naughty	0	27	25	30	15	7	10	Psychic	68	♀
+2633	8	Timid	1	4	9	28	27	27	9	Ice	60	♀
+2963	8	Serious	1	12	7	25	2	7	23	Grass	66	♂
+3019	8	Quiet	1	0	25	10	1	5	21	Ice	32	♂
+3069	8	Gentle	1	25	29	1	18	28	15	Ground	45	♂
+3152	8	Adamant	1	12	17	18	23	21	18	Elect.	47	♂
+3518	8	Gentle	0	12	17	12	20	11	15	Grass	55	♂
+4214	8	Quiet	0	10	11	28	9	8	8	Rock	31	♂
+4316	8	Mild	0	3	27	2	17	3	14	Psychic	59	♂
+4373	8	Adamant	1	25	9	0	14	14	2	Fight.	65	♂
+4610	8	Relaxed	1	0	13	11	7	29	6	Psychic	47	♂
+4695	8	Rash	1	0	13	12	10	25	3	Grass	45	♂
+4702	8	Naughty	0	5	12	10	1	3	4	Elect.	52	♂
+4900	8	Gentle	0	18	19	11	17	18	29	Steel	54	♂
+5052	8	Hasty	1	22	12	0	2	31	21	Water	61	♀
+5311	8	Docile	1	23	16	1	25	17	18	Psychic	35	♂
+5317	8	Naive	0	11	0	5	31	29	25	Dragon	40	♂
+5461	8	Lax	0	18	27	25	27	25	9	Dragon	42	♂
+5716	8	Impish	0	21	27	4	0	20	16	Fight.	31	♂
+6336	8	Modest	0	16	1	18	20	12	28	Fight.	32	♂
+6477	8	Adamant	0	29	8	17	4	17	19	Grass	35	♂
+6515	8	Serious	1	16	29	29	11	31	6	Psychic	65	♂
+6522	8	Docile	1	10	30	16	28	17	12	Steel	31	♂
+6603	8	Mild	1	2	20	30	27	0	17	Bug	43	♂
+6939	8	Impish	1	21	26	11	24	12	19	Ground	38	♀
+7339	8	Quiet	0	7	12	24	16	13	27	Water	35	♀
+7470	8	Serious	1	28	22	27	25	11	5	Dragon	54	♀
+7491	8	Jolly	1	25	21	8	28	25	9	Grass	30	♂
+7584	8	Bold	1	27	23	2	8	19	6	Fire	59	♂
+7588	8	Sassy	1	0	2	12	19	23	20	Elect.	61	♂
+7648	8	Mild	1	0	16	8	31	22	0	Ground	60	♂
+8033	8	Docile	0	10	2	6	18	5	26	Steel	49	♂
+8621	8	Docile	0	13	11	16	2	21	3	Grass	46	♂
+8625	8	Naughty	1	6	4	28	13	23	10	Elect.	56	♂
+8656	8	Docile	1	18	30	0	29	19	18	Elect.	57	♂
+8746	8	Serious	1	26	1	25	27	11	18	Psychic	66	♂
+9247	8	Docile	0	29	14	15	4	24	7	Ground	38	♂
+9457	8	Lax	0	11	9	10	31	19	26	Psychic	68	♂
+9480	8	Careful	0	26	16	2	22	7	2	Steel	68	♂
+9871	8	Naive	0	14	26	10	26	18	19	Flying	70	♂
+10024	8	Gentle	0	28	1	30	2	16	5	Poison	42	♂
+10100	8	Brave	0	10	8	22	18	24	9	Flying	43	♂
+10118	8	Naughty	1	16	0	1	30	13	24	Fire	40	♂
+10217	8	Timid	1	19	30	28	20	8	0	Fight.	31	♂
+10359	8	Hasty	1	28	9	13	11	22	13	Steel	60	♂
+10500	8	Lax	0	8	27	19	0	29	29	Grass	33	♂
+10815	8	Lax	1	3	19	15	11	3	18	Ice	70	♂
+10846	8	Naughty	1	22	28	5	27	14	12	Rock	61	♀
+10919	8	Lax	1	3	19	15	11	3	18	Ice	70	♂
+10984	8	Calm	1	0	8	25	19	19	7	Dragon	65	♂
+11098	8	Naive	1	19	14	19	7	6	9	Ghost	64	♂
+11142	8	Modest	1	6	14	25	18	17	31	Grass	47	♀
+11231	8	Modest	0	12	3	13	19	28	8	Bug	41	♂
+11397	8	Naughty	1	14	12	15	3	13	1	Dragon	43	♂
+11862	8	Quirky	1	23	15	10	18	3	19	Grass	70	♂
+12045	8	Quirky	1	22	18	20	16	23	15	Water	57	♂
+12273	8	Hardy	0	10	12	27	12	29	7	Grass	38	♂
+12291	8	Bold	0	24	30	11	29	2	12	Rock	54	♂
+12509	8	Bashful	0	24	27	26	12	22	0	Fight.	54	♂
+12562	8	Naive	1	27	15	6	18	23	5	Grass	64	♀
+12705	8	Impish	0	20	8	7	23	12	25	Ghost	42	♂
+12792	8	Quiet	1	15	1	12	21	27	29	Dragon	50	♂
+12842	8	Calm	0	26	8	9	4	31	0	Fire	50	♂
+12857	8	Lax	0	1	13	4	22	11	17	Grass	60	♀
+13150	8	Naive	1	18	13	8	4	21	29	Grass	30	♀
+13343	8	Timid	1	28	16	31	22	9	23	Grass	47	♀
+13393	8	Mild	0	15	13	13	20	24	29	Ground	30	♂
+13502	8	Lax	1	28	24	7	7	23	27	Dragon	68	♂
+13578	8	Quirky	0	2	14	13	17	8	28	Rock	31	♀
+13648	8	Serious	1	15	14	6	4	22	31	Poison	59	♂
+13729	8	Quiet	1	14	2	23	1	15	7	Dragon	59	♀
+13773	8	Brave	0	14	18	8	14	22	15	Flying	67	♀
+14138	8	Relaxed	0	27	17	5	24	7	11	Elect.	56	♂
+14264	8	Naughty	1	13	3	23	29	4	18	Bug	38	♂
+14496	8	Relaxed	0	27	27	19	9	3	0	Ice	54	♂
+
+
+Abra will be Lv8 in 1F and Steven's Room, Lv9 in B1F and Lv10 in B2F
