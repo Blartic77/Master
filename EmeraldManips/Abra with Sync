@@ -39,37 +39,20 @@ Frame	Nature	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
 
 Frames	Nature	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
 602	Calm	2	1	30	22	13	4	Fire	43	♂
-1068	Rash	26	3	11	6	15	5	Grass	64	♀
-1151	Hasty	26	29	0	18	23	5	Grass	61	♂
-1191	Modest	0	14	22	15	16	14	Ground	49	♂
 1330	Bold	19	18	25	16	29	24	Fire	31	♂
-1514	Docile	13	8	22	20	17	6	Steel	37	♂
 1585	Quirky	7	24	0	2	10	5	Poison	61	♂
 1814	Adamant	16	0	31	24	22	3	Poison	57	♀
-2100	Timid	14	4	1	25	30	13	Ghost	50	♂
 2382	Jolly	3	21	8	13	13	3	Dragon	35	♂
 2410	Mild	8	18	0	26	30	13	Flying	61	♂
-2547	Naughty	6	28	30	11	15	7	Ice	68	♀
 2596	Naughty	27	25	30	15	7	10	Psychic	68	♀
-2761	Naughty	3	6	16	3	29	1	Ice	42	♂
-3077	Quirky	11	21	25	18	31	24	Water	61	♀
 3518	Gentle	12	17	12	20	11	15	Grass	55	♂
-3851	Lonely	27	6	16	12	24	6	Fight.	36	♂
 4214	Quiet	10	11	28	9	8	8	Rock	31	♂
 4316	Mild	3	27	2	17	3	14	Psychic	59	♂
-4447	Mild	15	11	4	9	26	10	Rock	57	♀
-4497	Serious	8	9	31	14	24	24	Flying	42	♂
 4702	Naughty	5	12	10	1	3	4	Elect.	52	♂
-4747	Hardy	23	14	3	9	27	29	Dragon	54	♂
 4900	Gentle	18	19	11	17	18	29	Steel	54	♂
-5031	Timid	6	14	8	4	7	29	Water	52	♂
-5276	Modest	14	10	3	25	16	12	Rock	34	♂
 5317	Naive	11	0	5	31	29	25	Dragon	40	♂
 5461	Lax	18	27	25	27	25	9	Dragon	42	♂
-5485	Hardy	29	8	4	16	2	13	Poison	50	♀
-5632	Bashful	25	12	2	20	23	12	Steel	52	♂
 5716	Impish	21	27	4	0	20	16	Fight.	31	♂
-5794	Mild	5	12	8	26	22	25	Poison	60	♂
 
 
 Abra will be Lv8 in 1F and Steven's room, Lv9 in B1F and Lv10 in B2F
