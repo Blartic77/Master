@@ -1,0 +1,31 @@
+Slakoth grass encounters with initial seed = 0. Frames match the ones from Pokefinder, excluding the ones where an encounter's not possible by method H2
+
+Frames	Lv	Nature	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
+874	5	Jolly	29	5	31	8	25	16	Water	32	♂
+1324	5	Bashful	15	2	5	31	11	2	Psychic	67	♀
+1497	5	Naive	16	27	18	19	17	30	Elect.	49	♀
+1509	5	Lax	23	4	23	8	22	13	Ground	53	♀
+1555	5	Hardy	26	26	27	25	17	8	Psychic	34	♀
+1601	6	Bashful	14	31	8	5	8	18	Rock	36	♂
+1851	6	Brave	17	6	1	18	18	12	Flying	61	♂
+1863	5	Quiet	5	10	0	31	5	4	Elect.	41	♀
+2138	6	Adamant	6	21	16	12	10	27	Poison	56	♀
+2194	5	Impish	22	27	6	10	24	11	Poison	49	♀
+2746	6	Naive	14	16	5	30	10	28	Fight.	61	♂
+2993	6	Quiet	0	9	4	5	4	3	Ghost	35	♂
+3206	5	Jolly	4	22	5	14	18	3	Poison	66	♀
+3524	5	Adamant	12	1	22	0	15	10	Fire	57	♂
+3580	5	Sassy	12	10	7	4	23	11	Grass	59	♂
+3625	5	Naive	21	19	3	31	14	8	Bug	64	♂
+4171	5	Rash	0	6	14	11	11	3	Ice	69	♂
+4238	5	Serious	10	4	28	30	20	16	Fight.	40	♀
+4241	5	Docile	8	2	31	21	4	12	Rock	33	♂
+4405	6	Bashful	21	26	4	24	25	7	Water	36	♀
+4883	6	Quiet	0	3	24	22	5	0	Fire	41	♂
+4945	6	Bashful	30	2	19	4	19	7	Grass	59	♂
+5027	5	Mild	20	25	18	19	11	18	Elect.	68	♂
+5181	6	Modest	9	26	13	5	26	13	Ghost	51	♂
+5621	6	Adamant	13	31	8	11	31	8	Psychic	61	♀
+5905	5	Docile	10	29	0	21	24	28	Rock	30	♂
+5992	5	Calm	27	26	22	15	3	29	Ice	64	♂
+6157	5	Lax	13	24	16	10	25	25	Water	40	♂
