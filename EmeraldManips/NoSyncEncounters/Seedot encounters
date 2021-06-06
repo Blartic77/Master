@@ -1,0 +1,23 @@
+The frames listed match Pokefinder's, excluding the ones that don't match the grass encounter frames. Initial seed is 0.
+
+Frame	Lv	Nature	Ability	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
+1601	3	Bashful	1	14	31	8	5	8	18	Rock	36	♂
+1851	3	Brave	0	17	6	1	18	18	12	Flying	61	♂
+2138	3	Adamant	0	6	21	16	12	10	27	Poison	56	♀
+2746	3	Naive	0	14	16	5	30	10	28	Fight.	61	♂
+2993	3	Quiet	0	0	9	4	5	4	3	Ghost	35	♂
+4405	3	Bashful	1	21	26	4	24	25	7	Water	36	♀
+4883	3	Quiet	0	0	3	24	22	5	0	Fire	41	♂
+4945	3	Bashful	0	30	2	19	4	19	7	Grass	59	♂
+5181	3	Modest	0	9	26	13	5	26	13	Ghost	51	♂
+5621	3	Adamant	1	13	31	8	11	31	8	Psychic	61	♀
+6798	3	Calm	0	17	19	24	11	14	10	Rock	66	♂
+7496	3	Quiet	1	30	31	24	14	21	0	Fire	42	♀
+7520	3	Sassy	0	26	30	0	22	25	23	Water	47	♂
+7814	3	Jolly	0	23	30	13	31	21	9	Dragon	42	♂
+8172	3	Docile	1	28	22	11	3	16	5	Ghost	43	♀
+8823	3	Serious	0	0	0	29	6	6	1	Poison	60	♂
+13886	3	Serious	1	31	11	28	7	16	30	Rock	47	♂
+14069	3	Sassy	0	6	6	27	20	3	1	Grass	54	♂
+14223	3	Jolly	1	30	29	2	13	11	30	Elect.	58	♂
+14281	3	Timid	0	1	28	23	27	24	15	Ghost	47	♀
