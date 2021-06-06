@@ -1,4 +1,5 @@
 The frames listed match Pokefinder's, excluding the ones that don't match the grass encounter frames. Initial seed is 0.
+Ability 0 = Chlorophyll, Ability 1 = Early Bird
 
 Frame	Lv	Nature	Ability	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
 1601	3	Bashful	1	14	31	8	5	8	18	Rock	36	♂
