@@ -1,59 +1,59 @@
 Possible Ralts encounters (Lv4) in Route 102. The frames listed here match Pokefinder's, excluding the ones not listed as possible grass encounters. Initial seed is 0
 Ability 0 = Synchronize, Ability 1 = Trace
 
-Frame	Lv	Nature	Ability	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
-874	4	Jolly	1	29	5	31	8	25	16	Water	32	♂
-1324	4	Bashful	0	15	2	5	31	11	2	Psychic	67	♀
-1497	4	Naive	0	16	27	18	19	17	30	Elect.	49	♀
-1509	4	Lax	0	23	4	23	8	22	13	Ground	53	♀
-1555	4	Hardy	0	26	26	27	25	17	8	Psychic	34	♀
-1863	4	Quiet	0	5	10	0	31	5	4	Elect.	41	♀
-2194	4	Impish	0	22	27	6	10	24	11	Poison	49	♀
-3206	4	Jolly	1	4	22	5	14	18	3	Poison	66	♀
-3524	4	Adamant	1	12	1	22	0	15	10	Fire	57	♂
-3580	4	Sassy	0	12	10	7	4	23	11	Grass	59	♂
-3625	4	Naive	1	21	19	3	31	14	8	Bug	64	♂
-4171	4	Rash	1	0	6	14	11	11	3	Ice	69	♂
-4238	4	Serious	1	10	4	28	30	20	16	Fight.	40	♀
-4241	4	Docile	1	8	2	31	21	4	12	Rock	33	♂
-5027	4	Mild	1	20	25	18	19	11	18	Elect.	68	♂
-5905	4	Docile	0	10	29	0	21	24	28	Rock	30	♂
-5992	4	Calm	1	27	26	22	15	3	29	Ice	64	♂
-6157	4	Lax	1	13	24	16	10	25	25	Water	40	♂
-6258	4	Lonely	1	13	18	1	11	19	14	Psychic	66	♂
-6452	4	Docile	1	23	25	1	11	27	2	Ice	66	♂
-7104	4	Bashful	1	7	26	25	18	25	17	Grass	42	♀
-7181	4	Jolly	0	18	22	11	21	28	16	Rock	34	♂
-7282	4	Serious	1	24	25	16	11	26	21	Ghost	60	♂
-7514	4	Jolly	0	25	19	18	11	28	28	Rock	43	♂
-8688	4	Quiet	1	22	2	3	6	14	10	Fight.	70	♂
-8740	4	Timid	1	18	18	23	19	10	14	Rock	70	♂
-9110	4	Serious	1	28	1	28	17	8	10	Rock	35	♂
-9190	4	Brave	1	21	13	18	3	2	5	Ghost	63	♂
-9232	4	Lax	0	8	22	30	16	31	17	Water	54	♀
-9527	4	Sassy	1	24	26	19	31	12	23	Ghost	49	♂
-9815	4	Quirky	1	9	6	13	5	30	7	Ghost	56	♂
-9954	4	Relaxed	1	20	20	6	11	0	21	Bug	42	♀
-9990	4	Mild	1	4	31	8	24	21	1	Grass	31	♀
-10466	4	Jolly	1	23	6	1	24	28	12	Flying	31	♀
-10516	4	Brave	0	5	27	23	23	8	13	Steel	43	♀
-10650	4	Mild	1	27	4	3	31	6	25	Ghost	63	♀
-10704	4	Rash	1	21	1	4	7	1	20	Psychic	40	♂
-10765	4	Jolly	0	10	31	0	2	25	14	Fire	47	♂
-10940	4	Relaxed	1	12	5	27	2	21	24	Water	42	♀
-11279	4	Quiet	1	14	7	17	14	21	17	Grass	42	♀
-11437	4	Mild	0	19	26	29	5	29	24	Psychic	31	♂
-11541	4	Careful	1	20	15	22	31	28	15	Ghost	49	♀
-11646	4	Modest	1	0	10	3	25	10	19	Ghost	59	♀
-11945	4	Gentle	0	16	30	9	21	7	5	Dragon	51	♂
-12016	4	Calm	0	23	21	24	28	31	1	Grass	50	♀
-12432	4	Timid	1	22	6	5	7	28	28	Rock	42	♂
-12490	4	Lonely	0	30	24	23	13	26	8	Rock	53	♀
-12833	4	Impish	1	27	29	14	8	9	26	Fire	38	♂
-12892	4	Brave	0	29	16	15	19	25	11	Dragon	47	♀
-13335	4	Jolly	0	13	31	24	16	15	11	Grass	56	♀
-13597	4	Calm	0	5	26	21	16	20	14	Flying	36	♂
-13625	4	Quirky	1	19	12	1	29	3	4	Psychic	50	♀
-13706	4	Quirky	0	18	19	10	31	0	16	Rock	44	♀
-13847	4	Impish	0	4	11	27	10	27	0	Water	64	♀
-14961	4	Hardy	0	7	13	30	23	24	4	Rock	43	♀
+Frame	Nature	Ability	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
+874	Jolly	1	29	5	31	8	25	16	Water	32	♂
+1324	Bashful	0	15	2	5	31	11	2	Psychic	67	♀
+1497	Naive	0	16	27	18	19	17	30	Elect.	49	♀
+1509	Lax	0	23	4	23	8	22	13	Ground	53	♀
+1555	Hardy	0	26	26	27	25	17	8	Psychic	34	♀
+1863	Quiet	0	5	10	0	31	5	4	Elect.	41	♀
+2194	Impish	0	22	27	6	10	24	11	Poison	49	♀
+3206	Jolly	1	4	22	5	14	18	3	Poison	66	♀
+3524	Adamant	1	12	1	22	0	15	10	Fire	57	♂
+3580	Sassy	0	12	10	7	4	23	11	Grass	59	♂
+3625	Naive	1	21	19	3	31	14	8	Bug	64	♂
+4171	Rash	1	0	6	14	11	11	3	Ice	69	♂
+4238	Serious	1	10	4	28	30	20	16	Fight.	40	♀
+4241	Docile	1	8	2	31	21	4	12	Rock	33	♂
+5027	Mild	1	20	25	18	19	11	18	Elect.	68	♂
+5905	Docile	0	10	29	0	21	24	28	Rock	30	♂
+5992	Calm	1	27	26	22	15	3	29	Ice	64	♂
+6157	Lax	1	13	24	16	10	25	25	Water	40	♂
+6258	Lonely	1	13	18	1	11	19	14	Psychic	66	♂
+6452	Docile	1	23	25	1	11	27	2	Ice	66	♂
+7104	Bashful	1	7	26	25	18	25	17	Grass	42	♀
+7181	Jolly	0	18	22	11	21	28	16	Rock	34	♂
+7282	Serious	1	24	25	16	11	26	21	Ghost	60	♂
+7514	Jolly	0	25	19	18	11	28	28	Rock	43	♂
+8688	Quiet	1	22	2	3	6	14	10	Fight.	70	♂
+8740	Timid	1	18	18	23	19	10	14	Rock	70	♂
+9110	Serious	1	28	1	28	17	8	10	Rock	35	♂
+9190	Brave	1	21	13	18	3	2	5	Ghost	63	♂
+9232	Lax	0	8	22	30	16	31	17	Water	54	♀
+9527	Sassy	1	24	26	19	31	12	23	Ghost	49	♂
+9815	Quirky	1	9	6	13	5	30	7	Ghost	56	♂
+9954	Relaxed	1	20	20	6	11	0	21	Bug	42	♀
+9990	Mild	1	4	31	8	24	21	1	Grass	31	♀
+10466	Jolly	1	23	6	1	24	28	12	Flying	31	♀
+10516	Brave	0	5	27	23	23	8	13	Steel	43	♀
+10650	Mild	1	27	4	3	31	6	25	Ghost	63	♀
+10704	Rash	1	21	1	4	7	1	20	Psychic	40	♂
+10765	Jolly	0	10	31	0	2	25	14	Fire	47	♂
+10940	Relaxed	1	12	5	27	2	21	24	Water	42	♀
+11279	Quiet	1	14	7	17	14	21	17	Grass	42	♀
+11437	Mild	0	19	26	29	5	29	24	Psychic	31	♂
+11541	Careful	1	20	15	22	31	28	15	Ghost	49	♀
+11646	Modest	1	0	10	3	25	10	19	Ghost	59	♀
+11945	Gentle	0	16	30	9	21	7	5	Dragon	51	♂
+12016	Calm	0	23	21	24	28	31	1	Grass	50	♀
+12432	Timid	1	22	6	5	7	28	28	Rock	42	♂
+12490	Lonely	0	30	24	23	13	26	8	Rock	53	♀
+12833	Impish	1	27	29	14	8	9	26	Fire	38	♂
+12892	Brave	0	29	16	15	19	25	11	Dragon	47	♀
+13335	Jolly	0	13	31	24	16	15	11	Grass	56	♀
+13597	Calm	0	5	26	21	16	20	14	Flying	36	♂
+13625	Quirky	1	19	12	1	29	3	4	Psychic	50	♀
+13706	Quirky	0	18	19	10	31	0	16	Rock	44	♀
+13847	Impish	0	4	11	27	10	27	0	Water	64	♀
+14961	Hardy	0	7	13	30	23	24	4	Rock	43	♀
