@@ -1,3 +1,18 @@
 1) Keen Eye (also Intimidate?):
 
--It seems like the "prevention" effect might also be a Pokemon change for a given frame. However, more research is needed for this to be 100% confirmed.
+-It seems like the "prevention" effect might also be a Pokemon change for a given frame. However, more research is needed for this to be 100% confirmed. 
+-The changed encounters so far include:
+
+---------------
+1.1. Route 116:
+--------------- 
+-Frame 876 becomes Abra instead of Nincada. 
+
+---------------
+1.2. Route 102:
+---------------
+-Frame 950 becomes Ralts instead of Pooch.
+-Frame 1203 becomes Lotad instead of Wurmple.
+-Frame 1521 becomes Ralts instead of Wurmple.
+
+This could indicate that abilities that alter encounters can also alter the encounter frames for grass/cave/surf/fishing encounters.
