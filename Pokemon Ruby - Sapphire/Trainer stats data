@@ -1,8 +1,8 @@
 Early version. I'm focusing on the stats (HP, Atk, etc.) of the most important trainers in Ruby/Sapphire. Trainers with different Pokémon,
 mainly Team Magma/Aqua fights, as well as Rival fights are written separately at the end of the document
 
-|Trainer	      |		Species			|Lv	|HP	|Atk	|Def	|SpA	|SpD	|Spe|
-|---------------------|---------------------------------|-------|-------|-------|-------|-------|-------|---|
+Trainer	      		Species			Lv	HP	Atk	Def	SpA	SpD	Spe
+---------------------------------------------------------------------------------------------------
 Bug Catcher Jose	Wurmple	                8	25	13	11	8	9	8
 	                Silcoon	                8	26	11	12	9	9	7
 	                Nincada	                8	23	12	19	11	10	9
