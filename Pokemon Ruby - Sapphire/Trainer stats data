@@ -1,0 +1,80 @@
+Early version. I'm focusing on the stats (HP, Atk, etc.) of the most important trainers in Ruby/Sapphire.
+
+Trainer			Species			Lv	HP	Atk	Def	SpA	SpD	Spe
+----------------------------------------------------------------------------------------------------
+Aqua=Magma Grunt (PW)	Poochyena		9	25	15	11	10	10	9
+Aqua=Magma Grunt (RT)	Poochyena		11	28	18	12	11	11	10
+Roxanne			Geodude			14	37	29	35	15	15	13
+			Nosepass		15	37	19	49	24	35	17
+Brawly			Machop			17	53	35	25	19	19	19
+			Makuhita		18	58	30	20	16	18	19
+May 2			Wailmer			18	75	31	18	31	18	27
+			Numel			18	50	29	20	29	22	16
+			Grovyle			20	52	29	25	41	36	45
+Brendan 2		Wailmer			18	75	31	18	34	16	27
+			Shroomish		18	50	20	27	22	27	16
+			Combusken		20	56	41	31	41	27	31
+Wally			Ralts			16	35	14	13	19	14	18
+Wattson			Magnemite		22	48	25	36	52	34	33
+			Voltorb			20	50	21	29	31	31	49
+			Magneton		23	62	42	55	67	44	39
+Archie			Mightyena		24	71	57	42	38	38	37
+			Golbat			24	74	47	42	40	45	52
+			Sharpedo		25	74	75	29	57	26	57
+Maxie			Mightyena		24	71	52	46	38	34	42
+			Golbat			24	74	47	42	40	40	57
+			Camerupt		25	74	59	39	68	47	29
+Flannery		Slugma			26	63	35	32	47	32	18
+			Slugma			26	63	32	35	47	28	21
+			Torkoal			28	85	61	81	61	57	24
+Norman			Slaking			28	128	101	73	64	48	60
+			Vigoroth		30	95	54	60	49	45	66
+			Slaking			31	143	113	68	73	54	83
+May 3			Numel			29	77	43	31	46	37	25
+			Wailmer			29	117	53	28	49	28	38
+			Grovyle			31	77	45	38	63	55	63
+Brendan 3		Wailmer		        29	117	49	28	53	25	43
+			Shroomish		29	77	31	43	34	43	25
+			Combusken		31	83	63	47	63	42	48
+Winona			Swellow			31	85	65	49	38	43	97
+			Pelipper		30	83	42	72	63	54	51
+			Skarmory		32	91	63	102	38	57	57
+			Altaria			33	102	61	66	61	84	73
+Tate & Liza		Solrock			42	123	97	89	63	72	76
+			Lunatone		42	123	56	79	97	89	76
+Wallace			Luvdisc			40	94	38	58	50	66	82
+			Sealeo			40	131	62	70	74	70	50
+			Whiscash		42	154	80	76	78	66	71
+			Seaking			42	129	92	69	82	69	72
+			Milotic			43	147	62	85	103	137	87
+Wally (VR)		Altaria			44	127	74	92	66	105	91
+			Roselia			44	105	71	52	90	83	70
+			Magneton		41	99	61	99	99	69	69
+			Delcatty		43	120	68	68	60	60	72
+			Gardevoir		45	129	77	77	131	109	99
+Sidney			Mightyena		46	134	101	83	81	66	83
+			Shiftry			48	158	115	77	94	77	105
+			Cacturne		46	134	136	74	111	74	69
+			Sharpedo		48	139	134	57	110	57	110
+			Absol			49	137	147	78	93	78	93
+Phoebe			Dusclops		48	110	94	144	77	129	43
+			Banette			49	136	118	83	101	89	83
+			Sableye			50	125	95	95	76	93	70
+			Banette			49	136	132	83	101	72	91
+			Dusclops		51	117	92	153	73	168	46
+Glacia			Glalie			50	155	100	90	100	100	110
+			Sealeo			50	165	80	90	95	90	65
+			Sealeo			52	171	83	93	98	93	67
+			Glalie			52	160	103	92	113	103	103
+			Walrein			53	196	106	116	122	104	99
+Drake			Shelgon			52	145	119	124	91	72	64
+			Altaria			54	161	86	118	105	134	107
+			Flygon			53	163	126	105	105	105	126
+			Flygon			53	163	126	115	94	105	126
+			Salamence		55	186	187	110	143	99	132
+Steven			Skarmory		57	158	101	181	74	102	102
+			Claydol			55	148	89	137	108	154	104
+			Aggron			56	161	145	223	89	80	85
+			Armaldo			56	167	162	120	110	111	72
+			Cradily			56	179	113	131	113	127	77
+			Metagross		58	178	179	173	133	127	104
