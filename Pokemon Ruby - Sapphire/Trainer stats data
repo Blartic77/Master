@@ -179,10 +179,49 @@ May 2			Wailmer			18	75	31	18	31	18	27
 
 May 3			Numel			29	77	43	31	46	37	25
 			Wailmer			29	117	53	28	49	28	38
-			Grovyle			31	77	45	38	63	55	63
-	
+			Grovyle			31	77	45	38	63	55	69
+
+May 4                   Swellow	                31	83	63	47	41	41	88
+	                Wailmer                	32	130	55	33	55	33	49
+	                Numel                	32	86	44	36	52	42	33
+	                Grovyle	                34	86	57	43	70	57	77
+
+
+Brendan                 Treecko	                5	19	8	8	11	11	12
+
+Brendan 2 	        Numel              	18	50	27	18	31	22	18
+	                Wailmer	                18	75	31	18	31	18	27
+	                Grovyle	                20	52	29	25	41	36	45
+			
+Brendan 3              	Numel	                29	77	43	27	50	34	28
+	                Wailmer          	29	117	49	28	49	28	43
+	                Grovyle          	31	77	45	38	63	55	69
+			
+Brendan 4          	Swellow	                31	83	63	47	41	41	88
+	                Numel                   32	86	49	36	57	39	29
+	                Wailmer	                32	130	55	33	55	33	49
+	                Grovyle	                34	86	57	38	70	62	77
+
 	
 2) If your starter was Treecko:
+
+May 	                Torchic	                5	19	9	9	12	11	9
+
+May 2 	                Wailmer	                18	75	31	18	31	18	27
+	                Shroomish	        18	50	18	27	20	29	18
+	                Combusken	        20	56	41	31	41	27	31
+
+May 3	                Wailmer	                29	117	49	28	49	28	43
+	                Shroomish	        29	77	27	43	31	47	28
+	                Combusken	        31	83	63	47	63	42	48
+
+May 4                   Swellow	                31	83	63	47	41	41	88
+	                Wailmer	                32	130	55	33	49	36	49
+	                Shroomish	        32	86	36	49	36	49	33
+	                Combusken	        34	92	70	53	70	53	50
+
+
+Brendan 	        Torchic	                5	19	11	9	12	9	9
 
 Brendan 2		Wailmer			18	75	31	18	34	16	27
 			Shroomish		18	50	20	27	22	27	16
@@ -191,8 +230,13 @@ Brendan 2		Wailmer			18	75	31	18	34	16	27
 Brendan 3		Wailmer		        29	117	49	28	53	25	43
 			Shroomish		29	77	31	43	34	43	25
 			Combusken		31	83	63	47	63	42	48
-	
-	
+
+Brendan 4 	        Swellow	                31	83	63	47	41	41	88
+	                Shroomish	        32	86	36	49	36	49	33
+	                Wailmer	                32	130	49	33	55	36	49
+	                Combusken	        34	92	63	53	77	53	50
+             
+
 3) If your starter was Torchic:
 
 May			Mudkip			5	20	12	10	11	10	8
@@ -209,3 +253,19 @@ May 4         	        Swellow	                31	83	63	47	41	41	88
 	                Shroomish	        32	86	36	49	32	49	36
 	                Numel	                32	86	44	36	57	39	33
 	                Marshtomp	        34	99	77	60	53	54	47
+
+
+Brendan          	Mudkip	                5	20	12	9	10	10	9
+
+Brendan 2               Shroomish	        18	50	20	29	20	24	18
+	                Numel	                18	50	27	20	29	19	19
+	                Marshtomp	        20	60	41	35	31	35	27
+	
+Brendan 3               Shroomish	        29	77	31	47	31	38	28
+	                Numel	                29	77	43	31	46	30	30
+	                Marshtomp	        31	89	63	53	47	53	41
+	
+Brendan 4               Swellow	                31	83	63	47	41	41	88
+	                Shroomish	        32	86	32	49	36	49	36
+	                Numel	                32	86	44	36	57	39	33
+	                Marshtomp	        34	99	70	66	53	60	42
