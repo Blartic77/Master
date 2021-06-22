@@ -1,0 +1,772 @@
+Early version. Gives the stats of the most relevant trainers in a way it's easy to copy + paste into Showdown's calculator for quick, easy damage calculations.
+
+Roxanne:
+--------
+Geodude
+Level: 12
+Hardy Nature
+Ability: Rock Head
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Defense Curl
+- Rock Throw
+- Rock Tomb
+
+Geodude
+Level: 12
+Quiet Nature
+Ability: Rock Head
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Defense Curl
+- Rock Throw
+- Rock Tomb
+
+Nosepass @ Oran Berry
+Level: 15
+Lonely Nature
+Ability: Sturdy
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Tackle
+- Harden
+- Block
+- Rock Tomb
+
+
+Brawly:
+-------
+Machop
+Level: 16
+Hardy Nature
+Ability: Guts
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Karate Chop
+- Low Kick
+- Seismic Toss
+- Bulk Up
+
+Meditite
+Level: 16
+Calm Nature
+Ability: Pure Power
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Focus Punch
+- Light Screen
+- Reflect
+- Bulk Up
+
+Makuhita
+Level: 19
+Lax Nature
+Ability: Thick Fat
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Vital Throw
+- Arm Thrust
+- Reversal
+- Bulk Up
+
+
+Wattson:
+--------
+Voltorb
+Level: 20
+Hardy Nature
+Ability: Soundproof
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Spark
+- Shock Wave
+- Rollout
+- Self-Destruct
+
+Electrike
+Level: 20
+Hardy Nature
+Ability: Static
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Leer
+- Howl
+- Quick Attack
+- Shock Wave
+
+Magneton
+Level: 22
+Impish Nature
+Ability: Magnet Pull
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Shock Wave
+- Sonic Boom
+- Thunder Wave
+- Supersonic
+
+Manectric
+Level: 24
+Brave Nature
+Ability: Static
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Shock Wave
+- Quick Attack
+- Howl
+- Thunder Wave
+
+
+Maxie:
+------
+Mightyena
+Level: 24
+Lax Nature
+Ability: Intimidate
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Bite
+- Roar
+- Sand Attack
+- Odor Sleuth
+
+Zubat
+Level: 24
+Lonely Nature
+Ability: Inner Focus
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Wing Attack
+- Bite
+- Astonish
+- Supersonic
+
+Camerupt
+Level: 25
+Adamant Nature
+Ability: Magma Armor
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Magnitude
+- Ember
+- Tackle
+- Focus Energy
+
+
+Flannery:
+---------
+Numel
+Level: 24
+Jolly Nature
+Ability: Oblivious
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Overheat
+- Magnitude
+- Take Down
+- Sunny Day
+
+Slugma
+Level: 24
+Calm Nature
+Ability: Magma Armor
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Overheat
+- Smog
+- Light Screen
+- Sunny Day
+
+Camerupt
+Level: 26
+Adamant Nature
+Ability: Magma Armor
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Overheat
+- Tackle
+- Attract
+- Sunny Day
+
+Torkoal @ White Herb
+Level: 29
+Modest Nature
+Ability: White Smoke
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Overheat
+- Body Slam
+- Attract
+- Sunny Day
+
+
+Norman:
+-------
+Spinda
+Level: 27
+Hardy Nature
+Ability: Own Tempo
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Facade
+- Psybeam
+- Teeter Dance
+- Encore
+
+Vigoroth
+Level: 27
+Naive Nature
+Ability: Vital Spirit
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Slash
+- Facade
+- Feint Attack
+- Encore
+
+Linoone
+Level: 29
+Lonely Nature
+Ability: Pickup
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Facade
+- Slash
+- Headbutt
+- Belly Drum
+
+Slaking @ Sitrus Berry
+Level: 31
+Sassy Nature
+Ability: Truant
+- Facade
+- Feint Attack
+- Counter
+- Yawn
+
+
+Winona:
+-------
+Swablu
+Level: 29
+Hasty Nature
+Ability: Natural Cure
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Aerial Ace
+- Perish Song
+- Mirror Move
+- Safeguard
+
+Tropius
+Level: 29
+Impish Nature
+Ability: Chlorophyll
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Solar Beam
+- Aerial Ace
+- Synthesis
+- Sunny Day
+
+Pelipper
+Level: 30
+Calm Nature
+Ability: Keen Eye
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Water Gun
+- Aerial Ace
+- Protect
+- Supersonic
+
+Skarmory
+Level: 31
+Calm Nature
+Ability: Keen Eye
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Aerial Ace
+- Steel Wing
+- Sand Attack
+- Fury Attack
+
+Altaria @ Oran Berry
+Level: 33
+Hardy Nature
+Ability: Natural Cure
+- Dragon Breath
+- Earthquake
+- Aerial Ace
+- Dragon Dance
+
+
+Maxie 2:
+--------
+Mightyena
+Level: 37
+Lax Nature
+Ability: Intimidate
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Roar
+- Swagger
+- Scary Face
+
+Crobat
+Level: 38
+Lonely Nature
+Ability: Inner Focus
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Wing Attack
+- Air Cutter
+- Confuse Ray
+- Bite
+
+Camerupt
+Level: 39
+Adamant Nature
+Ability: Magma Armor
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Earthquake
+- Rock Slide
+- Take Down
+- Amnesia
+
+
+Tate and Liza:
+--------------
+Claydol
+Level: 41
+Lax Nature
+Ability: Levitate
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Earthquake
+- Ancient Power
+- Psychic
+- Light Screen
+
+Xatu
+Level: 41
+Hardy Nature
+Ability: Synchronize
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Psychic
+- Sunny Day
+- Calm Mind
+- Confuse Ray
+
+Lunatone
+Level: 42
+Impish Nature
+Ability: Levitate
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Psychic
+- Hypnosis
+- Calm Mind
+- Light Screen
+
+Solrock
+Level: 42
+Modest Nature
+Ability: Levitate
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Psychic
+- Flamethrower
+- Solar Beam
+- Sunny Day
+
+
+Maxie 3:
+--------
+Mightyena
+Level: 42
+Lax Nature
+Ability: Intimidate
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Taunt
+- Swagger
+- Scary Face
+
+Crobat
+Level: 43
+Lonely Nature
+Ability: Inner Focus
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Wing Attack
+- Air Cutter
+- Confuse Ray
+- Mean Look
+
+Camerupt
+Level: 44
+Adamant Nature
+Ability: Magma Armor
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Earthquake
+- Rock Slide
+- Take Down
+- Amnesia
+
+
+Tabitha 3:
+----------
+Camerupt
+Level: 36
+Hardy Nature
+Ability: Magma Armor
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Rock Slide
+- Take Down
+- Amnesia
+- Focus Energy
+
+Mightyena
+Level: 38
+Impish Nature
+Ability: Intimidate
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Take Down
+- Swagger
+- Scary Face
+- Roar
+
+Golbat
+Level: 40
+Hardy Nature
+Ability: Inner Focus
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Wing Attack
+- Air Cutter
+- Bite
+- Confuse Ray
+
+
+Archie:
+-------
+Mightyena
+Level: 41
+Brave Nature
+Ability: Intimidate
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Take Down
+- Roar
+- Swagger
+- Scary Face
+
+Crobat
+Level: 41
+Bashful Nature
+Ability: Inner Focus
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Wing Attack
+- Air Cutter
+- Confuse Ray
+- Bite
+
+Sharpedo
+Level: 43
+Mild Nature
+Ability: Rough Skin
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Slash
+- Swagger
+- Taunt
+- Screech
+
+
+Juan:
+-----
+Luvdisc
+Level: 41
+Adamant Nature
+Ability: Swift Swim
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Water Pulse
+- Sweet Kiss
+- Attract
+- Flail
+
+Sealeo
+Level: 43
+Naive Nature
+Ability: Thick Fat
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Aurora Beam
+- Body Slam
+- Water Pulse
+- Encore
+
+Whiscash
+Level: 41
+Hasty Nature
+Ability: Oblivious
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Earthquake
+- Water Pulse
+- Amnesia
+- Rain Dance
+
+Crawdaunt
+Level: 43
+Adamant Nature
+Ability: Hyper Cutter
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Water Pulse
+- Crabhammer
+- Taunt
+- Leer
+
+Kingdra @ Chesto Berry
+Level: 46
+Naive Nature
+Ability: Swift Swim
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Water Pulse
+- Ice Beam
+- Double Team
+- Rest
+
+
+Sidney:
+-------
+Mightyena
+Level: 46
+Rash Nature
+Ability: Intimidate
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Double-Edge
+- Crunch
+- Sand Attack
+- Roar
+
+Shiftry
+Level: 48
+Jolly Nature
+Ability: Chlorophyll
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Extrasensory
+- Double Team
+- Swagger
+- Torment
+
+Cacturne
+Level: 46
+Adamant Nature
+Ability: Sand Veil
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Needle Arm
+- Feint Attack
+- Cotton Spore
+- Leech Seed
+
+Crawdaunt
+Level: 48
+Naughty Nature
+Ability: Hyper Cutter
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Facade
+- Strength
+- Surf
+- Swords Dance
+
+Absol @ Sitrus Berry
+Level: 49
+Bold Nature
+Ability: Pressure
+- Aerial Ace
+- Rock Slide
+- Slash
+- Swords Dance
+
+
+Phoebe:
+-------
+Dusclops
+Level: 48
+Naughty Nature
+Ability: Pressure
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Shadow Punch
+- Protect
+- Confuse Ray
+- Curse
+
+Banette
+Level: 49
+Calm Nature
+Ability: Insomnia
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Shadow Ball
+- Feint Attack
+- Will-O-Wisp
+- Grudge
+
+Sableye
+Level: 50
+Careful Nature
+Ability: Keen Eye
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Shadow Ball
+- Feint Attack
+- Night Shade
+- Double Team
+
+Banette
+Level: 49
+Naive Nature
+Ability: Insomnia
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Shadow Ball
+- Psychic
+- Thunderbolt
+- Facade
+
+Dusclops @ Sitrus Berry
+Level: 51
+Careful Nature
+Ability: Pressure
+- Shadow Ball
+- Earthquake
+- Ice Beam
+- Rock Slide
+
+
+Glacia:
+-------
+Sealeo
+Level: 50
+Brave Nature
+Ability: Thick Fat
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Body Slam
+- Ice Ball
+- Attract
+- Hail
+
+Glalie
+Level: 50
+Hardy Nature
+Ability: Inner Focus
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Ice Beam
+- Icy Wind
+- Crunch
+- Light Screen
+
+Sealeo
+Level: 52
+Bashful Nature
+Ability: Thick Fat
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Body Slam
+- Blizzard
+- Attract
+- Hail
+
+Glalie
+Level: 52
+Gentle Nature
+Ability: Inner Focus
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Ice Beam
+- Shadow Ball
+- Explosion
+- Hail
+
+Walrein @ Sitrus Berry
+Level: 53
+Naive Nature
+Ability: Thick Fat
+- Surf
+- Ice Beam
+- Body Slam
+- Sheer Cold
+
+
+Drake:
+------
+Shelgon
+Level: 52
+Quiet Nature
+Ability: Rock Head
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Rock Tomb
+- Double-Edge
+- Dragon Claw
+- Protect
+
+Altaria
+Level: 54
+Modest Nature
+Ability: Natural Cure
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Aerial Ace
+- Double-Edge
+- Dragon Breath
+- Dragon Dance
+
+Kingdra
+Level: 53
+Hardy Nature
+Ability: Swift Swim
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Surf
+- Body Slam
+- Dragon Dance
+- Smokescreen
+
+Flygon
+Level: 53
+Lax Nature
+Ability: Levitate
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Earthquake
+- Dragon Breath
+- Crunch
+- Flamethrower
+
+Salamence @ Sitrus Berry
+Level: 55
+Bold Nature
+Ability: Intimidate
+- Dragon Claw
+- Flamethrower
+- Crunch
+- Rock Slide
+
+
+Champion:
+---------
+Wailord
+Level: 57
+Rash Nature
+Ability: Water Veil
+- Water Spout
+- Blizzard
+- Double-Edge
+- Rain Dance
+
+Tentacruel
+Level: 55
+Sassy Nature
+Ability: Clear Body
+- Hydro Pump
+- Ice Beam
+- Sludge Bomb
+- Toxic
+
+Whiscash
+Level: 56
+Sassy Nature
+Ability: Oblivious
+- Surf
+- Earthquake
+- Hyper Beam
+- Amnesia
+
+Ludicolo
+Level: 56
+Hardy Nature
+Ability: Swift Swim
+- Surf
+- Giga Drain
+- Double Team
+- Leech Seed
+
+Gyarados
+Level: 56
+Rash Nature
+Ability: Intimidate
+- Earthquake
+- Hyper Beam
+- Surf
+- Dragon Dance
+
+Milotic @ Sitrus Berry
+Level: 58
+Gentle Nature
+Ability: Marvel Scale
+- Surf
+- Ice Beam
+- Toxic
+- Recover
