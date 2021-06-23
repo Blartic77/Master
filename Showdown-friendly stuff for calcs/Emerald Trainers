@@ -817,7 +817,7 @@ Slugma
 Level: 18
 Naughty Nature
 Ability: Magma Armor
-IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Ember
 - Yawn
 - Smog
@@ -931,7 +931,7 @@ Wingull
 Level: 18
 Brave Nature
 Ability: Keen Eye
-IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Water Gun
 - Wing Attack
 - Supersonic
@@ -941,7 +941,7 @@ Slugma
 Level: 18
 Hardy Nature
 Ability: Magma Armor
-IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Ember
 - Yawn
 - Smog
@@ -1032,4 +1032,150 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Pursuit
 - Fury Cutter
 - Screech
+
+
+3) If you picked Treecko:
+
+3.1. If you picked the boy:
+
++May
+
+Torchic
+Level: 5
+Calm Nature
+Ability: Blaze
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Growl
+
+
++May2
+
+Wingull
+Level: 18
+Brave Nature
+Ability: Keen Eye
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Supersonic
+- Growl
+
+Lombre
+Level: 18
+Calm Nature
+Ability: Swift Swim
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Absorb
+- Nature Power
+- Astonish
+- Growl
+
+Combusken
+Level: 20
+Naive Nature
+Ability: Blaze
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Ember
+- Double Kick
+- Focus Energy
+- Peck
+
+
++May3
+
+Pelipper
+Level: 29
+Hardy Nature
+Ability: Keen Eye
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Wing Attack
+- Supersonic
+- Mist
+- Protect
+
+Lombre
+Level: 29
+Bold Nature
+Ability: Swift Swim
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Absorb
+- Nature Power
+- Fake Out
+- Fury Swipes
+
+Combusken
+Level: 31
+Hardy Nature
+Ability: Blaze
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Double Kick
+- Peck
+- Sand Attack
+- Bulk Up
+
+
++May4
+
+Tropius
+Level: 31
+Sassy Nature
+Ability: Chlorophyll
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Stomp
+- Magical Leaf
+- Sweet Scent
+- Whirlwind
+
+Pelipper
+Level: 32
+Naive Nature
+Ability: Keen Eye
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Wing Attack
+- Supersonic
+- Mist
+- Protect
+
+Ludicolo
+Level: 32
+Calm Nature
+Ability: Swift Swim
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Absorb
+- Nature Power
+- Astonish
+- Growl
+
+Combusken
+Level: 34
+Naive Nature
+Ability: Blaze
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Peck
+- Sand Attack
+- Bulk Up
+- Quick Attack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
