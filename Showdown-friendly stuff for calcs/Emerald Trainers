@@ -269,7 +269,7 @@ Skarmory
 Level: 31
 Calm Nature
 Ability: Keen Eye
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Aerial Ace
 - Steel Wing
 - Sand Attack
@@ -277,7 +277,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 Altaria @ Oran Berry
 Level: 33
-Hardy Nature
+Docile Nature
 Ability: Natural Cure
 - Dragon Breath
 - Earthquake
@@ -867,7 +867,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Mud Sport
 
 
-+May4
++May 4
 
 Tropius
 Level: 31
@@ -910,6 +910,129 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Mud Sport
 
 
+1.2. If you picked the girl:
+
++Brendan
+
+Mudkip
+Level: 5
+Hasty Nature
+Ability: Torrent
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Growl
+
+
++Brendan 2
+
+Lombre
+Level: 18
+Relaxed Nature
+Ability: Swift Swim
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Absorb
+- Nature Power
+- Astonish
+- Growl
+
+Slugma
+Level: 18
+Lonely Nature
+Ability: Magma Armor
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Ember
+- Yawn
+- Smog
+- Rock Throw
+
+Marshtomp
+Level: 20
+Bashful Nature
+Ability: Torrent
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Water Gun
+- Mud Shot
+- Bide
+- Foresight
+
+
++Brendan 3
+
+Lombre
+Level: 29
+Relaxed Nature
+Ability: Swift Swim
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Absorb
+- Fury Swipes
+- Nature Power
+- Fake Out
+
+Slugma
+Level: 29
+Lonely Nature
+Ability: Magma Armor
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Ember
+- Rock Throw
+- Harden
+- Amnesia
+
+Marshtomp
+Level: 31
+Bashful Nature
+Ability: Torrent
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Mud Shot
+- Take Down
+- Foresight
+- Mud Sport
+
+
++Brendan 4
+
+Tropius
+Level: 31
+Mild Nature
+Ability: Chlorophyll
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Stomp
+- Magical Leaf
+- Sweet Scent
+- Whirlwind
+
+Slugma
+Level: 32
+Rash Nature
+Ability: Magma Armor
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Ember
+- Rock Throw
+- Harden
+- Amnesia
+
+Ludicolo
+Level: 32
+Hardy Nature
+Ability: Swift Swim
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Absorb
+- Nature Power
+- Astonish
+- Growl
+
+Marshtomp
+Level: 34
+Hasty Nature
+Ability: Torrent
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Mud Shot
+- Take Down
+- Foresight
+- Mud Sport
+
+
+
 2) If you picked Mudkip:
 
 2.1. If you picked the boy:
@@ -925,7 +1048,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leer
 
 
-+May2
++May 2
 
 Wingull
 Level: 18
@@ -958,7 +1081,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fury Cutter
 
 
-+May3
++May 3
 
 Slugma
 Level: 29
@@ -1034,6 +1157,128 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Screech
 
 
+2.2. If you picked the girl:
+
++Brendan
+
+Treecko
+Level: 5
+Calm Nature
+Ability: Overgrow
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pound
+- Leer
+
+
++Brendan 2
+
+Slugma
+Level: 18
+Bold Nature
+Ability: Magma Armor
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Ember
+- Yawn
+- Smog
+- Rock Throw
+
+Wingull
+Level: 18
+Modest Nature
+Ability: Keen Eye
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Supersonic
+- Growl
+
+Grovyle
+Level: 20
+Hasty Nature
+Ability: Overgrow
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Absorb
+- Quick Attack
+- Pursuit
+- Fury Cutter
+
+
++Brendan 3
+
+Slugma
+Level: 29
+Bold Nature
+Ability: Magma Armor
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Ember
+- Rock Throw
+- Harden
+- Amnesia
+
+Pelipper
+Level: 29
+Hardy Nature
+Ability: Keen Eye
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Wing Attack
+- Supersonic
+- Mist
+- Protect
+
+Grovyle
+Level: 31
+Gentle Nature
+Ability: Overgrow
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Fury Cutter
+- Pursuit
+- Leaf Blade
+- Screech
+
+
++Brendan 4:
+
+Tropius
+Level: 31
+Mild Nature
+Ability: Chlorophyll
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Stomp
+- Magical Leaf
+- Sweet Scent
+- Whirlwind
+
+Slugma
+Level: 32
+Timid Nature
+Ability: Magma Armor
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Ember
+- Rock Throw
+- Harden
+- Amnesia
+
+Pelipper
+Level: 32
+Bold Nature
+Ability: Keen Eye
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Wing Attack
+- Supersonic
+- Mist
+- Protect
+
+Grovyle
+Level: 34
+Lonely Nature
+Ability: Overgrow
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Leaf Blade
+- Pursuit
+- Fury Cutter
+- Screech
+
+
 3) If you picked Treecko:
 
 3.1. If you picked the boy:
@@ -1049,7 +1294,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growl
 
 
-+May2
++May 2
 
 Wingull
 Level: 18
@@ -1082,7 +1327,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Peck
 
 
-+May3
++May 3
 
 Pelipper
 Level: 29
@@ -1115,7 +1360,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Bulk Up
 
 
-+May4
++May 4
 
 Tropius
 Level: 31
@@ -1158,24 +1403,123 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Quick Attack
 
 
+3.2. If you picked the girl:
+
++Brendan
+
+Torchic
+Level: 5
+Naive Nature
+Ability: Blaze
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Growl
 
 
++Brendan 2
+
+Wingull
+Level: 18
+Gentle Nature
+Ability: Keen Eye
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Gun
+- Wing Attack
+- Supersonic
+- Growl
+
+Lombre
+Level: 18
+Quiet Nature
+Ability: Swift Swim
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Absorb
+- Nature Power
+- Astonish
+- Growl
+
+Combusken
+Level: 20
+Naive Nature
+Ability: Blaze
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Ember
+- Double Kick
+- Focus Energy
+- Peck
 
 
++Brendan 3
+
+Pelipper
+Level: 29
+Docile Nature
+Ability: Keen Eye
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Wing Attack
+- Supersonic
+- Mist
+- Protect
+
+Lombre
+Level: 29
+Brave Nature
+Ability: Swift Swim
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Absorb
+- Nature Power
+- Fake Out
+- Fury Swipes
+
+Combusken
+Level: 31
+Quirky Nature
+Ability: Blaze
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Double Kick
+- Peck
+- Sand Attack
+- Bulk Up
 
 
++Brendan 4
 
+Tropius
+Level: 31
+Mild Nature
+Ability: Chlorophyll
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Stomp
+- Magical Leaf
+- Sweet Scent
+- Whirlwind
 
+Pelipper
+Level: 32
+Hasty Nature
+Ability: Keen Eye
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Wing Attack
+- Supersonic
+- Mist
+- Protect
 
+Ludicolo
+Level: 32
+Calm Nature
+Ability: Swift Swim
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Absorb
+- Nature Power
+- Astonish
+- Growl
 
-
-
-
-
-
-
-
-
-
-
-
+Combusken
+Level: 34
+Quiet Nature
+Ability: Blaze
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Peck
+- Sand Attack
+- Bulk Up
+- Quick Attack
