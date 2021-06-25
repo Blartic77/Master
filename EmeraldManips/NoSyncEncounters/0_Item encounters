@@ -1,3 +1,27 @@
+To get an item encounter (regardless of spread), you might hit these frames for the item you're looking for 
+(assuming having items are frame/PID specific and not species specific):
+
+1) No special lead:
+-Frame 919, slot 1 -> Aron (Hard Stone), Shuppet (Spell Tag), Magnemite (Metal Coat), Hariyama (King's Rock), Whismur (Chesto Berry), Trapinch (Soft Sand)
+-Frame 1383, slot 0 -> Sandshrew (Quick Claw), Pooch (Pecha Berry)
+
+2) Compound Eyes lead:
+-Frame 856, slot 3 -> Abra (Twisted Spoon)
+-Frame 4883, slot 11 -> Cacnea (Poison Barb), Skitty (Leppa Berry)
+
+
+The locations where this would work would be:
+
+-Route 116: Abra, Poochyena, Whismur, Skitty
+-Granite Cave (B1F & B2F): Aron
+-Route 111 (Desert): Sandshrew, Cacnea, Trapinch
+-Victory Road (1F & B1F): Hariyama
+-New Mauville (any): Magnemite
+-Route 121: Shuppet
+
+
+The testing itself:
+
 Testing was done in Route 116. Frames are Pokefinder's (Method H2). No special leads:
 -------------------------------------------------------------------------------------
 -Frame 919, slot 1 (Whismur, Chesto Berry)
