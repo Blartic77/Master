@@ -1,0 +1,24 @@
+Testing was done in Route 116. Frames are Pokefinder's (Method H2). No special leads:
+-------------------------------------------------------------------------------------
+-Frame 919, slot 1 (Whismur, Chesto Berry)
+-Frame 1383, slot 0 (Pooch, Pecha Berry)
+-Frame 1863, slot 9 (Pooch, Pecha Berry) 
+-Frame 3451, slot 1 (Whismur, Chesto Berry)
+-Frame 4115, slot 0 (Pooch, Pecha Berry)
+-Frame 4596, slot 1 (Whismur, Chesto Berry)
+-Frame 4831, slot 1 (Whismur, Chesto Berry)
+-Frame 6602, slot 1 (Whismur, Chesto Berry)
+-Frame 12518 OR 12566, slot 3, METHOD H4 (Abra, Twisted Spoon)
+
+
+Testing in Route 116 (same as above) with Compound Eyes lead:
+-------------------------------------------------------------
+-Frame 563, slot 0 (Pooch, Pecha Berry)
+-Frame 592, slot 0 (Pooch, Pecha Berry)
+-Frame 734, slot 0, METHOD H4 (Pooch, Pecha Berry)
+-Frame 856, slot 3 (Abra, Twisted Spoon) 
+-Frame 2134 OR 2168 OR 2250, slot 0 (Pooch, Pecha Berry) (frame 2168 is unlikely)
+-Frame 3445 OR 3509 OR 3625, slot 0 OR 8 OR 9 (Pooch, Pecha Berry) (probably frame 3625)
+-Frame 4883, slot 11 (Skitty, Leppa Berry)
+-Frame 8479, slot 0 (Pooch, Pecha Berry)
+-Frame 10956, slot 8 (Pooch, Pecha Berry)
