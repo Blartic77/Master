@@ -1,5 +1,5 @@
 To get an item encounter (regardless of spread), you might hit these frames for the item you're looking for 
-(assuming having items are frame/PID specific and not species specific):
+(assuming having an item is frame/PID specific and not species specific):
 
 1) No special lead:
 -Frame 919, slot 1 -> Aron (Hard Stone), Shuppet (Spell Tag), Magnemite (Metal Coat), Hariyama (King's Rock), Whismur (Chesto Berry), Trapinch (Soft Sand)
@@ -7,7 +7,7 @@ To get an item encounter (regardless of spread), you might hit these frames for 
 
 2) Compound Eyes lead:
 -Frame 856, slot 3 -> Abra (Twisted Spoon)
--Frame 4883, slot 11 -> Cacnea (Poison Barb), Skitty (Leppa Berry)
+-Frame 4883, slot 11 -> Cacnea (Poison Barb), Skitty (Leppa Berry), Kecleon (Persim Berry)
 
 
 The locations where this would work would be:
@@ -46,3 +46,6 @@ Testing in Route 116 (same as above) with Compound Eyes lead:
 -Frame 4883, slot 11 (Skitty, Leppa Berry)
 -Frame 8479, slot 0 (Pooch, Pecha Berry)
 -Frame 10956, slot 8 (Pooch, Pecha Berry)
+
+
+TBA: frames that give Blue/Red/Yellow/Green Shards to get evo stones
