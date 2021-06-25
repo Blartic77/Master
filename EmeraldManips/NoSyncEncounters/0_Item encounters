@@ -8,7 +8,9 @@ To get an item encounter (regardless of spread), you might hit these frames for 
 2) Compound Eyes lead:
 -Frame 856, slot 3 -> Abra (Twisted Spoon)
 -Frame 4883, slot 11 -> Cacnea (Poison Barb), Skitty (Leppa Berry), Kecleon (Persim Berry)
+-Frame 10956, slot 8 -> Pikachu (Light Ball)*, Dodrio (Sharp Beak)*
 
+*: assuming Safari Zone encounter frames match normal grass encounter frames if no Pokéblocks are used
 
 The locations where this would work would be:
 
@@ -18,7 +20,8 @@ The locations where this would work would be:
 -Victory Road (1F & B1F): Hariyama
 -New Mauville (any): Magnemite
 -Route 121: Shuppet, Kecleon
-
+-Safari Zone 1st Area: Pikachu*
+-Safari Zone 3rd Area: Dodrio*
 
 The testing itself:
 
