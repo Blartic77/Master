@@ -3,10 +3,10 @@ To get an item encounter (regardless of spread), you might hit these frames for 
 
 1) No special lead:
 -Frame 919, slot 1 -> Aron (Hard Stone), Shuppet (Spell Tag), Magnemite (Metal Coat), Hariyama (King's Rock), Whismur (Chesto Berry), Trapinch (Soft Sand)
+-Frame 1293, slot 3 -> Abra (Twisted Spoon)
 -Frame 1383, slot 0 -> Sandshrew (Quick Claw), Pooch (Pecha Berry)
 
 2) Compound Eyes lead:
--Frame 856, slot 3 -> Abra (Twisted Spoon)
 -Frame 4883, slot 11 -> Grimer? (Nugget), Cacnea (Poison Barb), Skitty (Leppa Berry), Kecleon (Persim Berry)
 -Frame 10956, slot 8 -> Pikachu (Light Ball)*, Dodrio (Sharp Beak)*
 
@@ -29,6 +29,7 @@ The testing itself:
 Testing was done in Route 116. Frames are Pokefinder's (Method H2). No special leads:
 -------------------------------------------------------------------------------------
 -Frame 919, slot 1 (Whismur, Chesto Berry)
+-Frame 1293, slot 3 (Abra, Twisted Spoon)
 -Frame 1383, slot 0 (Pooch, Pecha Berry)
 -Frame 1863, slot 9 (Pooch, Pecha Berry) 
 -Frame 3451, slot 1 (Whismur, Chesto Berry)
