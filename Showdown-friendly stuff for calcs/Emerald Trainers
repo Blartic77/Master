@@ -931,6 +931,28 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growl
 
 
++May (Rustboro/Route 104):
+
+Torkoal
+Level: 13
+Mild Nature
+Ability: White Smoke
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Ember
+- Smog
+- Curse
+
+Mudkip
+Level: 15
+Jolly Nature
+Ability: Torrent
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Water Gun
+- Mud-Slap
+- Growl
+- Bide
+
+
 +May 2
 
 Lombre
@@ -1051,6 +1073,28 @@ Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Growl
+
+
++Brendan (Rustboro/Route 104)
+
+Slugma
+Level: 13
+Bold Nature
+Ability: Magma Armor
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Ember
+- Smog
+- Yawn
+
+Mudkip
+Level: 15
+Bold Nature
+Ability: Torrent
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Water Gun
+- Mud-Slap
+- Growl
+- Bide
 
 
 +Brendan 2
@@ -1178,6 +1222,29 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leer
 
 
++May (Rustboro)
+
+Wingull
+Level: 13
+Brave Nature
+Ability: Keen Eye
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Water Gun
+- Growl
+- Supersonic
+- Wing Attack
+
+Treecko
+Level: 15
+Impish Nature
+Ability: Overgrow
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Pound
+- Leer
+- Absorb
+- Quick Attack
+
+
 +May 2
 
 Wingull
@@ -1298,6 +1365,29 @@ Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pound
 - Leer
+
+
++Brendan (Rustboro/Route 104):
+
+Wingull
+Level: 13
+Calm Nature
+Ability: Keen Eye
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Water Gun
+- Growl
+- Supersonic
+- Wing Attack
+
+Treecko
+Level: 15
+Bold Nature
+Ability: Overgrow
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Pound
+- Leer
+- Absorb
+- Quick Attack
 
 
 +Brendan 2
@@ -1424,6 +1514,29 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growl
 
 
++May (Rustboro/Route 104)
+
+Lotad
+Level: 13
+Rash Nature
+Ability: Swift Swim
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Astonish
+- Growl
+- Absorb
+- Swift
+
+Torchic
+Level: 15
+Rash Nature
+Ability: Blaze
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Scratch
+- Growl
+- Focus Energy
+- Ember
+
+
 +May 2
 
 Wingull
@@ -1544,6 +1657,29 @@ Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
 - Growl
+
+
++Brendan (Rustboro/Route 104)
+
+Lotad
+Level: 13
+Jolly Nature
+Ability: Swift Swim
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Astonish
+- Growl
+- Absorb
+- Swift
+
+Torchic
+Level: 15
+Mild Nature
+Ability: Blaze
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+- Scratch
+- Growl
+- Focus Energy
+- Ember
 
 
 +Brendan 2
