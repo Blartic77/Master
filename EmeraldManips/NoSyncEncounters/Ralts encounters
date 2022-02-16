@@ -1,5 +1,5 @@
-Possible Ralts encounters (Lv4) in Route 102. The frames listed here match Pokefinder's, excluding the ones not listed as possible grass encounters. Initial seed is 0
-Ability 0 = Synchronize, Ability 1 = Trace
+Possible Ralts encounters (Lv4) in Route 102. The frames listed here match Pokefinder's, excluding the ones not listed as possible grass encounters. 
+Initial seed is 0. Method is H2. Ability 0 = Synchronize, Ability 1 = Trace
 
 Frame	Nature	Ability	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
 874	Jolly	1	29	5	31	8	25	16	Water	32	♂
