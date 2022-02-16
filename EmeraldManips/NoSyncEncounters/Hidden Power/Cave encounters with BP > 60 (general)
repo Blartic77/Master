@@ -57,3 +57,5 @@ Frame	Slot	Nature	Ability	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP
 4816	8	Impish	1	31	22	5	14	23	8	Fire	62
 4837	3	Rash	0	15	7	17	31	18	1	Steel	62
 4850	2	Rash	1	2	8	14	3	19	3	Ice	68
+
+Note: the encounter at 2746 is impossible to get on emulator at least (tested by me and some other runners)
