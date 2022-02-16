@@ -41,3 +41,5 @@ Frames	Lv	Nature	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
 14223	8	Jolly	30	29	2	13	11	30	Elect.	58	♂
 14281	8	Timid	1	28	23	27	24	15	Ghost	47	♀
 14362	7	Timid	15	8	9	21	12	16	Bug	30	♀
+
+Note: the encounter at 2746 is impossible to get on emulator at least (tested by me and some other runners)
