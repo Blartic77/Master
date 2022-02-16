@@ -1,3 +1,6 @@
+UPDATE: whether the wild mon holds an item or not is NOT determined by hitting these frames, unfortunately. It's determined after the encounter starts but BEFORE
+the mon's sprite shows up. So don't take these as a guaranteed held item encounter
+
 To get an item encounter (regardless of spread), you might hit these frames for the item you're looking for 
 (assuming having an item is frame/PID specific and not species specific):
 
