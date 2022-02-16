@@ -22,3 +22,5 @@ Frame	Lv	Nature	Ability	HP	Atk	Def	SpA	SpD	Spe	HP Type	HP BP	Gender
 14069	3	Sassy	0	6	6	27	20	3	1	Grass	54	♂
 14223	3	Jolly	1	30	29	2	13	11	30	Elect.	58	♂
 14281	3	Timid	0	1	28	23	27	24	15	Ghost	47	♀
+
+Note: the encounter at 2746 is impossible to get on emulator at least (tested by me and some other runners)
