@@ -1,0 +1,46 @@
+Spread thought is 2283f in Pokefinder (H1, Male, Adamant, 27/25/29/11/28/31, HP Steel 45 BP)
+
+------------
+Pre-Roxanne:
+------------
+-Pick Mudkip as starter
+-Get Taillow in Route 116 (it's at Lv8) as this skips doing the Route 104 twins. Get Abra as well to skip them completely
+-Use Mudkip to help in Rustboro Gym (double battle only)
+
+_______
+
+Brawly:
+_______
+
+-At Lv14 with Poison -> Guts and full HP:
+--Turn 1: X Atk, receive max damage from Karate Chop (25 HP), lose 4 HP to Poison -> 9 HP left
+--Turn 2: Wing Attack (OHKO), lose 4 HP to Poison -> 5 HP left
+--Turn 3: Wing Attack (OHKO), lose 4 HP to Poison -> 1 HP left
+--Turn 4: Wing Attack (OHKO)
+
+No ranges for this fight
+
+_______
+
+Winona:
+_______
+
+-OHKOs at +4 Atk at Lv32 with Return (90 BP) + Silk Scarf without Guts
+-Calcs say HP Electric could, at best, only skip 1 turn on Pelipper, not saving any turns on Skarmory (but being slower due to having to raise both Atk and SpA if
+the player wants to use HP Electric). Also doesn't seem to skip any turns on Gyarados swimmer
+
+___________________
+
+Champion (Wallace):
+___________________
+
+-Providing you kept a status condition (burn or poison) and assuming you're Lv55 with 140 Atk, have Facade and Silk Scarf, and assuming an order of Wailord/Tentacruel/Milotic/Ludicolo/Whiscash/Gyarados:
+-Facade (88% range), Facade (Tentacruel), Facade (Milotic), Facade/Fly (Ludicolo; Aerial Ace is only a 50% range), Heal as Whiscash uses Hyper Beam + X Atk + Facade, Facade (Gyarados; 75% range)
+
+Notes:
+
+The issue is going to be Wally's Magneton 
+
+Overall, it seems like HP Ground could be an option for the Flannery and Wally fights as Return would have about 79 BP only for the first fight and might need the
+OHKO on the second one to prevent getting instantly KO'd by Thunderbolt (although something like HP Fighting could be a thing too, as there are 36 mandatory Dark
+types so it could save PP from Normal moves AND deal with Magneton, too)
