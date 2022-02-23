@@ -25,7 +25,7 @@ _______
 Winona:
 _______
 
--OHKOs at +4 Atk at Lv32 with Return (90 BP) + Silk Scarf without Guts
+-OHKOs at +4 Atk at Lv32 with Return (90 BP) + Silk Scarf without Guts (2 OHKO on Skarmory)
 -Calcs say HP Electric could, at best, only skip 1 turn on Pelipper, not saving any turns on Skarmory (but being slower due to having to raise both Atk and SpA if
 the player wants to use HP Electric). Also doesn't seem to skip any turns on Gyarados swimmer
 
@@ -43,4 +43,4 @@ The issue is going to be Wally's Magneton
 
 Overall, it seems like HP Ground could be an option for the Flannery and Wally fights as Return would have about 79 BP only for the first fight and might need the
 OHKO on the second one to prevent getting instantly KO'd by Thunderbolt (although something like HP Fighting could be a thing too, as there are 36 mandatory Dark
-types so it could save PP from Normal moves AND deal with Magneton, too)
+types and there's Petalburg Gym too, so it could save PP from Normal moves AND deal with Magneton, too)
