@@ -1,0 +1,115 @@
+All the semi-decent to very good spreads I found for Ruby/Sapphire. Note that the frames listed match bizhawk's/those in-game, for Pokefinder you'd have to substract 1f
+
+All of these have been verified as encounter frames in Ruby/Sapphire with a dead battery (initial seed = 5A0 (hex) or 1440 (decimal))
+Default method in-game seems to be H2, so if you don't see the method listed for a spread assume H2
+
+1. No Sweet Scent/Illuminate/Stench:
+
+Slot 0:
+-------
+-Frame 822 (H4, M, Hasty, Ab.1, 5/25/7/22/26/29, HP Ground 63 BP)
+-Frame 917 (H1, M, Naive, Ab.1, 14/26/19/25/22/29, HP Ghost 54 BP)
+
+Slot 1:
+-------
+-Frame 812* (H1, F, Modest, Ab.1, 14/29/4/28/27/12, HP Fire 50 BP)
+-Frame 1549* (H4, F, Modest, Ab.1, 26/20/12/20/23/28, HP Steel 50 BP)
+-Frame 1801 (M, Mild, Ab.0, 27/5/17/15/3/21, HP Dark 61 BP)
+-Frame 3123 (H4, M, Rash, Ab.0, 18/14/11/20/7/14, HP Fire 59 BP)
+-Frame 6452 (H1, M, Naive, Ab.0, 25/6/22/26/23/11, HP Water 69 BP)
+
+Slot 2:
+-------
+-Frame 940 (H4, M, Lonely, Ab.0, 15/31/17/30/3/23, HP Electric 67 BP)
+-Frame 1936* (M, Naive, Ab.1, 19/17/11/30/7/31, HP Electric 68 BP)
+-Frame 1936* (M, Naive, Ab.1, 31/30/7/18/8/20, HP Flying 44 BP)
+-Frame 2898* (M, Jolly, Ab.0, 24/28/25/12/6/24, HP Fighting 50 BP)
+
+Slot 3:
+-------
+-Frame 1056 (F, Bashful, Ab.1, 16/4/14/11/31/23, HP Ice 68 BP)
+-Frame 1520 (M, Jolly, Ab.0, 27/23/28/10/6/12, HP Fighting 62 BP)
+-Frame 1614 (M, Modest, Ab.1, 18/20/1/18/23/11, HP Grass 66 BP)
+-Frame 1614 (H4, M, Modest, Ab.1, 28/18/26/18/23/11, HP Water 69 BP)
+-Frame 1793 (F, Lax, Ab.1, 26/2/20/15/7/23, HP Ice 67 BP)
+-Frame 2471 (H1, M, Naive, Ab.1, 16/0/31/22/14/17, HP Poison 63 BP)
+
+Slot 4:
+-------
+-Frame 1089 (F, Mild, Ab.0, 29/1/11/29/31/15, HP Dark 57 BP)
+-Frame 1250* (M, Brave, Ab.1, 30/19/7/18/11/10, HP Water 70 BP)
+-Frame 1350 (H1, M, Modest, Ab.0, 11/21/21/29/27/8, HP Ice 50 BP)
+-Frame 1363 (H4, F, Lax, Ab.1, 21/10/12/26/15/15, HP Water 66 BP)
+
+Slot 5:
+-------
+-Frame 762 (H1, M, Lonely, Ab.1, 28/24/6/14/10/20, HP Fighting 63 BP)
+-Frame 926* (F, Naughty, Ab.0, 1/15/29/29/11/30, HP Ice 56 BP)
+-Frame 926* (H4, F, Naughty, Ab.0, 29/25/22/29/11/30, HP Psychic 57 BP)
+-Frame 1337* (F, Quirky, Ab.1, 6/25/30/13/30/26, HP Rock 58 BP)
+-Frame 1455 (M, Mild, Ab.0, 22/20/31/23/26/27, HP Ghost 68 BP)
+-Frame 1455* (M, Mild, Ab.0, 28/26/7/20/31/22, HP Fire 59 BP)
+-Frame 2139 (M, Hasty, Ab.0, 25/7/28/16/15/9, HP Grass 51 BP)
+-Frame 2148 (F, Hardy, Ab.0, 12/31/23/31/15/20, HP Psychic 64 BP)
+-Frame 2150 (F, Naughty, Ab.1, 1/14/22/31/11/21, HP Ice 64 BP)
+-Frame 2678* (H4, F, Lax, Ab.1, 31/11/11/30/31/18, HP Water 70 BP)
+
+Slot 6:
+-------
+-Frame 1152* (M, Bashful, Ab.1, 24/22/10/30/6/28, HP Fighting 64 BP) 
+-Frame 1257* (M, Adamant, Ab.0, 28/26/10/30/27/20, HP Steel 64 BP)
+-Frame 1257* (H4, M, Adamant, Ab.0, 0/31/25/30/27/20, HP Water 61 BP)
+-Frame 1533"* (H1, M, Lonely, Ab.0, 23/21/15/21/10/25, HP Steel 53 BP)
+
+Slot 7:
+-------
+-Frame 714 (H4, F, Brave, Ab.0, 29/11/0/25/14/27, HP Ghost 56 BP)
+-Frame 1293* (H1, M, Hardy, Ab.1, 23/26/8/26/8/25, HP Poison 42 BP)
+-Frame 1350 (H1, F, Serious, Ab.0, 17/6/21/14/8/28, HP Flying 41 BP)
+
+Slot 8:
+-------
+-Frame 1837 (H4, F, Ab.0, Relaxed, 15/26/14/30/27/27, HP Water 70 BP)
+-Frame 1837* (F, Ab.0, Relaxed, 2/26/17/30/27/27, HP Grass 67 BP)
+
+Slot 9:
+-------
+-Frame 1458* (H1, F, Naughty, Ab.1, 22/20/31/23/26/27, HP Ghost 68 BP)
+-Frame 1458 (F, Naughty, Ab.1, 27/23/26/23/5/26, HP Psychic 49 BP)
+-Frame 1458 (H4, F, Naughty, Ab.1, 22/20/31/23/5/26, HP Psychic 48 BP)
+-Frame 2987* (F, Hasty, Ab.0, 31/21/16/26/9/16, HP Fire 40 BP)
+-Frame 6466* (F, Serious, Ab.0, 30/21/6/23/19/7, HP Ice 68 BP)
+-Frame 11866 (M, Docile, Ab.0, 10/10/31/26/31/10, HP Fire 70 BP)
+
+Slot 10:
+--------
+-Frame 4913* (H1, F, Adamant, Ab. 1, 11/21/12/23/30/20, HP Rock 61 BP)
+
+Slot 11:
+--------
+-Frame 546 (H4, F, Timid, Ab.1, 13/18/24/31/26/10, HP Rock 66 BP)
+-Frame 866 (H1, F, Modest, Ab.1, 14/29/4/28/27/12, HP Fire 50 BP)
+-Frame 866* (F, Modest, Ab.1, 12/28/27/18/2/10, HP Fighting 68 BP)
+-Frame 866¨ (H4, F, Modest, Ab.1, 14/29/4/18/2/10, HP Fighting 66 BP) 
+-Frame 1428 (H1, F, Rash, Ab.0, 13/3/19/18/22/19, HP Ground 69 BP)
+-Frame 80770 (F, Naive, Ab.0, 11/7/18/22/19/16, HP Fire 64 BP)
+
+¨: is an encounter frame in caves, too
+*: obtained by a different method (H1/H2/H4) but should be possible since the frame's an encounter frame anyways
+
+
+2. With Illuminate lead:
+
+Slot 1:
+-------
+-Frame 564 (H4, F, Docile, Ab.0, 11/22/21/16/28/13, HP Ground 31 BP)
+
+Slot 4: 
+-------
+-Frame 1265 (H4, F, Hasty, Ab.1, 7/29/19/19/7/30, HP Ice 68 BP)
+
+
+3. Sweet Scent (H1):
+
+Slot 4:
+-Frame 4837 (M, Naive, Ab.0, 21/15/29/31/3/30, HP Ice 66 BP)
