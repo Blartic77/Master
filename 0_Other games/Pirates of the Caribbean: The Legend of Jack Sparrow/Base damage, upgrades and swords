@@ -1,0 +1,31 @@
+The base damage of all skills goes as follows:
+
+Skill	        Base damage	Upgrade 1	Upgrade 2
+Light slash 1	5	        7	        10
+Light slash 2	5        	7	        10
+Light finisher	5	        10	        15
+Heavy 1	        8	        10	        15
+Heavy 2	        8	        10      	15
+Overhead Slice	8	        10      	15
+Lunge	        5	        7	        10
+Running Kick	4	        7	        10
+Block Counter	3	        5	        10
+Vault Kick	4	        7	        10
+
+Bomb		                        1 each (max I got was 15 hits but could go up to 20)
+Axe		                        30
+Will's/Elizabeth's special		13 each
+Jack's fire blade (light)*		10
+Jack's fire blade (heavy)*		10
+
+*: damage to bosses since most normal enemies get their HP depleted instantly
+
+Most of these were tested on Pequeno #1
+
+Note that upgrading Light slash 2 only upgrades the 2nd slash, not both the 1st and the 2nd one.
+
+-Green swords (Formosa #2 aka Temple Terror): +25% damage to ALL forms of damage (from slashes to axes to throwing wooden barrels)
+-White swords (Sand, sky, rum and gold): +50% damage to ALL forms of damage (from slashes to axes to throwing wooden barrels); if you picked the green swords 
+it works as another +25% stacking damage bonus
+
+Finally, note that most (if not all) ranged enemies have 10 HP whereas enemies with swords have HP values between 15 and 30 HP
