@@ -1,6 +1,6 @@
 No method = H2
 Frames match bizhawk's/in-game
-No Sweet Scent/Illuminate taken into account
+No Sweet Scent/Illuminate leads taken into account
 Wild encounters only
 
 --------------------------------
@@ -10,69 +10,110 @@ Alt Mains by best spreads found:
 1) Pre Roxanne:
 
 1.1. Route 102:
--Poochyena:  1152f (Lv3 M, Bashful, 24/22/10/30/6/28, HP Fighting 64 BP) 
--Lotad:      2678f (H4, Lv4 F, Lax, 31/11/11/30/31/18, HP Water 70 BP, Rain Dish)
--Seedot:      762f (H1, Lv4 M, Lonely, 28/24/6/14/10/20, HP Fighting 63, Early Bird)
--Surskit:     866f (H1, Lv3 F, Modest, 14/29/4/28/27/12, HP Fire 50 BP)
--Ralts:      6466f (Lv4 F, Serious, 30/21/6/23/19/7, HP Ice 68 BP, Synchronize) OR
-            11866f (Lv4 M, Docile, 10/10/31/26/31/10, HP Fire 70 BP, Synchronize) OR
-             2987f (Lv4 F, Hasty, 31/21/16/26/9/16, HP Fire 40 BP, Synchronize), use H1 for max speed
+-Poochyena:   1152f (Lv3 M, Bashful, 24/22/10/30/6/28, HP Fighting 64 BP) 
+-Lotad:       2678f (H4, Lv4 F, Lax, 31/11/11/30/31/18, HP Water 70 BP, Rain Dish)
+-Seedot:       762f (H1, Lv4 M, Lonely, 28/24/6/14/10/20, HP Fighting 63, Early Bird)
+-Surskit:      866f (H1, Lv3 F, Modest, 14/29/4/28/27/12, HP Fire 50 BP)
+-Ralts:       6466f (Lv4 F, Serious, 30/21/6/23/19/7, HP Ice 68 BP, Synchronize) OR
+             11866f (Lv4 M, Docile, 10/10/31/26/31/10, HP Fire 70 BP, Synchronize) OR
+              2987f (Lv4 F, Hasty, 31/21/16/26/9/16, HP Fire 40 BP, Synchronize), use H1 for max speed
 
 1.2. Route 104:
--Wingull:    9652f (H4, Lv4 F, Timid, 18/27/23/26/26/21, HP Ground 64 BP)
+-Wingull:     9652f (H4, Lv4 F, Timid, 18/27/23/26/26/21, HP Ground 64 BP)
 
 1.3. Petalburg Woods:
--Shroomish:   940f (H4, Lv5 M, Lonely, 15/31/17/30/3/23, HP Electric 67 BP) OR
-            11384f (H4, Lv5 M, Adamant, 3/31/16/1/30/15, HP Ghost 57 BP) OR
-             1162f (H4, Lv6 F, Serious, 1/22/25/25/18/21, HP Ghost 51 BP)
-                     
+-Shroomish:    940f (H4, Lv5 M, Lonely, 15/31/17/30/3/23, HP Electric 67 BP) OR
+               940f (H1, Lv5 M, Lonely, 15/31/17/18/23/23, HP Electric 67 BP) OR
+             11384f (H4, Lv5 M, Adamant, 3/31/16/1/30/15, HP Ghost 57 BP) OR
+              1162f (H4, Lv6 F, Serious, 1/22/25/25/18/21, HP Ghost 51 BP)
+-Slakoth:     1458f (H1, Lv5 F, Naughty, 22/20/31/23/26/27, HP Ghost 68 BP)
+               
 1.4. Route 116: 
--Zigzagoon:  1458f (H1, Lv8 F, Naughty, 22/20/31/23/26/27, HP Ghost 68 BP)
--Taillow:   12004f (H1, Lv8 F, Lonely, 18/30/25/23/24/14, HP Rock 47 BP) OR
-             9048f (H4, Lv8 M, Adamant, 28/24/6/21/18/20, HP Ground 52 BP)
--Skitty:     7046f (Lv7 F, Lonely, 6/26/3/25/25/31, HP Dragon 39 BP) OR
-            11576f (Lv7 F, Mild, 5/26/23/20/10/22, HP Flying 59 BP)
+-Zigzagoon:   1458f (H1, Lv8 F, Naughty, 22/20/31/23/26/27, HP Ghost 68 BP)
+-Taillow:    12004f (H1, Lv8 F, Lonely, 18/30/25/23/24/14, HP Rock 47 BP) OR
+              9048f (H4, Lv8 M, Adamant, 28/24/6/21/18/20, HP Ground 52 BP)
+-Skitty:      7046f (Lv7 F, Lonely, 6/26/3/25/25/31, HP Dragon 39 BP) OR
+             11576f (Lv7 F, Mild, 5/26/23/20/10/22, HP Flying 59 BP)
+
+1.5. Rusturf Tunnel:
+-Whismur:      657f (Lv8 M, Jolly, 10/30/18/6/19/24, HP Steel 64 BP)
+
 
 2) Pre 2nd badge:
 
-2.1. Granite Cave:
-2.1.1. Granite Cave B2F:
--Abra:       1455f (H1, Lv10 M, Mild, 28/26/7/20/31/22, HP Fire 59 BP, Synchronize)
-2.1.2. Granite Cave B1F:
--Makuhita:   1152f (Lv10 M, Bashful, 24/22/10/30/6/28, HP Fighting 64 BP, Guts) OR
-             1534f (H1, Lv10 M, Lonely, 23/21/15/21/10/25, HP Steel 53 BP, Thick Fat)
+2.1. Route 104 (Fishing, Old Rod):
+-Magikarp:    1257f (Lv9 M, Adamant, 28/26/10/30/27/20, HP Steel 64 BP) OR
+              1257f (H1, Lv9 M, Adamant, 0/31/25/26/10/28, HP Flying 61 BP) OR
+               762f (H1, Lv9 M, Lonely, 28/24/6/14/10/20, HP Fighting 63 BP) OR   
+               917f (H1, Lv8 M, Naive, 14/26/19/25/22/29, HP Ghost 54 BP) OR
+              2947f (H1, Lv10 M, Quirky, 27/27/7/25/15/18, HP Ice 59 BP) OR
+               822f (H4, Lv10 M, Hasty, 5/25/7/22/26/29, HP Ground 63 BP)         
+                   
+2.2. Granite Cave: 
+2.2.1. Granite Cave B2F:
+-Abra:        1455f (H1, Lv10 M, Mild, 28/26/7/20/31/22, HP Fire 59 BP, Synchronize)
+-Zubat:       1519f (Lv11 M, Jolly, 27/23/28/10/6/12, HP Fighting 62 BP) OR
+               592f (Lv10 M, Naive, 5/16/12/26/30/14, HP Fighting 65 BP)
+2.2.2. Granite Cave B1F:
+-Makuhita:    1152f (Lv10 M, Bashful, 24/22/10/30/6/28, HP Fighting 64 BP, Guts) OR
+              1534f (H1, Lv10 M, Lonely, 23/21/15/21/10/25, HP Steel 53 BP, Thick Fat)
 
-2.2. Route 110:
--Plusle(S):  1350f (H1, Lv13 M, Modest, 11/21/21/29/27/8, HP Ice 50 BP)
--Electrike: 12107f (Lv12 M, Rash, 19/10/26/21/31/11, HP Ice 59 BP, Static) 
+2.3. Route 110:
+-Plusle(S):   1350f (H1, Lv13 M, Modest, 11/21/21/29/27/8, HP Ice 50 BP) OR
+              2294f (Lv13 M, Gentle, 22/30/30/27/23/5, HP Ice 64 BP)
+-Minun(S):    1720f (H1, Lv12 M, Calm, 22/24/6/15/5/31, HP Ice 48 BP)
+-Minun(R):    1363f (H4, Lv13 F, Lax, 21/10/21/26/15/15, HP Water 66 BP)
+-Electrike:  12107f (Lv12 M, Rash, 19/10/26/21/31/11, HP Ice 59 BP, Static) OR
+              3737f (H4, Lv12 M, Hasty, 27/19/25/27/23/14, HP Ice 67 BP, Lightning Rod) OR
+              2947f (H1, Lv13 M, Quirky, 27/27/7/25/15/18, HP Ice 59 BP, Lightning Rod)
 
-2.3. Route 117:
--Marill:     1599f (H1, Lv13 M, Bashful, 18/31/20/26/29/11, HP Grass 47 BP, Huge Power)
--Roselia:    1614f (H4, Lv14 M, Modest, 28/18/26/18/23/11, HP Water 69 BP, Poison Point)
-
+2.4. Route 117:
+-Marill:      1599f (H1, Lv13 M, Bashful, 18/31/20/26/29/11, HP Grass 47 BP, Huge Power)
+-Roselia:     1614f (H4, Lv14 M, Modest, 28/18/26/18/23/11, HP Water 69 BP, Poison Point)
+-Volbeat:     1458f (H1, Lv14 M, Naughty, 22/20/31/23/26/27, HP Ghost 68 BP, Swarm) OR
+              2838f (H4, Lv13 M, Brave, 20/29/12/9/19/31, HP Ice 55 BP, Swarm)
 
 3) Pre 3rd badge:
-
+                
 3.1. Route 114:
--Zangoose:    926f (H4, Lv16 F, Naughty, 29/25/22/29/11/30, HP Psychic 57 BP) OR
-             1458f (H1, Lv15 F, Naughty, 22/20/31/23/26/27, HP Ghost 68 BP)
+-Zangoose:     926f (H4, Lv16 F, Naughty, 29/25/22/29/11/30, HP Psychic 57 BP) OR
+              1458f (H1, Lv15 F, Naughty, 22/20/31/23/26/27, HP Ghost 68 BP)
+-Seviper:      926f (H4, Lv16 F, Naughty, 29/25/22/29/11/30, HP Psychic 57 BP) OR
+              1044f (H4, Lv16 F, Jolly, 14/21/24/26/22/30, HP Fighting 66 BP)
+-Swablu:       940f (H1, Lv17 M, Lonely, 15/31/17/18/23/23, HP Electric 67 BP) OR
+               473f (H1, Lv16 M, Mild, 21/15/9/29/23/28, HP Ice 51 BP) OR
+              1110f (Lv16 M, Rash, 19/17/1/31/25/26, HP Ice 45 BP)
 
 3.2. Meteor Falls:
--Lunatone:   1152f (Lv18, Bashful, 24/22/10/30/6/28, HP Fighting 64 BP)
--Solrock:    1534f (H1, Lv18, Lonely, 23/21/15/21/10/25, HP Steel 53 BP)
+-Lunatone:    1152f (Lv18, Bashful, 24/22/10/30/6/28, HP Fighting 64 BP)
+-Solrock:     1534f (H1, Lv18, Lonely, 23/21/15/21/10/25, HP Steel 53 BP) OR
+              1152f (Lv18, Bashful, 24/22/10/30/6/28, HP Fighting 64 BP)
 
 3.3. Jagged Pass (Sapphire; Lv -2 for Ruby):
--Spoink      3447f (H4, Lv22 F, Naive, 22/29/4/22/23/28, HP Fire 61 BP, Own Tempo)
--Machop     11346f (H4, Lv22 M, Naive, 3/23/23/19/6/25, HP Steel 64 BP) OR
-            14986f (Lv22 M, Brave, 22/25/18/17/30/21, HP Ghost 53 BP)
+-Spoink       3447f (H4, Lv22 F, Naive, 22/29/4/22/23/28, HP Fire 61 BP, Own Tempo)
+-Machop      11346f (H4, Lv22 M, Naive, 3/23/23/19/6/25, HP Steel 64 BP) OR
+             14986f (Lv22 M, Brave, 22/25/18/17/30/21, HP Ghost 53 BP)
+-Numel:        473f (H1, Lv21 M, Mild, 21/15/9/29/23/28, HP Ice 51 BP)
 
 
 4) Post Flannery:
--Trapinch:  1520f (H1, Lv21 M, Jolly, 10/22/28/23/28/27, HP Bug 47 BP) 
-
+-Trapinch:   1520f (H1, Lv21 M, Jolly, 10/22/28/23/28/27, HP Bug 47 BP) 
+-Sandshrew:  2201f (Lv20 F, Naughty, 17/30/20/31/23/26, HP Electric 66 BP) OR
+              822f (H4, Lv20 M, Hasty, 5/25/7/22/26/29, HP Ground 63 BP) OR
+              592f (Lv20 M, Naive, 5/16/12/26/30/14, HP Fighting 65 BP) OR
+             1745f (Lv21 M, Adamant, 1/27/26/22/3/23, HP Grass 69 BP)
+             
 
 5) Post Norman:
--Billy*:    3510f (Lv26, Gentle, 7/31/19/23/23/20, HP Ice 64 BP, Soundproof)
+-Billy*:     3510f (Lv26, Gentle, 7/31/19/23/23/20, HP Ice 64 BP, Soundproof)
+-Jigglypuff: 1162f (H4, Lv25 F, Serious, 1/22/25/25/18/21, HP Ghost 51 BP)
+-Shuppet:    1520f (Lv28 M, Jolly, 27/23/28/10/6/12, HP Fighting 62 BP)
+-Meditite:   1520f (Lv29 M, Jolly, 27/23/28/10/6/12, HP Fighting 62 BP)
+-Vulpix:      963f (H4, Lv27 M, Modest, 17/14/13/17/27/11, HP Dragon 56 BP) OR
+              932f (Lv29 M, Quiet, 19/29/26/15/23/1, HP Dragon 63 BP) OR
+             2135f (H4, Lv29 F, Hardy, 15/31/23/31/15/20, HP Psychic 64 BP) OR
+             2294f (Lv29 M, Gentle, 22/30/30/27/23/5, HP Ice 64 BP) OR
+             2678f (H4, Lv27 F, Lax, 31/11/11/30/31/18, HP Water 70 BP)
 
 *: Billy is already evolved here
 
@@ -84,28 +125,32 @@ Alt Mains by earlier spreads (for those with spreads beyond 2000f):
 1) Pre Roxanne:
 
 1.1. Route 102:
--Lotad:     1363f (H4, Lv3 F, Lax, 21/10/12/26/15/15, HP Water 66 BP, Rain Dish)
--Ralts:     1447f (H1, Lv4 F, Lax, 9/25/8/21/9/25, HP Psychic 30 BP, Synchronize)
+-Lotad:      1363f (H4, Lv3 F, Lax, 21/10/12/26/15/15, HP Water 66 BP, Rain Dish) OR
+             1455f (Lv4 M, Mild, 22/20/31/23/26/27, HP Ghost 68 BP, Swift Swim)
+-Ralts:      1447f (H1, Lv4 F, Lax, 9/25/8/21/9/28, HP Psychic 30 BP, Synchronize)
 
 1.2. Route 104:
--Wingull:    866f (H1, Lv5 F, Modest, 14/29/4/28/27/12, HP Fire 50 BP)
+-Wingull:     866f (H1, Lv5 F, Modest, 14/29/4/28/27/12, HP Fire 50 BP)
 
 1.3. Route 116:
--Skitty:    1428f (Lv8 F, Rash, 19/18/22/21/2/3, HP Bug 59 BP)
+-Skitty:     1428f (Lv8 F, Rash, 19/18/22/21/2/3, HP Bug 59 BP)
+-Taillow:    1257f (Lv7 M, Adamant, 28/26/10/30/27/20, HP Steel 64 BP)
                   
                   
 2) Pre 2nd badge: 
                      
 2.1. Route 110:    
--Electrike: 1959f (Lv13 M, Mild, 2/0/28/15/29/31, HP Ice 45 BP, Lightning Rod) OR
-            1956f (Lv12 M, Docile, 23/19/15/31/7/0, HP Ice 64 BP, Static)
+-Electrike:  1066f (Lv12 M, Rash, 19/17/1/31/25/26, HP Ice 45 BP, Static) OR
+             1614f (H4, Lv13 M, Modest, 28/18/26/18/23/11, HP Water 69 BP, Lightning Rod) OR
+             1959f (Lv13 M, Mild, 2/0/28/15/29/31, HP Ice 45 BP, Lightning Rod) OR
+             1792f (Lv13 F, Lax, 26/2/20/15/7/23, HP Ice 67 BP, Lightning Rod) OR
+             1956f (H1, Lv12 M, Docile, 23/19/15/31/7/0, HP Ice 64 BP, Static)
                      
                      
 3) Pre 3rd badge:       
                         
 3.1. Jagged Pass (Sapphire; Lv -2 for Ruby):
--Spoink:     866f (H1, Lv22 F, Modest, 14/29/4/28/27/12, HP Fire 50 BP, Own Tempo)
--Machop:    1255f (Lv21 M, Impish, 31/21/25/27/6/24, HP Bug 61 BP) OR
-            1162f (H4, Lv22 F, Serious, 1/22/25/25/18/21, HP Ghost 51 BP) OR
-            1202f (H4, Lv22 M, Adamant, 10/20/3/9/4/26, HP Rock 38 BP)
-
+-Spoink:      866f (H1, Lv22 F, Modest, 14/29/4/28/27/12, HP Fire 50 BP, Own Tempo)
+-Machop:     1255f (Lv21 M, Impish, 31/21/25/27/6/24, HP Bug 61 BP) OR
+             1162f (H4, Lv22 F, Serious, 1/22/25/25/18/21, HP Ghost 51 BP) OR
+             1202f (H4, Lv22 M, Adamant, 10/20/3/9/4/26, HP Rock 38 BP)
