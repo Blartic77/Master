@@ -667,7 +667,116 @@ Ability: Marvel Scale
 
 Team Aqua:
 
-1) Archie:
+1) Petalburg Woods (aka Aqua Pooch #1):
+
+Poochyena
+Level: 9
+Brave Nature
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Sand Attack
+- Howl
+
+2) Rusturf Tunnel (aka Aqua Pooch #2):
+
+Poochyena
+Level: 11
+Brave Nature
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Sand Attack
+- Howl
+
+3) Museum grunt #1:
+
+Carvanha
+Level: 15
+Relaxed Nature
+Ability: Rough Skin
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bite
+- Rage
+- Leer
+- Focus Energy
+
+4) Museum grunt #2:
+
+Zubat
+Level: 14
+Gentle Nature
+Ability: Inner Focus
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Leech Life
+- Astonish
+- Supersonic
+
+Carvanha
+Level: 14
+Quiet Nature
+Ability: Rough Skin
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bite
+- Rage
+- Leer
+- Focus Energy
+
+5) Mt. Chimney grunt:
+
+Zubat
+Level: 20
+Gentle Nature
+Ability: Inner Focus
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Leech Life
+- Astonish
+- Supersonic
+- Bite
+
+Poochyena
+Level: 20
+Hardy Nature
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bite
+- Sand Attack
+- Howl
+- Odor Sleuth
+
+6) Matt:
+
+Carvanha
+Level: 20
+Timid Nature
+Ability: Rough Skin
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Bite
+- Rage
+- Focus Energy
+- Scary Face
+
+Poochyena
+Level: 20
+Naughty Nature
+Ability: Run Away
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Bite
+- Sand Attack
+- Howl
+- Odor Sleuth
+
+Carvanha
+Level: 20
+Adamant Nature
+Ability: Rough Skin
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Bite
+- Rage
+- Focus Energy
+- Scary Face
+
+7) Archie:
 
 Mightyena
 Level: 24
@@ -699,7 +808,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Scary Face
 - Focus Energy
 
-2) Archie 2:
+8) Archie 2:
 
 Mightyena
 Level: 41
@@ -734,7 +843,29 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Team Magma:
 
-1) Museum Magma Grunt #1:
+1) Petalburg Woods (aka Magma Pooch #1):
+
+Poochyena
+Level: 9
+Brave Nature
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Sand Attack
+- Howl
+
+2) Rusturf Tunnel (aka Magma Pooch #2):
+
+Poochyena
+Level: 11
+Brave Nature
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Sand Attack
+- Howl
+
+3) Museum Magma Grunt #1:
 
 Numel
 Level: 15
@@ -745,7 +876,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Ember
 - Growl
 
-2) Museum Magma Grunt #2:
+4) Museum Magma Grunt #2:
 
 Zubat
 Level: 14
@@ -765,7 +896,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Ember
 - Growl
 
-3) Maxie:
+5) Maxie:
 
 Mightyena
 Level: 24
@@ -797,7 +928,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Focus Energy
 - Tackle
 
-3) Tabitha 2:
+6) Tabitha 2:
 
 Numel
 Level: 32
@@ -829,7 +960,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Amnesia
 - Focus Energy
 
-5) Courtney 2:
+7) Courtney 2:
 
 Camerupt
 Level: 38
@@ -851,7 +982,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Roar
 - Swagger
 
-6) Maxie 2:
+8) Maxie 2:
 
 Mightyena
 Level: 41
