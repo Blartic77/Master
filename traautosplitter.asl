@@ -1,4 +1,4 @@
-// Autosplitter script for TRA (v5.0) by NextLevelMemes, using apel's v1.0 load remover. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice. Also huge thanks BryNu for thoroughly testing it, to Taeruhs, Didi and Dayo/Clay for helping me to test it too and to apel for checking for possible writing mistakes.   
+// Autosplitter script for TRA (v5.1) by NextLevelMemes, using apel's v1.0 load remover. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice. Also huge thanks BryNu for thoroughly testing it, to Taeruhs, Didi and Dayo/Clay for helping me to test it too and to apel for checking for possible writing mistakes.   
 // Note that the default (NBJ) splits are based on specific routes/paths based on the latest top speedrun of that category. If you're using different shortcuts, remember to untick the splits in the layout settings. 
 // For a guide on how to use this autosplitter (and for troubleshooting too) please refer to this guide: https://www.speedrun.com/tra/guide/7dxat
 // The splits files for different categories can be found here: https://www.speedrun.com/tra/resources
@@ -416,7 +416,19 @@ isLoading
 }
 
 startup
-{   
+{
+	if (timer.CurrentTimingMethod == TimingMethod.RealTime)
+	{        
+  		var timingMessage = MessageBox.Show(
+  		"This game uses Game Time (without loads) as the main timing method. " +
+  		"LiveSplit is currently set to display and compare against Real Time (including loads).\n\n" +
+  		"Would you like the timing method to be set to Game Time?",
+  		"Tomb Raider Anniversary | LiveSplit",
+  		MessageBoxButtons.YesNo,MessageBoxIcon.Question
+  		);
+  		if (timingMessage == DialogResult.Yes)
+    		timer.CurrentTimingMethod = TimingMethod.GameTime;
+	}
 	vars.LaraWasHere = new List<string>();
 	
     settings.Add("Main", true, "Autostarts when:");
