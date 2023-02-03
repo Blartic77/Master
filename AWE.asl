@@ -1,4 +1,4 @@
-//Script by NLM aka NextLevelMemes. 
+//Script by Blartic77
 
 state("AWE")
 {
