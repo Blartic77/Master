@@ -1,4 +1,4 @@
-//Autosplitter by NLM aka NextLevelMemes for Pokemon Ruby and Sapphire. Huge thanks to LoveSickHero for his rigorous testing and for finding the second constant, as well as to Snairam for his thorough testing.
+//Autosplitter by Blartic77 for Pokemon Ruby and Sapphire. Huge thanks to LoveSickHero for his rigorous testing and for finding the second constant, as well as to Snairam for his thorough testing.
 //Thanks to Ero, Square, buurazu and 2838 for giving me advice on how to properly sigscan, and again to buurazu for his sigscan function which I used for this script.
 
 state("mGBA")
