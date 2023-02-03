@@ -29,4 +29,4 @@ To use them, get the .asl (https://www.speedrun.com/tools/NLM_TRAautosplitter_v3
 
 Finally, if you need help with the autosplitter you can find detailed information on how it works here, as well as troubleshooting: https://www.speedrun.com/tra/guide/7dxat
 
-If after reading the troubleshooting in the guide an issue persist you can reach me via Discord (username = NLM/NextLevelMemes).
+If after reading the troubleshooting in the guide an issue persist you can reach me via Discord.
