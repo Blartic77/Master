@@ -1,4 +1,4 @@
-// Autosplitter script for TRA (v5.1) by NextLevelMemes, using apel's v1.0 load remover. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice. Also huge thanks BryNu for thoroughly testing it, to Taeruhs, Didi and Dayo/Clay for helping me to test it too and to apel for checking for possible writing mistakes.   
+// Autosplitter script for TRA (v5.1) by Blartic77, using apel's v1.0 load remover. Special thanks to Cadarev for figuring out how to prevent the same autosplit from happening twice. Also huge thanks BryNu for thoroughly testing it, to Taeruhs, Didi and Dayo/Clay for helping me to test it too and to apel for checking for possible writing mistakes.   
 // Note that the default (NBJ) splits are based on specific routes/paths based on the latest top speedrun of that category. If you're using different shortcuts, remember to untick the splits in the layout settings. 
 // For a guide on how to use this autosplitter (and for troubleshooting too) please refer to this guide: https://www.speedrun.com/tra/guide/7dxat
 // The splits files for different categories can be found here: https://www.speedrun.com/tra/resources
