@@ -1,4 +1,4 @@
-//Lord of the Rings: Return of the King autosplitter by NLM aka NextLevelMemes
+//Lord of the Rings: Return of the King autosplitter by Blartic77
 
 state("ROTK")
 {
