@@ -1,4 +1,4 @@
-//Autosplitter by NLM aka NextLevelMemes for Pokemon Emerald. 
+//Autosplitter by Blartic77 for Pokemon Emerald. 
 //Thanks to Ero, Square, buurazu and 2838 for giving me advice on how to properly sigscan, and again to buurazu for his sigscan function which I used for this script
 
 state("mGBA")
