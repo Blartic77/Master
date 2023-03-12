@@ -62,7 +62,7 @@ update
 	
 	SigScanTarget target;
 	
-	target = new SigScanTarget(1, "00 01 01 00 00 00 00 00 00 00 00 00 11");
+	target = new SigScanTarget(1, "00 01 01 00 00 00 00 00 00 00 00 00 11");				//"00 23 03 12 00 ?? ?? ?? 40 00 00 00 00 01" for no dry battery
 	vars.search(target,"Trumpets");
 	{
 	if(vars.addr == IntPtr.Zero)
