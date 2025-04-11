@@ -1,0 +1,51 @@
+Ok, so here's what I could find so far:
+
+-Mast:                  255
+-Pequeno:               650
+-Tang #1:               200
+-Tang #2:               1000
+-Pequeno 2:             1500
+-Blacksmoke James:      1600
+-Mallot #1:             500
+-Koehler:               800
+-Mallot #2:             1600
+-Bo'sun:                1200
+-Serpiente de Muerta*:  750
+-Barbossa*:             2500
+-Alberto Chaves (Blue): 600/600x3/180
+-Benito Chaves (Red):   600x3/269
+-Celio Chaves (Green):  389
+
+Note that Jacoby and Pintel HPs are irrelevant since they can be defeated much more quickly by other means. 
+
+*: like all enemies in "Return to Isla de Muerta", these take "50%" less damage (actually 33%); that is, all damage done to them is divided by 1.5.
+
+Finally, note that for the Chaves brothers, a weird system was implemented since the devs didn't know which brother you'd go after. I'll explain it here:
+
+___________
+
+First fight
+___________
+
+Just lower Alberto's HP (600) to around 2/3 to make Benito come in. Alberto's HP is fully restored.
+
+____________
+
+Second fight
+____________
+
+Ok, here comes the weirdness. So each brother is given 600 HP, but the red bar seems to go down as if it was 1800 HP total. Each time a brother's HP would
+be 0, it is given 600 HP again. Once you deal around 1400 HP, Celio comes in.
+
+___________
+
+Third fight
+___________
+
+If you thought the previous HP mechanic was weird get ready for something even weirder. Each brother starts now with a lower HP value and the total HP bar
+displayed in red seems to display 1438 HP total. Simply deplete two of the brother's HPs to make them go down, although oddly enough they can stand on 1 HP
+(you might notice the HP bar doesn't go down) and need extra hits to go down. Then, deplete the last brother's HP...and he'll be given another 600 HP, BUT
+all damage you deal to this brother is now capped to 4 per hit. Yep, I said that right. Why? Honestly I have no idea. But since bombs deal little damage 
+per hit but hit many times in a short amount of time, they can take care of this brother rather fast (simply compare how little his HP bar goes down to 
+normal hits VS using bombs on him). So yep, weird mechanics to make these battles work, but I guess most of us didn't notice it during our first playthrough,
+so...they kinda work as intended? Anyways, there goes my explanation.
